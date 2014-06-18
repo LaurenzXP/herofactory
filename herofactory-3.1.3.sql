@@ -14,7 +14,7 @@ MySQL - 5.1.73 : Database - ni381535_1_DB
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`ni381535_1_DB` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `ni381535_1_DB`;
+USE `arma3srv`;
 
 /*Table structure for table `dynperms` */
 
@@ -128,6 +128,45 @@ CREATE TABLE `vehicles` (
   KEY `pid` (`pid`),
   KEY `type` (`type`)
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE IF NOT EXISTS `houses` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `house_id` varchar(32) NOT NULL,
+  `pid` varchar(32) NOT NULL,
+  `storage` varchar(255) NOT NULL,
+  `trunk` varchar(2048) NOT NULL DEFAULT '[]',
+  `weapon_storage` varchar(4096) NOT NULL DEFAULT '[]',
+  `weapon_storage2` varchar(4096) NOT NULL DEFAULT '[]',
+  `position` varchar(255) NOT NULL,
+  `occupied` tinyint(1) NOT NULL DEFAULT '0',
+  `locked` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `pid` (`pid`),
+  KEY `house_id` (`house_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+
+
+
+CREATE TABLE IF NOT EXISTS `gangs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `gangname` varchar(30) NOT NULL,
+  `atmCash` varchar(2048) NOT NULL,
+  `locked` varchar(2048) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`gangname`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+CREATE TABLE IF NOT EXISTS `gang_players` (
+  `gangid` int(11) NOT NULL,
+  `playerid` varchar(2048) NOT NULL,
+  `rank` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
 
 /* Procedure structure for procedure `deleteDeadVehicles` */
 
