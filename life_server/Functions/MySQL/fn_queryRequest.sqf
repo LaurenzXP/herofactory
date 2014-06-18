@@ -47,6 +47,8 @@ while {true} do {
 	waitUntil {scriptDone _thread};
 	sleep 0.2;
 	_queryResult = missionNamespace getVariable format["QUERY_%1",_uid];
+        diag_log "QueryResult = ";
+        diag_log _queryResult;
 	if(!isNil "_queryResult") exitWith {};
 };
 
@@ -102,6 +104,7 @@ switch (_side) do {
 };
 
 _queryGangResult = [];
+
 switch (_side) do {
 	case civilian: {
 		_queryGang = format["SELECT gang_players.playerid, gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
@@ -121,6 +124,10 @@ switch (_side) do {
 			_queryResult set[10, _queryGangResult];
 		};
 };
-//* diag_log format["got Player Housing Information: Return: %1",_ret];
-//* diag_log format["Returning Player Information: %1", _queryResult];
+
+diag_log _queryGangResult;
+
+
+ diag_log format["got Player Housing Information: Return: %1",_ret];
+ diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
