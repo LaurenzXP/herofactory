@@ -1,6 +1,8 @@
 /*
     File: fn_civLoadGear.sqf
     Author: Bryan "Tonic" Boardwine
+
+    @Vampire mades this script working - thanks to him!
     
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.

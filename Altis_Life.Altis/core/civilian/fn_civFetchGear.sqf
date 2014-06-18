@@ -2,6 +2,8 @@
     File: fn_civFetchGear.sqf
     Author: Bryan "Tonic" Boardwine
     Full Gear/Y-Menu Save by Vampire
+
+    @Vampire made this script working - thanks to him!
     
     Description:
     Saves the players gear for syncing to the database for persistence.
