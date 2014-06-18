@@ -1,6 +1,6 @@
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 DB_Async_Active = false;
-__CONST__(LIFE_SCHEMA_NAME,"'ni381535_1_db'");//CHANGE THIS IF YOUR DATABASE IS NOT CALLED ARMA3LIFE KEEP THE ' '
+__CONST__(LIFE_SCHEMA_NAME,"'arma3srv-life'");//CHANGE THIS IF YOUR DATABASE IS NOT CALLED ARMA3LIFE KEEP THE ' '
 publicVariable "LIFE_SCHEMA_NAME";
 
 //Null out harmful things for the server.
@@ -28,6 +28,8 @@ life_animals_array = [];
 
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
+[] execVM "\life_server\initGangs.sqf";
+[] execVM "\life_server\initHousing.sqf";
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 
 _tempID = ["SERV_onClientDisconnect","onPlayerDisconnected","TON_fnc_clientDisconnect"] call BIS_fnc_addStackedEventHandler;

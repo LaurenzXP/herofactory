@@ -161,7 +161,9 @@ life_inv_items =
 	"life_inv_spikeStrip",
 	"life_inv_rock",
 	"life_inv_cement",
-	"life_inv_goldbar"
+	"life_inv_goldbar",
+	"life_inv_storage1",
+	"life_inv_storage2"
 ];
 
 //Setup variable inv vars.
@@ -191,6 +193,7 @@ life_licenses =
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
+	["license_civ_home", "civ"]
 	["license_adac_air","adac"],
 	["license_adac_boot","adac"],	
 	["license_adac_truck","adac"],	
@@ -268,6 +271,9 @@ buy_array =
 	["fuelF",850],
 	["peach",68],
 	["spikeStrip",2500]
+	["spikeStrip",2500],
+	["storage1",100000],
+	["storage2",250000]
 ];
 __CONST__(buy_array,buy_array);
 

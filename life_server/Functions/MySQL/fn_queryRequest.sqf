@@ -10,7 +10,7 @@
 	ARRAY - If array has 0 elements it should be handled as an error in client-side files.
 	STRING - The request had invalid handles or an unknown error and is logged to the RPT.
 */
-private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","_thread"];
+private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","_thread","_handlerhousing","_queryHousingResult"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _ownerID = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -71,6 +71,7 @@ for "_i" from 0 to (count _old)-1 do
 };
 
 _queryResult set[6,_old];
+
 //Parse data for specific side.
 switch (_side) do {
 	case west: {
@@ -91,4 +92,35 @@ switch (_side) do {
 	};	
 };
 
+_ret = [];
+
+switch (_side) do {
+	case civilian: {
+		_ret = [_uid, _side] call BRUUUDIS_fnc_queryPlayerHouses;
+		_queryResult set[9, _ret];
+	};
+};
+
+_queryGangResult = [];
+switch (_side) do {
+	case civilian: {
+		_queryGang = format["SELECT gang_players.playerid, gangs.id, gangs.gangname, gangs.locked, gang_players.rank FROM gangs LEFT JOIN gang_players on gang_players.gangid=gangs.id WHERE gang_players.playerid='%1'",_uid];
+		waitUntil{!DB_Async_Active};
+			while {true} do {
+			_threadGang = [_queryGang,_uid] spawn _handler;
+			waitUntil {scriptDone _threadGang};
+			sleep 0.2;
+			_queryGangResult = missionNamespace getVariable format["QUERY_%1",_uid];
+			if(!isNil "_queryResult") exitWith {};
+		};
+		missionNamespace setVariable[format["QUERY_%1",_uid],nil]; //Unset the variable.
+		if (typeName _queryGangResult != "STRING") then {
+			_old = _queryGangResult select 3;
+			_new = [parseNumber(_old), 1] call DB_fnc_bool;
+			_queryGangResult set [3, _new];
+			_queryResult set[10, _queryGangResult];
+		};
+};
+//* diag_log format["got Player Housing Information: Return: %1",_ret];
+//* diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

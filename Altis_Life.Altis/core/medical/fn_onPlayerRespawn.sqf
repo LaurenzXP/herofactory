@@ -16,8 +16,8 @@ _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Again why the fuck am I setting this? Can anyone tell me?
 
 //Load our gear as a cop incase something horrible happens
-if(playerSide == indepdendet) then {
-	[] spawn life_fnc_coploadGear;
+if(playerSide == west) then {
+	[] spawn life_fnc_loadGear;
 };
 
 _unit addRating 9999999999999999; //Set our rating to a high value, this is for a ARMA engine thing.

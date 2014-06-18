@@ -113,6 +113,37 @@ class CfgFunctions
 			class cleanupRequest {};
 		};
 	};
+	class BRUUUDIS_System {
+
+        tag = "BRUUUDIS";       
+        class Bruuudis
+        {
+            file = "\life_server\Functions\bruuudis";
+            class deleteHouse {};
+            class insertHouse {};
+            class queryHouses {};
+			class queryPlayerHouses {};
+            class updateHouseStorage {};
+            class updateHouseWeaponStorage {};
+        };
+    };
+	class msc_System {
+		tag = "MSC";
+		class msc
+		{
+			file = "\life_server\Functions\msc";
+			class insertGang{};
+			class queryGangs{};
+			class queryGangPlayers{};
+			class insertGangPlayer{};
+			class removeGangPlayer{};
+			class removeGang{};
+			class updateGangLeader{};
+			class updateGanglock{};
+		};
+	};
+	
+	
 };
 
 class CfgVehicles
