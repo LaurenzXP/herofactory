@@ -121,7 +121,7 @@ CREATE TABLE `vehicles` (
   `active` tinyint(1) NOT NULL DEFAULT '0',
   `plate` int(20) NOT NULL,
   `color` int(20) NOT NULL,
-  `inventory` varchar(500) NOT NULL,
+  `inventory` varchar(500),
   `damage` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `side` (`side`),
