@@ -35,9 +35,11 @@ _query = switch(_side) do {
 	case west: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
 	case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel FROM players WHERE playerid='%1'",_uid];};
-	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel FROM players WHERE playerid='%1'",_uid];};
+	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
 	
 };
+
+diag_log "Loging Query from fn_queryRequest.sqf";
 diag_log _query;
 
 waitUntil{!DB_Async_Active};
@@ -121,6 +123,6 @@ switch (_side) do {
 			_queryResult set[10, _queryGangResult];
 		};
 };
-//* diag_log format["got Player Housing Information: Return: %1",_ret];
-//* diag_log format["Returning Player Information: %1", _queryResult];
+ diag_log format["got Player Housing Information: Return: %1",_ret];
+ diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
