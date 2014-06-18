@@ -123,6 +123,7 @@ switch (_side) do {
 			_queryGangResult set [3, _new];
 			_queryResult set[10, _queryGangResult];
 		};
+	};	
 };
 
 diag_log _queryGangResult;
