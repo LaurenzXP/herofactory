@@ -270,7 +270,7 @@ buy_array =
 	["redgull",1500],
 	["fuelF",850],
 	["peach",68],
-	["spikeStrip",2500]
+	["spikeStrip",2500],
 	["spikeStrip",2500],
 	["storage1",100000],
 	["storage2",250000]
