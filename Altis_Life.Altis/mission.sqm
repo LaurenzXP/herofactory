@@ -3402,7 +3402,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_13"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item101
 				{
@@ -8686,7 +8686,7 @@ class Mission
 		};
 		class Item425
 		{
-			position[]={9688.96,12.233228,8937.0684};
+			position[]={9694.9346,12.36939,8936.9492};
 			azimut=-122.29397;
 			id=688;
 			side="EMPTY";
@@ -105496,7 +105496,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=289;
+		items=290;
 		class Item0
 		{
 			position[]={8487.8721,107.09129,25155.781};
@@ -106527,7 +106527,7 @@ class Mission
 		};
 		class Item131
 		{
-			position[]={9688.5361,12.233613,8936.9561};
+			position[]={9694.5107,12.357639,8936.8369};
 			name="reb_v_2";
 			type="Empty";
 			angle=-74.833801;
@@ -107835,6 +107835,12 @@ class Mission
 		{
 			position[]={8555.1211,78.708504,25289.139};
 			name="respawn_east";
+			type="Empty";
+		};
+		class Item289
+		{
+			position[]={9695.2129,12.375134,8936.5293};
+			name="car_g_13";
 			type="Empty";
 		};
 	};
