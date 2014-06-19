@@ -97,22 +97,22 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return set[count _return,
-		["C_Offroad_01_F",-1]];
+		["C_Offroad_01_F",1000]];
 		
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_return set[count _return,
-			["C_Hatchback_01_sport_F",-1]];
+			["C_Hatchback_01_sport_F",10000]];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["C_SUV_01_F",-1]];
+			["C_SUV_01_F",10000]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_F",-1]];
+			["B_MRAP_01_F",30000]];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
