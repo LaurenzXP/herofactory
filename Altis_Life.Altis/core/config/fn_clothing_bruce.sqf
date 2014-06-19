@@ -30,6 +30,10 @@ switch (_filter) do
 		["U_IG_Guerilla2_3","The Outback Rangler",1200],
 		["U_C_HunterBody_grn","The Hunters Look",1500],
 		["U_C_WorkerCoveralls","Mechanic Coveralls",2500],
+		["U_C_Scientist",2500],
+		["U_NikosAgedBody","Poloshirt Blue",250],
+		["U_C_Journalist","Poloshirt Blue",500],
+		["U_Competitor","Poloshirt Blue",500],
 		["U_OrestesBody","Surfing On Land",1100]
 		];
 	};
@@ -86,6 +90,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
+		    ["V_Press_F",nil,10000],
+			["V_Rangemaster_belt",nil,10000]
 		];
 	};
 	
