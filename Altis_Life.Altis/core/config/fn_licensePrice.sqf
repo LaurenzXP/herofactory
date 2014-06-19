@@ -35,6 +35,9 @@ switch (_type) do
 	case "cement": {6500};
 	case "mair": {15000};
 	
+	case "home": {150000};
+	
+	
 				// licenzen
 	case "adac": {15000};
 			
