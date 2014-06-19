@@ -27,6 +27,7 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "zlt_fastrope.sqf";
 
 if(!StartProgress) then
 {
