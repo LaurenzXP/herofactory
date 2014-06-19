@@ -34,7 +34,8 @@ switch (_shop) do
 	case "med_air_hs": {
 		_return = [
 			["B_Heli_Light_01_F",50000],
-			["O_Heli_Light_02_unarmed_F",75000]
+			["O_Heli_Light_02_unarmed_F",75000],
+			["I_Heli_Transport_02_F",175000]
 		];
 	};
 	
@@ -44,8 +45,11 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
+			["C_Hatchback_01_sport_F",49500],			
 			["C_Offroad_01_F",12500],
+			["B_G_Offroad_01_F",12500],			
 			["C_SUV_01_F",35000],
+			["I_G_Van_01_transport_F",85000],
 			["C_Van_01_transport_F",40000]
 		];
 	};
@@ -57,11 +61,12 @@ switch (_shop) do
 			["C_Van_01_box_F",60000],
 			["I_Truck_02_transport_F",75000],
 			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",275000],
-			["O_Truck_03_transport_F",200000],
-			["O_Truck_03_covered_F",250000],
-			["B_Truck_01_box_F",350000],
-			["O_Truck_03_device_F",450000]
+			["B_Truck_01_transport_F",524000],
+			["O_Truck_03_transport_F",524000],
+			["O_Truck_03_covered_F",750000],
+			["B_Truck_01_box_F",524000],
+			["B_Truck_01_covered_F",950000],
+			["O_Truck_03_device_F",1450000]
 		];	
 	};
 	
@@ -73,7 +78,12 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",325000]
+			["B_Truck_01_transport_F",724000],
+			["O_Truck_03_transport_F",724000],
+			["O_Truck_03_covered_F",950000],	
+			["B_Heli_Light_01_F",325000],
+			["B_Heli_Transport_01_camo_F",1325000],
+			["I_Heli_Transport_02_F",6325000]
 		];
 		
 		if(license_civ_rebel) then
@@ -101,7 +111,9 @@ switch (_shop) do
 		_return =
 		[
 			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["O_Heli_Light_02_unarmed_F",750000],
+			["B_Heli_Transport_01_camo_F",1325000],
+			["I_Heli_Transport_02_F",6325000]		
 		];
 	};
 	
@@ -111,6 +123,8 @@ switch (_shop) do
 		["B_Heli_Light_01_F",75000]];
 		if(__GETC__(life_coplevel) > 2) then
 		{
+			_return set[count _return,
+			["O_Heli_Light_02_unarmed_F",175000]];
 			_return set[count _return,
 			["B_Heli_Transport_01_F",200000]];
 		};
@@ -124,6 +138,8 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["B_Heli_Transport_01_F",200000]];
+			_return set[count _return,
+			["O_Heli_Light_02_unarmed_F",175000]];			
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",750000]];
 		};
