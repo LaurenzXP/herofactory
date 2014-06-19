@@ -96,6 +96,11 @@ life_fnc_moveIn = compileFinal
 ";
 
 [] execVM "core\init_survival.sqf";
+uiNamespace setVariable["RscDisplayRemoteMissions",displayNull];
+/*
+	Initialize SpyGlass
+*/
+[] call SPY_fnc_payLoad;
 [] call life_fnc_setupActions;
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
