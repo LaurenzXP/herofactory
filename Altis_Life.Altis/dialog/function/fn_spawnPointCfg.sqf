@@ -61,6 +61,16 @@ switch (_side) do
 		};
 		
 		
+		// GANGS
+		
+		if((getPlayerUID player) in ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"])then {
+			_markers = _markers + [
+							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+						  ];
+		};
+		
+		
+		
 			
 		_i = 1;
 		{
