@@ -51,6 +51,16 @@ switch (_side) do
 			"Land_i_House_Big_02_V2_F",
 			"Land_i_House_Big_02_V3_F"
 		];
+		
+		if(license_civ_rebel) then {
+		_markers = _markers + [
+					["rebellen_1","Rebel Spawn 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["rebellen_2","Rebel Spawn 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["rebellen_3","Rebel Spawn 3","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				];
+		};
+		
+		
 			
 		_i = 1;
 		{
@@ -79,7 +89,7 @@ switch (_side) do
 	};
 	
 	case east: {
-		markers = [
+		_markers = [
 			["adac_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["adac_2","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
