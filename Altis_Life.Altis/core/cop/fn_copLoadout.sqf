@@ -1,0 +1,26 @@
+/*
+	File: fn_medicLoadout.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Loads the medic out with the default gear.
+*/
+private("_coplevel");
+
+player addUniform "U_Rangemaster";
+
+	
+	_coplevel = __GETC__(life_coplevel);
+
+	switch(_coplevel) do {
+		case 1:
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
+		case 2:
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
+		case 3:
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
+		case 4:
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
+		case 5:	
+	}
+

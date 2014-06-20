@@ -13,10 +13,10 @@ switch (_item) do
 {
 	case "oilu": {7};
 	case "oilp": {6};
-	case "heroinu": {6};
-	case "heroinp": {4};
-	case "cannabis": {4};
-	case "marijuana": {3};
+	case "heroinu": {3};
+	case "heroinp": {2};
+	case "cannabis": {2};
+	case "marijuana": {1};
 	case "apple": {1};
 	case "water": {1};
 	case "rabbit": {1};
@@ -45,8 +45,8 @@ switch (_item) do
 	case "glass": {1};
 	case "diamond": {4};
 	case "diamondc": {2};
-	case "cocaine": {6};
-	case "cocainep": {4};
+	case "cocaine": {3};
+	case "cocainep": {2};
 	case "spikeStrip": {15};
 	case "rock": {6};
 	case "cement": {5};

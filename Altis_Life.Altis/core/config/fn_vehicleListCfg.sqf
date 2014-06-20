@@ -96,10 +96,10 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",950000],
-			["B_Truck_01_transport_F",724000],
-			["O_Truck_03_transport_F",724000],
-			["O_Truck_03_covered_F",950000],	
-			["B_Heli_Light_01_F",325000],
+			["B_Truck_01_transport_F",1724000],
+			["O_Truck_03_transport_F",1724000],
+			["O_Truck_03_covered_F",1950000],	
+			["B_Heli_Light_01_F",1325000],
 			["I_Heli_Transport_02_F",6325000]
 		];
 		
