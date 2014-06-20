@@ -52,7 +52,7 @@ switch (_vehicle) do
 			case 2: {_color = "Orange"};
 			case 3: {_color = "Black / White"};
 			case 4: {_color = "Tan"};
-			case 5: {_color = "Green"};
+			case 5: {_color = "Monster"};
 			case 6: {_color = "Cop"};
 		};
 	};
@@ -152,6 +152,15 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Regular"};
 			case 1: {_color = "Black"};
+		};
+	};
+	
+	case "O_MRAP_02_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Regular"};
+			case 1: {_color = "SD"};
 		};
 	};
 	

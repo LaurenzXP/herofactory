@@ -32,7 +32,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport03_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
-			["textures\hatchback_sport_ken_block.jpg","civ"],
+			["textures\CIV\hatchback_sport_ken_block.jpg","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
 		];
 	};
@@ -152,8 +152,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\Hunter_1.jpg","cop"],
-			["textures\swat_hunter_1.jpg","fed"]
+			["textures\COP\Vehicles\Hunter\hunter_pol1.jpg","cop","textures\COP\Vehicles\Hunter\hunter_pol2.jpg"],
+			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","fed","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"]
 		];
 	};
 	
@@ -195,14 +195,15 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\hellcat_black.jpg","cop"],
+			["textures\hellcat_black.jpg","cop"]
 		];
 	};
 	case "O_MRAP_02_F":
 	{
 		_ret =
 		[
-			["textures\mrap.jpg","civ"],
+			["textures\vehicles\mrap_02_ext_01_co.paa","civ","textures\vehicles\mrap_02_ext_02_co.paa"],
+			["textures\vehicles\Ifrit_black_front.paa","civ","textures\vehicles\Ifrit_black_hinten.paa"]
 		];
 	};
 
