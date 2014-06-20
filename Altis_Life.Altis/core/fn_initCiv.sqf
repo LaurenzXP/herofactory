@@ -30,26 +30,6 @@ player addRating 9999999;
 
 
 
-// we need to add some special uniforms for special player
-
-		// GANGS
-		
-if((getPlayerUID player) in ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"])then {
-
-	diag_log "Player is in Altis Security service - check uniform!";
-
-	_uniform = uniform player;
-	diag_log "_uniform";
-	switch(_uniform) {
-		case "U_O_SpecopsUniform_ocamo" : {
-			diag_log "player get a new texture for uniform";
-			player setObjectTextureGlobal [0,"textures\sec.jpg"];
-		};
-	};
-};
-
-
-
 
 [] call life_fnc_zoneCreator;
 [] call life_fnc_initHouses;
