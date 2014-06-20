@@ -62,20 +62,16 @@ switch (_side) do
 		
 		
 		// GANGS
-		
+		// Security service - with loadout for Uniforms
 		if((getPlayerUID player) in ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"])then {
-
 				_uniform = uniform player;
 				diag_log "_uniform";
 				switch(_uniform) do {
 					case "U_O_SpecopsUniform_ocamo" : {
 						diag_log "player get a new texture for uniform";
 						player setObjectTextureGlobal [0,"textures\sec.jpg"];
-					};
 				};
-
-
-
+			};
 			_markers = _markers + [
 							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 						  ];
