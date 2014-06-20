@@ -11,12 +11,14 @@ private["_end"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
 
+diag_log "----------ADAC INIT-----------";
 diag_log "Player want to spawn as ADAC";
 diag_log life_adacLevel;
+diag_log player;
+diag_log "------------------------------";
 
 if((__GETC__(life_adacLevel)) == 0) exitWith {
 
-	
 	["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
 	sleep 35;
 };

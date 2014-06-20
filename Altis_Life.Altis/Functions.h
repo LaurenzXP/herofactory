@@ -73,7 +73,7 @@ class Life_Client_Core
 		class medicSiren {};
 	};
 	
-	class ADAC
+	class Adac
 	{
 		file = "core\adac";
 		
@@ -83,6 +83,7 @@ class Life_Client_Core
 		class adacRepaintVehicle {};
 		class adacsaveGear {};
 		class adacloadGear {};
+		class medicLoadout {};
 	};
 	
 	

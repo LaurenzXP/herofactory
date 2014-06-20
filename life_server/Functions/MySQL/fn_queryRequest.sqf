@@ -35,7 +35,7 @@ _query = switch(_side) do {
 	case west: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
 	case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel FROM players WHERE playerid='%1'",_uid];};
-	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel FROM players WHERE playerid='%1'",_uid];};
+	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
 	
 };
 diag_log _query;
@@ -83,6 +83,11 @@ switch (_side) do {
 	};
 	
 	case civilian: {
+		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[8,_new];
+	};
+	case independent: {
 		_new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[8,_new];

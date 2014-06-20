@@ -22,14 +22,6 @@ switch (playerSide) do {
 	};
 	case independent:
  	{
- 		_array = [];
-		{
-			if(_x select 1 == "adac") then
-			{
-				_array set[count _array,[_x select 0,(missionNamespace getVariable (_x select 0))]];
-			};
-		} foreach life_licenses;
-		_packet set[count _packet,_array];
 		_gear = independent_gear;
 		_packet set[count _packet,_gear];
 	};
