@@ -32,7 +32,7 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport03_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
-			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
+			["textures\hatchback_sport_ken_block.jpg","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
 		];
 	};
@@ -118,8 +118,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","cop"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
+			["textures\police_heli.jpg","cop"],
+			["\police_heli.jpg","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
@@ -152,8 +152,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
+			["textures\Hunter_1.jpg","cop"],
+			["textures\swat_hunter_1.jpg","fed"]
 		];
 	};
 	
@@ -190,6 +190,24 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
+
+	case "I_Heli_light_03_F":
+	{
+		_ret =
+		[
+			["textures\hellcat_black.jpg","cop"],
+		];
+	};
+	case "O_MRAP_02_F":
+	{
+		_ret =
+		[
+			["textures\mrap.jpg","civ"],
+		];
+	};
+
+
+
 };
 
 _ret;

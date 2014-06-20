@@ -6,10 +6,16 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return"];
+private["_shop","_return", "_gang_sd"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
+
+// GANG CONFIGS
+_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+
+
+
 switch (_shop) do
 {
 	case "kart_shop":
@@ -54,6 +60,16 @@ switch (_shop) do
 			["C_Van_01_box_F",60000],
 			["C_Van_01_transport_F",40000]
 		];
+
+		// GANG Cars
+		if((getPlayerUID player) in _gang_sd )then {
+			_return = _return + 
+			[
+				["O_MRAP_02_F",640000]
+			];
+				
+		};
+
 	};
 	
 	case "civ_truck":
@@ -134,6 +150,7 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F",750000],
 			["I_Heli_Transport_02_F",6325000]		
 		];
+
 	};
 	
 	case "cop_air":
@@ -147,6 +164,12 @@ switch (_shop) do
 			_return set[count _return,
 			["B_Heli_Transport_01_F",200000]];
 		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return set[count _return,
+			["I_Heli_light_03_F",275000]];
+		};
+
 	};
 	
 	case "cop_airhq":
@@ -162,6 +185,13 @@ switch (_shop) do
 			_return set[count _return,
 			["B_MRAP_01_hmg_F",750000]];
 		};
+
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return set[count _return,
+			["I_Heli_light_03_F",275000]];
+		};
+
 	};
 	
 	case "civ_ship":
