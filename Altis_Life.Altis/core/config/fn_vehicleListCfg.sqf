@@ -79,7 +79,7 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",150000],
+			["O_MRAP_02_F",950000],
 			["B_Truck_01_transport_F",724000],
 			["O_Truck_03_transport_F",724000],
 			["O_Truck_03_covered_F",950000],	
@@ -90,7 +90,7 @@ switch (_shop) do
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,
-			["B_G_Offroad_01_armed_F",750000]];
+			["B_G_Offroad_01_armed_F",7000000]];
 		};
 	};
 	
@@ -130,7 +130,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",253000],
+			["B_Heli_Light_01_F",500000],
 			["O_Heli_Light_02_unarmed_F",750000],
 			["I_Heli_Transport_02_F",6325000]		
 		];
