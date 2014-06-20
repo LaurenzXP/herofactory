@@ -83,7 +83,7 @@ class Life_Client_Core
 		class adacRepaintVehicle {};
 		class adacsaveGear {};
 		class adacloadGear {};
-		class medicLoadout {};
+		class adacLoadout {};
 	};
 	
 	
