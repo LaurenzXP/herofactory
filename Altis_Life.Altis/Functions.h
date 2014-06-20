@@ -308,6 +308,7 @@ class Life_Client_Core
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
+		class copLoadout {};
 		
 		//* Added for Housing
 		class houseOwnerSearch {};

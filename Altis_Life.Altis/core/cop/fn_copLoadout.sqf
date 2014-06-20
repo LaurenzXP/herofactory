@@ -22,5 +22,10 @@ player addUniform "U_Rangemaster";
 		case 4:
 			player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
 		case 5:	
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\Sergeant_4.jpg"];
+		case 6:	
+			player setObjectTextureGlobal [0,"textures\COP\Uniform\swat_shirt.jpg"];
+		case 7:	
+			player setObjectTextureGlobal [0,"textures\COP\Uniformswat_shirt.jpg"];	
 	}
 

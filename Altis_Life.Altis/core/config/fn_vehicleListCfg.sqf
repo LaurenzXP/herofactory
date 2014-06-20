@@ -81,10 +81,10 @@ switch (_shop) do
 			["I_Truck_02_covered_F",100000],
 			["B_Truck_01_transport_F",524000],
 			["O_Truck_03_transport_F",524000],
-			["O_Truck_03_covered_F",750000],
-			["B_Truck_01_box_F",524000],
-			["B_Truck_01_covered_F",950000],
-			["O_Truck_03_device_F",1450000]
+			["O_Truck_03_covered_F",2750000],
+			["B_Truck_01_box_F",1524000],
+			["B_Truck_01_covered_F",2950000],
+			["O_Truck_03_device_F",6450000]
 		];	
 	};
 	
@@ -96,9 +96,15 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",950000],
-			["B_Truck_01_transport_F",1724000],
-			["O_Truck_03_transport_F",1724000],
-			["O_Truck_03_covered_F",1950000],	
+			["C_Van_01_box_F",60000],
+			["I_Truck_02_transport_F",75000],
+			["I_Truck_02_covered_F",100000],
+			["B_Truck_01_transport_F",1524000],
+			["O_Truck_03_transport_F",1524000],
+			["O_Truck_03_covered_F",3750000],
+			["B_Truck_01_box_F",2524000],
+			["B_Truck_01_covered_F",3950000],
+			["O_Truck_03_device_F",7450000],	
 			["B_Heli_Light_01_F",1325000],
 			["I_Heli_Transport_02_F",6325000]
 		];
