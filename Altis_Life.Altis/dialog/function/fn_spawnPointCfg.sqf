@@ -8,7 +8,7 @@
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
-private["_side","_markers","_mkName","_mk"];
+private["_side","_markers","_mkName","_mk","_uniform"];
 _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 //Spawn Marker, Spawn Name, PathToImage
@@ -65,10 +65,8 @@ switch (_side) do
 		// Security service - with loadout for Uniforms
 		if((getPlayerUID player) in ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"])then {
 				_uniform = uniform player;
-				diag_log "_uniform";
 				switch(_uniform) do {
 					case "U_O_SpecopsUniform_ocamo" : {
-						diag_log "player get a new texture for uniform";
 						player setObjectTextureGlobal [0,"textures\sec.jpg"];
 				};
 			};
