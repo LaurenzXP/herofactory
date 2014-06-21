@@ -108,6 +108,8 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["B_MRAP_01_F","C_SUV_01_F
 	_vehicle setVariable["lights",false,true];
 };
 
+// i dont want to know why this works.
 [[_vehicle],"life_fnc_clearVehicleAmmo",_unit,false] spawn life_fnc_MP;
+[_vehicle] call life_fnc_clearVehicleAmmo; 
 
 serv_sv_use = serv_sv_use - [_vid];
