@@ -43,6 +43,10 @@ class Life_Client_Core
 		class initMedic {};
 		class initAdac {};
 		class welcomeNotification {};
+		
+		// REmove Stuff from vehicles 
+		class RemoveLoot {};
+		
 	};
 	
 	class Admin

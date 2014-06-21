@@ -14,7 +14,7 @@
 		[classname,Custom Name (set nil for default),price]
 	]]
 */
-private["_shop"];
+private["_shop", "_coplevel"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 

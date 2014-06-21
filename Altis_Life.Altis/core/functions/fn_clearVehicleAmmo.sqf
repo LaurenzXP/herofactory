@@ -8,6 +8,9 @@
 private["_vehicle","_veh"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //DAFUQ
+
+diag_log "CALLING clearVehicleAmmo";
+
 _veh = typeOf _vehicle;
 
 if(_veh == "B_Boat_Armed_01_minigun_F") then
@@ -33,6 +36,15 @@ if(_veh == "B_Heli_Transport_01_F") then
 	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
 };
 
+if(_veh == "O_MRAP_02_F") then 
+{
+	_vehicle removeMagazinesTurret ["launch_RPG32_F",[1]];
+
+	
+};
+
+removeAllWeapons _vehicle;
+removeAllItems _vehicle;
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;

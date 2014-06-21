@@ -21,13 +21,18 @@ switch(playerSide) do
 	case west: 
 	{
 		[] spawn life_fnc_loadGear;
+		[] call life_fnc_RemoveLoot;
 	};
 	case east: 
 	{
-
 		diag_log "spawn life_fnc_adacloadGear";
 		[] spawn life_fnc_adacloadGear;
+		[] call life_fnc_RemoveLoot;
 	};	
+	case independent: 
+	{
+		[] call life_fnc_RemoveLoot;
+	};		
 	case civilian:
 	{
 		_unit setVariable["restrained",false,true];
@@ -35,7 +40,9 @@ switch(playerSide) do
 		_unit setVariable["transporting",false,true];
 		if(headGear player != "") then {removeHeadgear player;};
 		if(goggles player != "") then {removeGoggles player;};
+		[] call life_fnc_RemoveLoot;
 	};
+	
 };
 
 if(life_is_arrested) then
@@ -55,6 +62,9 @@ if(life_is_arrested) then
 _unit addRating 100000;
 
 [[_unit,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+
+
+
 [] call life_fnc_hudUpdate;
 cutText ["","BLACK IN"];
 

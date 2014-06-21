@@ -66,18 +66,24 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	//Remove all Stuff from Vehicle!
+	[] call life_fnc_RemoveLoot;
+	[_vehicle] call life_fnc_clearVehicleAmmo;
+	[_vehicle,"life_fnc_clearVehicleAmmo",true,false] spawn life_fnc_MP;
 };
 
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+
 	};
 	
 	case civilian: {
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
+
 	};
 	
 	case independent: {
@@ -88,6 +94,7 @@ switch(playerSide) do {
 	};
 
 };
+
 
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
