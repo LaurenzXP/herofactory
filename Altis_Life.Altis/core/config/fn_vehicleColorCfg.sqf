@@ -206,6 +206,13 @@ switch (_vehicle) do
 			["textures\COP\Vehicles\strider_sek.jpg","cop"]
 		];
 	};	
+	case "B_Heli_Light_01_F":
+	{
+		_ret =
+		[
+			["textures\MED\Vehicles\Notarzt_Hummingbird.jpg","med"]
+		];
+	};	
 	case "O_MRAP_02_F":
 	{
 		_ret =
