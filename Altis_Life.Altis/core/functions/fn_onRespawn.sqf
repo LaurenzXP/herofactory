@@ -21,18 +21,13 @@ switch(playerSide) do
 	case west: 
 	{
 		[] spawn life_fnc_loadGear;
-		[] call life_fnc_RemoveLoot;
 	};
 	case east: 
 	{
 		diag_log "spawn life_fnc_adacloadGear";
 		[] spawn life_fnc_adacloadGear;
-		[] call life_fnc_RemoveLoot;
+
 	};	
-	case independent: 
-	{
-		[] call life_fnc_RemoveLoot;
-	};		
 	case civilian:
 	{
 		_unit setVariable["restrained",false,true];
