@@ -7,7 +7,7 @@ remove loot of vehicles?
 private["_vlist","_vehicle","_all"];
 _vehicle =  [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _all = typeOf _vehicle;
-if(isNull _all) exitWith {}
+if(isNull _all) exitWith {};
 _vlist =
 	["C_Offroad_01_F","B_G_Offroad_01_F",
 	"B_Quadbike_01_F","I_Truck_02_covered_F",

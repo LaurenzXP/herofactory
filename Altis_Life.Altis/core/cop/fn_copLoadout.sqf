@@ -10,7 +10,7 @@ private("_coplevel");
 player addUniform "U_Rangemaster";
 
 	
-	_coplevel = __GETC__(life_coplevel);
+	_coplevel = (_GETC__(life_coplevel));
 
 	switch(_coplevel) do {
 		case 1:

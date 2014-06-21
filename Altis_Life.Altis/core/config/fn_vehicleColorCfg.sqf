@@ -214,7 +214,7 @@ switch (_vehicle) do
 		[
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
 			["textures\COP\Vehicles\GH\gh_pol1.jpg","cop","textures\COP\Vehicles\GH\gh_pol2.jpg"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
 		];
 	};
 
