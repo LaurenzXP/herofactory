@@ -42,15 +42,35 @@ class CfgSounds
   class SirenLong
   {
     name = "SirenLong";
-    sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+    sounds[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
     titles[] = {};
   };
-    class tazersound
+  class tazersound
   {
     name = "Tazersound";
-    sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+    sounds[] = {"\sounds\tazer.ogg", 0.25, 1};
     titles[] = {};
   };
+  	// sounds
+  class bank_alarm
+  {
+	name = "bank_alarm";  
+	sounds[] = {"\sounds\alarm.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  class unlock_sound
+  {
+	name = "unlock";  
+	sounds[] = {"\sounds\unlock.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  class notarzt_sound
+  {
+	name = "notarzt_sirene";  
+	sounds[] = {"\sounds\notarzt_sirene.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  
 };
 
 class CfgDebriefing
@@ -157,4 +177,9 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
+	
+
+  
+	
+	
 };
