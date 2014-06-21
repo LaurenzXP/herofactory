@@ -199,6 +199,13 @@ switch (_vehicle) do
 			["textures\COP\Vehicles\hellcat_black.jpg","cop"]
 		];
 	};
+	case "I_MRAP_03_F":
+	{
+		_ret =
+		[
+			["textures\COP\Vehicles\strider_sek.jpg","cop"]
+		];
+	};	
 	case "O_MRAP_02_F":
 	{
 		_ret =
