@@ -203,7 +203,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["\a3\soft_f_gamma\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f_gamma\MRAP_02\Data\mrap_02_ext_02_co.paa"],
+			["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"],
 			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"]
 		];
 	};
