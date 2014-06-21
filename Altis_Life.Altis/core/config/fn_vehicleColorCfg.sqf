@@ -119,7 +119,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\COP\Vehicles\police_heli.jpg","cop"],
-			["\police_heli.jpg","fed"],
+			["textures\COP\Vehicles\police_heli.jpg","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
