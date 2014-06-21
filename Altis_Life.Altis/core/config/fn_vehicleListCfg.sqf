@@ -118,14 +118,9 @@ switch (_shop) do
 			["B_Truck_01_covered_F",3950000],
 			["O_Truck_03_device_F",7450000],	
 			["B_Heli_Light_01_F",1325000],
+			["B_G_Offroad_01_armed_F",7000000],
 			["I_Heli_Transport_02_F",6325000]
 		];
-		
-		if(license_civ_rebel) then
-		{
-			_return set[count _return,
-			["B_G_Offroad_01_armed_F",7000000]];
-		};
 	};
 	
 	case "cop_car":
@@ -158,7 +153,7 @@ switch (_shop) do
 			_return set[count _return,
 			["I_MRAP_03_F",250000]];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_return set[count _return,
 			["O_MRAP_02_F",250000]];
