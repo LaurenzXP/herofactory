@@ -48,7 +48,7 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
+			["textures\COP\Vehicles\police_offroad.paa","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
 		];
 	};
@@ -76,7 +76,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["textures\COP\Vehicles\police_suv.paa","cop"]
 		];
 	};
 	
@@ -118,7 +118,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\police_heli.jpg","cop"],
+			["textures\COP\Vehicles\police_heli.jpg","cop"],
 			["\police_heli.jpg","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -153,7 +153,8 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\COP\Vehicles\Hunter\hunter_pol1.jpg","cop","textures\COP\Vehicles\Hunter\hunter_pol2.jpg"],
-			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","fed","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"]
+			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","fed","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"],
+			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","cop","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"]
 		];
 	};
 	
@@ -204,6 +205,16 @@ switch (_vehicle) do
 		[
 			["textures\vehicles\mrap_02_ext_01_co.paa","civ","textures\vehicles\mrap_02_ext_02_co.paa"],
 			["textures\vehicles\Ifrit_black_front.paa","civ","textures\vehicles\Ifrit_black_hinten.paa"]
+		];
+	};
+	
+	case "B_Heli_Transport_01_F":
+	{
+		_ret = 
+		[
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
+			["textures\COP\Vehicles\GH\gh_pol1.jpg","cop","textures\COP\Vehicles\GH\gh_pol2.jpg"],
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
 		];
 	};
 
