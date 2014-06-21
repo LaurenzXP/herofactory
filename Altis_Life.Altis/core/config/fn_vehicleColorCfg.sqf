@@ -48,7 +48,7 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["textures\COP\Vehicles\police_offroad.paa","cop"],
+			["textures\COP\Vehicles\police_offroad.jpg","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
 		];
 	};
@@ -76,7 +76,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["textures\COP\Vehicles\police_suv.paa","cop"]
+			["textures\COP\Vehicles\police_suv.jpg","cop"]
 		];
 	};
 	
@@ -203,8 +203,8 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicles\mrap_02_ext_01_co.paa","civ","textures\vehicles\mrap_02_ext_02_co.paa"],
-			["textures\vehicles\Ifrit_black_front.paa","civ","textures\vehicles\Ifrit_black_hinten.paa"]
+			["\a3\soft_f_gamma\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f_gamma\MRAP_02\Data\mrap_02_ext_02_co.paa"],
+			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"]
 		];
 	};
 	
