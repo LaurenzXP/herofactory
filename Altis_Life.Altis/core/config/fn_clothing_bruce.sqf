@@ -5,19 +5,24 @@
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
-private["_filter"];
+private["_filter","_ret", "_gang_sd", "_gang_adac"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
 ctrlSetText[3103,"Bruce's Outback Outfits"];
 
+// GANG CONFIGS
+_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+_gang_adac = ["76561198125791794","76561198135304154","76561197988162012"];
+
+
 switch (_filter) do
 {
 	//Uniforms
 	case 0:
 	{
-		[
+		_ret = [
 		["U_C_Poloshirt_blue","Poloshirt Blue",250],
 		["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
 		["U_C_Poloshirt_redwhite","Poloshirt Red/White",150],
@@ -36,12 +41,24 @@ switch (_filter) do
 		["U_Competitor","Poloshirt Blue",500],
 		["U_OrestesBody","Surfing On Land",1100]
 		];
+		// GANG Uniforms
+		if((getPlayerUID player) in _gang_sd )then {
+			_ret = _ret + 
+			[
+				["O_soldierU_M_F","SD Security",2000]
+			];
+				
+		};
+		
+		//O_soldierU_M_F
+		
+		
 	};
 	
 	//Hats
 	case 1:
 	{
-		[
+		_ret = [
 			["H_Bandanna_camo","Camo Bandanna",120],
 			["H_Bandanna_surfer","Surfer Bandanna",130],
 			["H_Bandanna_gry","Grey Bandanna",150],
@@ -69,7 +86,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		[
+		_ret = [
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -89,7 +106,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		[
+		_ret = [
 		    ["V_Press_F",nil,10000],
 			["V_Rangemaster_belt",nil,10000]
 		];
@@ -98,7 +115,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		[
+		_ret = [
 			["B_AssaultPack_cbr",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
@@ -110,3 +127,4 @@ switch (_filter) do
 		];
 	};
 };
+_ret;
