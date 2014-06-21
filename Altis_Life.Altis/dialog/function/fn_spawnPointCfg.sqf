@@ -8,8 +8,12 @@
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
-private["_side","_markers","_mkName","_mk","_uniform"];
+private["_side","_markers","_mkName","_mk","_uniform","_gang_sd", "_gang_adac"];
 _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
+
+_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+_gang_adac = ["76561198125791794","76561198135304154","76561197988162012"];
+
 
 //Spawn Marker, Spawn Name, PathToImage
 
@@ -63,7 +67,7 @@ switch (_side) do
 		
 		// GANGS
 		// Security service - with loadout for Uniforms
-		if((getPlayerUID player) in ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"])then {
+		if((getPlayerUID player) in _gang_sd )then {
 				_uniform = uniform player;
 				switch(_uniform) do {
 					case "U_O_SpecopsUniform_ocamo" : {
@@ -74,7 +78,18 @@ switch (_side) do
 							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 						  ];
 		};
-		
+		// ADAC with loadout for Uniforms
+		if((getPlayerUID player) in _gang_adac )then {
+				_uniform = uniform player;
+				switch(_uniform) do {
+					case "C_scientist_F" : {
+						player setObjectTextureGlobal [0,"textures\ADAC\adac_uniform.paa"];
+				};
+			};
+			_markers = _markers + [
+							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+						  ];
+		};		
 		
 
 			

@@ -6,13 +6,14 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return", "_gang_sd"];
+private["_shop","_return", "_gang_sd", "_gang_adac"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
 
 // GANG CONFIGS
 _gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+_gang_adac = ["76561198125791794","76561198135304154","76561197988162012"];
 
 
 
@@ -86,6 +87,17 @@ switch (_shop) do
 			["B_Truck_01_covered_F",2950000],
 			["O_Truck_03_device_F",6450000]
 		];	
+		
+		// GANG Cars
+		if((getPlayerUID player) in _gang_adac )then {
+			_return = _return + 
+			[
+				["B_Truck_01_mover_F",100000]
+			];
+				
+		};
+		
+		
 	};
 	
 	
