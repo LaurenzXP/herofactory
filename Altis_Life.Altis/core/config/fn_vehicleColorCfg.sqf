@@ -192,7 +192,7 @@ switch (_vehicle) do
 		];
 	};
 
-	case "I_Heli_light_03_F":
+	case "I_Heli_light_03_unarmed_F":
 	{
 		_ret =
 		[
@@ -204,7 +204,8 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"],
-			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"]
+			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"],
+			["textures\COP\Vehicles\Ifrit_Polizei4_Front.jpg","cop","textures\COP\Vehicles\Ifrit_Polizei4_hinten.jpg"]
 		];
 	};
 	

@@ -42,7 +42,7 @@ player addUniform "U_Rangemaster";
 	};	
 	case 7:
 	{	
-		player setObjectTextureGlobal [0,"textures\COP\Uniformswat_shirt.jpg"];	
+		player setObjectTextureGlobal [0,"textures\COP\Uniform\swat_shirt.jpg"];	
 	};
 };
 

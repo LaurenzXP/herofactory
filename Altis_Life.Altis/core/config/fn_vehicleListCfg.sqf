@@ -158,6 +158,11 @@ switch (_shop) do
 			_return set[count _return,
 			["I_MRAP_03_F",250000]];
 		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return set[count _return,
+			["O_MRAP_02_F",250000]];
+		};
 	};
 	
 	case "civ_air":
@@ -185,7 +190,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,
-			["I_Heli_light_03_F",275000]];
+			["I_Heli_light_03_unarmed_F",275000]];
 		};
 
 	};
@@ -207,7 +212,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,
-			["I_Heli_light_03_F",275000]];
+			["I_Heli_light_03_unarmed_F",275000]];
 		};
 
 	};
