@@ -196,7 +196,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\hellcat_black.jpg","cop"]
+			["textures\COP\Vehicles\hellcat_black.jpg","cop"]
 		];
 	};
 	case "O_MRAP_02_F":
