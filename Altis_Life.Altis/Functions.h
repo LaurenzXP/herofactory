@@ -44,8 +44,6 @@ class Life_Client_Core
 		class initAdac {};
 		class welcomeNotification {};
 		
-		// REmove Stuff from vehicles 
-		class RemoveLoot {};
 		
 	};
 	

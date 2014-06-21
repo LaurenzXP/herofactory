@@ -67,9 +67,9 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 	//Remove all Stuff from Vehicle!
-	[] call life_fnc_RemoveLoot;
+
 	[_vehicle] call life_fnc_clearVehicleAmmo;
-	[_vehicle,"life_fnc_clearVehicleAmmo",true,false] spawn life_fnc_MP;
+
 };
 
 //Side Specific actions.
@@ -104,5 +104,6 @@ if(_mode) then {
 };
 
 [] call SOCK_fnc_updateRequest; //Sync silently because it's obviously silently..
+[_vehicle,"life_fnc_clearVehicleAmmo",true,false] spawn life_fnc_MP;
 closeDialog 0; //Exit the menu.
 true;
