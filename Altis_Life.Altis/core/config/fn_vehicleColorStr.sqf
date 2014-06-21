@@ -23,7 +23,7 @@ switch (_vehicle) do
 			case 4: {_color = "Dark Red";};
 			case 5: {_color = "Blue / White"};
 			case 6: {_color = "Black"};
-			case 7: {_color = "Black"};
+			case 7: {_color = "Polizei"};
 			case 8: {_color = "Taxi"};
 		};
 	};
@@ -65,7 +65,7 @@ switch (_vehicle) do
 			case 1: {_color = "Black";};
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Cop";};
+			case 4: {_color = "Polizei";};
 		};
 	};
 	
@@ -116,7 +116,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Sheriff"};
+			case 0: {_color = "Polizei"};
 			case 1: {_color = "Black"};
 			case 2: {_color = "Civ Blue"};
 			case 3: {_color = "Civ Red"};
@@ -150,8 +150,9 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Regular"};
+			case 0: {_color = "Polizei"};
 			case 1: {_color = "Black"};
+			case 1: {_color = "GSG/SEK"};
 		};
 	};
 	
@@ -212,6 +213,16 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Black"};
+		};
+	};
+	
+	case "B_Heli_Transport_01_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black"};
+			case 1: {_color = "Polizei 1"};
+			case 1: {_color = "Polizei 2"};
 		};
 	};
 };
