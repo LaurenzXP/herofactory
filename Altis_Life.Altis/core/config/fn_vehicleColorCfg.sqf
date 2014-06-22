@@ -238,7 +238,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\ADAC\hemtt_mover_adac.jpg","civ"],
+			["textures\ADAC\hemtt_mover_adac.jpg","civ"]
 
 		];
 	};
