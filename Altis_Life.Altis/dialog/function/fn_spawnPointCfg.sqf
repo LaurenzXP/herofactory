@@ -12,7 +12,7 @@ private["_side","_markers","_mkName","_mk","_uniform","_gang_sd", "_gang_adac"];
 _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 _gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
-_gang_adac = ["76561198125791794","76561198135304154","76561197988162012"];
+_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
 
 
 //Spawn Marker, Spawn Name, PathToImage
@@ -87,7 +87,8 @@ switch (_side) do
 				};
 			};
 			_markers = _markers + [
-							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+							["adac_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+							["adac_2","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 						  ];
 		};		
 		

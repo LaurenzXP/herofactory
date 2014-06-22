@@ -7,6 +7,11 @@
 ****** Backend Variables *****
 *****************************
 */
+
+_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
+
+
 life_query_time = time;
 life_action_delay = time;
 life_trunk_vehicle = Objnull;
@@ -92,17 +97,27 @@ switch (playerSide) do
 	case west: 
 	{
 		life_atmcash = 17000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_paycheck = 1900; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		life_atmcash = 5000; //Starting Bank Money
 		life_paycheck = 550; //Paycheck Amount
+
+		if((getPlayerUID player) in _gang_sd )then {
+			life_atmcash = 5000; //Starting Bank Money
+			life_paycheck = 850; //Paycheck Amount
+		}
+		if((getPlayerUID player) in _gang_adac )then {
+			life_atmcash = 5000; //Starting Bank Money
+			life_paycheck = 5500; //Paycheck Amount
+		};
+
 	};
 	
 	case independent: {
 		life_atmcash = 16500;
-		life_paycheck = 450;
+		life_paycheck = 4500;
 	};
 	case east: 
 	{
@@ -114,7 +129,7 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = [];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -283,7 +298,7 @@ life_weapon_shop_array =
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",11500],
 	["ItemGPS",45],
-	["ToolKit",75],
+	["ToolKit",12500],
 	["FirstAidKit",65],
 	["Medikit",450],
 	["NVGoggles",980],
@@ -339,14 +354,14 @@ life_garage_prices =
 	["B_Truck_01_transport_F",5650],
 	["B_Truck_01_box_F", 3000],
 	["O_MRAP_02_F",4200],
-	["B_Heli_Light_01_F",45000],
-	["O_Heli_Light_02_unarmed_F",65000],
+	["B_Heli_Light_01_F",4000],
+	["O_Heli_Light_02_unarmed_F",6000],
 	["C_Rubberboat",400],
 	["C_Boat_Civil_01_F",4500],
 	["B_Boat_Transport_01_F",450],
 	["C_Boat_Civil_01_police_F",3500],
 	["B_Boat_Armed_01_minigun_F",16500],
-	["B_SDV_01_F",25000],
+	["B_SDV_01_F",2000],
 	["B_MRAP_01_F",7500]
 ];
 __CONST__(life_garage_prices,life_garage_prices);

@@ -234,6 +234,17 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
 		];
 	};
+	case "B_Truck_01_mover_F":
+	{
+		_ret = 
+		[
+			["textures\ADAC\hemtt_mover_adac.jpg","civ"],
+
+		];
+	};
+
+
+
 
 
 

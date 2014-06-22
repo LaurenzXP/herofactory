@@ -24,7 +24,8 @@ switch (_vehicle) do
 			case 5: {_color = "Blue / White"};
 			case 6: {_color = "Black"};
 			case 7: {_color = "Polizei"};
-			case 8: {_color = "Taxi"};
+			case 8: {_color = "Notarzt"};
+			case 9: {_color = "Notarzt"};
 		};
 	};
 	
@@ -53,7 +54,7 @@ switch (_vehicle) do
 			case 3: {_color = "Black / White"};
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Monster"};
-			case 6: {_color = "Cop"};
+			case 6: {_color = "Polizei"};
 		};
 	};
 	
@@ -65,7 +66,8 @@ switch (_vehicle) do
 			case 1: {_color = "Black";};
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Polizei";};
+			case 4: {_color = "Notarzt";};
+			case 5: {_color = "Polizei";};
 		};
 	};
 	
@@ -223,6 +225,13 @@ switch (_vehicle) do
 			case 0: {_color = "Black"};
 			case 1: {_color = "Polizei 1"};
 			case 1: {_color = "Polizei 2"};
+		};
+	};
+	case "B_Truck_01_mover_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "ADAC"};
 		};
 	};
 };
