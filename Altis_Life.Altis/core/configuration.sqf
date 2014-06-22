@@ -107,7 +107,7 @@ switch (playerSide) do
 		if((getPlayerUID player) in _gang_sd )then {
 			life_atmcash = 5000; //Starting Bank Money
 			life_paycheck = 850; //Paycheck Amount
-		}
+		};
 		if((getPlayerUID player) in _gang_adac )then {
 			life_atmcash = 5000; //Starting Bank Money
 			life_paycheck = 5500; //Paycheck Amount
