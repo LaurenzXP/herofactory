@@ -101,6 +101,7 @@ CREATE TABLE `players` (
   `adaclevel` enum('0','1','2','3') NOT NULL DEFAULT '0',
   `adac_licenses` text,
   `adac_gear` text,
+  `med_gear` text,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
