@@ -9,9 +9,6 @@
 private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
 disableSerialization;
 
-diag_log "player pressing ESC - preventing combatlogging!";
-diag_log playerSide;
-
 
 _escSync = {
 	private["_abortButton","_thread","_syncManager"];

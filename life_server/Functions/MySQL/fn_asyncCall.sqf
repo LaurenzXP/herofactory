@@ -48,11 +48,11 @@ if(_mode) then {
 		};
 	};
 
-	diag_log "1-----------------------------1";
-	diag_log missionNamespace;
-	diag_log format["QUERY_%1",_this select 2];
-	diag_log _this;
-	diag_log "------------------------------";
+//	diag_log "1-----------------------------1";
+//	diag_log missionNamespace;
+//	diag_log format["QUERY_%1",_this select 2];
+//	diag_log _this;
+//	diag_log "------------------------------";
 	
 	if(isNil {((_queryResult select 0) select 0)}) exitWith {missionNamespace setVariable[format["QUERY_%1",_this select 2],"_NO_ENTRY_"];};
 	_queryResult = (_queryResult select 0) select 0;

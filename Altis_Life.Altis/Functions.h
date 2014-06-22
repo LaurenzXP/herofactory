@@ -239,6 +239,7 @@ class Life_Client_Core
 		//* Added for Housing
 		class updateCash {};
         class vehicleGarage {};
+        class autoSave {};
 	};
 	
 	class Network

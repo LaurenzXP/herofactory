@@ -41,9 +41,17 @@ switch (_className) do
 	case "I_Boat_Armed_01_minigun_F": {175};
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
+
+	// tempest
 	case "O_Truck_03_transport_F": {520};
 	case "O_Truck_03_covered_F": {720};
 	case "O_Truck_03_device_F": {750};
+
+	//hemmtt
+	case "B_Truck_01_box_F": {680};
+	case "B_Truck_01_covered_F": {700};
+	case "B_Truck_01_transport_F": {520};
+
 	case "Land_Box_AmmoOld_F": {700};
     case "B_supplyCrate_F": {1000};
 	default {-1};

@@ -27,8 +27,8 @@ _handler = {
 
 //compile our query request
 
-diag_log "choosed side";
-diag_log _side;
+//diag_log "choosed side";
+//diag_log _side;
 
 
 _query = switch(_side) do {
@@ -38,7 +38,7 @@ _query = switch(_side) do {
 	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel, adac_gear FROM players WHERE playerid='%1'",_uid];};
 	
 };
-diag_log _query;
+//diag_log _query;
 
 waitUntil{!DB_Async_Active};
 
@@ -47,8 +47,8 @@ while {true} do {
 	waitUntil {scriptDone _thread};
 	sleep 0.2;
 	_queryResult = missionNamespace getVariable format["QUERY_%1",_uid];
-        diag_log "QueryResult = ";
-        diag_log _queryResult;
+  //      diag_log "QueryResult = ";
+  //      diag_log _queryResult;
 	if(!isNil "_queryResult") exitWith {};
 };
 
@@ -131,9 +131,9 @@ switch (_side) do {
 	};	
 };
 
-diag_log _queryGangResult;
+//diag_log _queryGangResult;
 
 
- diag_log format["got Player Housing Information: Return: %1",_ret];
- diag_log format["Returning Player Information: %1", _queryResult];
+// diag_log format["got Player Housing Information: Return: %1",_ret];
+// diag_log format["Returning Player Information: %1", _queryResult];
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

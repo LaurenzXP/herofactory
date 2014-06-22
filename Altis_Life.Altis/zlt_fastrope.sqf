@@ -97,7 +97,7 @@ zlt_fnc_ropes_cond = {
 
 zlt_fnc_fastropeaiunits = {
 		private ["_heli","_grunits"];
-		diag_log ["zlt_fnc_fastropeaiunits", _this];
+//		diag_log ["zlt_fnc_fastropeaiunits", _this];
 		_heli = _this select 0;
 		_grunits = _this select 1;
 
