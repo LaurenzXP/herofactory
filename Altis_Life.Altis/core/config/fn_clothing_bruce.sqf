@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_bruce.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -13,9 +14,6 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 ctrlSetText[3103,"Bruce's Outback Outfits"];
 
 // GANG CONFIGS
-_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
-_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
-
 
 switch (_filter) do
 {
@@ -42,7 +40,7 @@ switch (_filter) do
 		["U_OrestesBody","Surfing On Land",1100]
 		];
 		// GANG Uniforms
-		if((getPlayerUID player) in _gang_sd )then {
+		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
 			_ret = _ret + 
 			[
 				["O_soldierU_M_F","SD Security",2000]

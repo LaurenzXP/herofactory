@@ -24,9 +24,6 @@ switch (_className) do
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};
 	case "C_Boat_Civil_01_rescue_F": {85};
-	case "B_Truck_01_box_F": {680};
-	case "B_Truck_01_covered_F": {700};
-	case "B_Truck_01_transport_F": {520};
 	case "B_MRAP_01_F": {65};
 	case "O_MRAP_02_F": {60};
 	case "I_MRAP_03_F": {58};
@@ -44,13 +41,13 @@ switch (_className) do
 
 	// tempest
 	case "O_Truck_03_transport_F": {520};
-	case "O_Truck_03_covered_F": {720};
-	case "O_Truck_03_device_F": {750};
+	case "O_Truck_03_covered_F": {620};
+	case "O_Truck_03_device_F": {650};
 
 	//hemmtt
-	case "B_Truck_01_box_F": {680};
-	case "B_Truck_01_covered_F": {700};
-	case "B_Truck_01_transport_F": {520};
+	case "B_Truck_01_box_F": {780};
+	case "B_Truck_01_covered_F": {780};
+	case "B_Truck_01_transport_F": {620};
 
 	case "Land_Box_AmmoOld_F": {700};
     case "B_supplyCrate_F": {1000};

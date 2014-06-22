@@ -26,6 +26,9 @@ waitUntil {scriptDone _handle};
 //waitUntil {scriptDone _handle};
 //diag_log "::Life Client:: User actions completed";
 //diag_log "::Life Client:: Waiting for server functions to transfer..";
+
+
+
 waitUntil {(!isNil {clientGangLeader})};
 //diag_log "::Life Client:: Received server functions.";
 [] call SOCK_fnc_dataQuery;

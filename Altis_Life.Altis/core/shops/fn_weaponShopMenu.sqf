@@ -8,11 +8,17 @@
 private["_config","_itemInfo","_itemList"];
 uiNamespace setVariable ["Weapon_Shop",_this select 3];
 
+_config = [];
 disableSerialization;
 if(!(createDialog "life_weapon_shop")) exitwith {};
 
 _config = [_this select 3] call life_fnc_weaponShopCfg;
+
+diag_log "TORSTEN: TYPE OF _config";
+diag_log _config;
+
 if(typeName _config == "STRING") exitWith {hint _config; closeDialog 0;};
+
 
 ctrlSetText[38401,_config select 0];
 

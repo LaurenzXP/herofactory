@@ -13,6 +13,13 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 } foreach life_licenses;
 
 _packet set[count _packet,_array];
+
+
+diag_log "UPDATEREQUEST:";
+diag_log _packet;
+diag_log _array;
+diag_log med_gear;
+
 switch (playerSide) do {
 	case west: {_packet set[count _packet,cop_gear];};
 	case civilian: {
@@ -22,8 +29,8 @@ switch (playerSide) do {
 	};
 	case independent:
  	{
-		_gear = independent_gear;
-		_packet set[count _packet,_gear];
+ 		[] call life_fnc_medFetchGear;
+		_packet set[count _packet,med_gear];
 	};
 	case east:
  	{

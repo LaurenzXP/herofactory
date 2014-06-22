@@ -60,6 +60,8 @@ switch(playerSide) do {
 	
 	case independent: {
 		__CONST__(life_medicLevel,parseNumber(_this select 7));
+		med_gear = _this select 8;
+		[] spawn life_fnc_medLoadGear;
 	};
 };
 

@@ -36,7 +36,7 @@ switch(_side) do
 	};
 	
 	case independent: {
-		_query = format["UPDATE players SET cash='%1', bankacc='%2' WHERE playerid='%3'",_cash,_bank,_uid];
+		_query = format["UPDATE players SET cash='%1', bankacc='%2', med_gear='%3' WHERE playerid='%3'",_cash,_bank,_gear,_uid];
 	};
 	case east: {
 		_query = format["UPDATE players SET cash='%1', bankacc='%2', adac_gear='%3'  WHERE playerid='%3'",_cash,_bank,_uid];

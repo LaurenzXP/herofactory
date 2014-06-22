@@ -14,7 +14,8 @@
 		[classname,Custom Name (set nil for default),price]
 	]]
 */
-private["_shop", "_coplevel"];
+private["_shop", "_coplevel","_ret"];
+_ret = [];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
@@ -27,7 +28,7 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a cop!"};
 			default
 			{
-				["Altis Cop Shop",
+				_ret = ["Altis Cop Shop",
 					[
 						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
@@ -56,7 +57,7 @@ switch(_shop) do
 		{
 			case (playerSide != independent): {"You are not an EMS Medic"};
 			default {
-				["Hospital EMS Shop",
+				_ret = ["Hospital EMS Shop",
 					[
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
@@ -82,7 +83,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
 			default
 			{
-				["Altis Patrol Officer Shop",
+				_ret =  ["Altis Patrol Officer Shop",
 					[
 						["arifle_MX_F",nil,35000],
 						["SMG_02_ACO_F",nil,30000],
@@ -107,7 +108,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
+				_ret = ["Altis Sergeant Officer Shop",
 					[
 						["SMG_02_ACO_F",nil,15000],
 						["hgun_ACPC2_F",nil,17500],
@@ -161,7 +162,7 @@ switch(_shop) do
             case (__GETC__(life_coplevel) < 5): {"You are not at a sniper rank!"};
             default
             {
-                ["Altis Sniper Shop",
+               _ret =  ["Altis Sniper Shop",
                     [
                         ["optic_Arco",nil,4000],
                         ["optic_SOS",nil,5000],
@@ -185,7 +186,7 @@ switch(_shop) do
 			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
 			default
 			{
-				["Mohammed's Jihadi Shop",
+				_ret = ["Mohammed's Jihadi Shop",
 					[
 						["hgun_Pistol_heavy_01_F",nil,82000],
 						["LMG_Zafir_F",nil,200000],
@@ -241,7 +242,7 @@ switch(_shop) do
 			case (!license_civ_gun): {"You don't have a Firearms license!"};
 			default
 			{
-				["Billy Joe's Firearms",
+				_ret = ["Billy Joe's Firearms",
 					[
 						["hgun_Rook40_F",nil,6500],
 						["hgun_Pistol_heavy_02_F",nil,9850],
@@ -266,7 +267,7 @@ switch(_shop) do
 			case (__GETC__(life_donator) == 0): {"You are not a donator!"};
 			case (__GETC__(life_donator) == 1):
 			{
-				["STS Donator Shop Tier 1",
+				_ret = ["STS Donator Shop Tier 1",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
@@ -281,7 +282,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) == 2):
 			{
-				["STS Donator Shop Tier 2",
+				_ret = ["STS Donator Shop Tier 2",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
@@ -299,7 +300,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) >= 3):
 			{
-				["STS Donator Shop Tier 3",
+				_ret = ["STS Donator Shop Tier 3",
 					[
 						["hgun_Rook40_F",nil,500],
 						["hgun_PDW2000_F",nil,6500],
@@ -323,7 +324,7 @@ switch(_shop) do
 	
 	case "genstore":
 	{
-		["Altis General Store",
+		_ret = ["Altis General Store",
 			[
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
@@ -338,3 +339,4 @@ switch(_shop) do
 		];
 	};
 };
+_ret;

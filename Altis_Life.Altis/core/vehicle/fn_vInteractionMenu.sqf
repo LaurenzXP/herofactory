@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_vInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -36,7 +37,7 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
-if(playerSide in [west, east]) then {
+if((playerSide in [west, east]) || (((getPlayerUID player) in __GETC__(life_gang_adac)) || ((getPlayerUID player) in __GETC__(life_gang_sd)))) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 	

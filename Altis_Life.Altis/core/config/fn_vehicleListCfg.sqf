@@ -11,11 +11,6 @@ _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
 
-// GANG CONFIGS
-_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
-_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
-
-
 
 switch (_shop) do
 {
@@ -63,7 +58,7 @@ switch (_shop) do
 		];
 
 		// GANG Cars
-		if((getPlayerUID player) in _gang_sd )then {
+		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
 			_return = _return + 
 			[
 				["O_MRAP_02_F",640000]
@@ -89,7 +84,7 @@ switch (_shop) do
 		];	
 		
 		// GANG Cars
-		if((getPlayerUID player) in _gang_adac )then {
+		if((getPlayerUID player) in __GETC__(life_gang_adac)  )then {
 			_return = _return + 
 			[
 				["B_Truck_01_mover_F",100000]

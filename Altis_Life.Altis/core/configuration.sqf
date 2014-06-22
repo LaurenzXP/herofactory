@@ -7,9 +7,10 @@
 ****** Backend Variables *****
 *****************************
 */
-
-_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
-_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
+life_gang_sd = ["76561197967160502","76561198035428502","76561198024356511","76561198114611949"];
+life_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
+__CONST__(life_gang_sd,life_gang_sd);
+__CONST__(life_gang_adac,life_gang_adac);
 
 
 life_query_time = time;
@@ -104,11 +105,11 @@ switch (playerSide) do
 		life_atmcash = 5000; //Starting Bank Money
 		life_paycheck = 550; //Paycheck Amount
 
-		if((getPlayerUID player) in _gang_sd )then {
+		if((getPlayerUID player) in __GETC__(life_gang_sd) ) then {
 			life_atmcash = 5000; //Starting Bank Money
 			life_paycheck = 850; //Paycheck Amount
 		};
-		if((getPlayerUID player) in _gang_adac )then {
+		if((getPlayerUID player) in __GETC__(life_gang_adac) ) then {
 			life_atmcash = 5000; //Starting Bank Money
 			life_paycheck = 5500; //Paycheck Amount
 		};

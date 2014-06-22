@@ -412,7 +412,7 @@
 			<Original>You are now fully healed.</Original>
 		</Key>
 		<Key ID="STR_NOTF_BeingImpounded">
-			<Original>%1 your %2 is being impounded by the police.</Original>
+			<Original>%1 your %2 is being impounded.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Impounding">
 			<Original>Impounding Vehicle</Original>
