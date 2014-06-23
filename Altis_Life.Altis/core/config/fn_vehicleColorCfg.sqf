@@ -155,8 +155,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\COP\Vehicles\Hunter\hunter_pol1.jpg","cop","textures\COP\Vehicles\Hunter\hunter_pol2.jpg"],
-			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","fed","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"],
-			["textures\COP\Vehicles\Hunter\sek_hunter_01.jpg","cop","textures\COP\Vehicles\Hunter\sek_hunter_02.jpg"]
+			["textures\COP\Vehicles\Hunter\polizei_hunter1.jpg","cop","textures\COP\Vehicles\Hunter\polizei_hunter2.jpg"]
 		];
 	};
 	
