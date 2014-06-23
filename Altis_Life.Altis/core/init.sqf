@@ -99,5 +99,6 @@ uiNamespace setVariable["RscDisplayRemoteMissions",displayNull];
 [] call life_fnc_setupActions;
 // Init automatically saving gear
 [] spawn life_fnc_autoSave;
+[] execVM "core\fn_welcomecredits.sqf";
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
