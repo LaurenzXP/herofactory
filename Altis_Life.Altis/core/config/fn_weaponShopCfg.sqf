@@ -35,7 +35,7 @@ switch(_shop) do
 						["hgun_P07_F",nil,7500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
-						["ToolKit",nil,250],
+						["ToolKit",nil,2500],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
