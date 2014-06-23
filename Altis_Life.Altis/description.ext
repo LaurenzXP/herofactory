@@ -70,7 +70,13 @@ class CfgSounds
 	sound[] = {"\sounds\notarzt_sirene.ogg", 1.0, 1};  
 	titles[] = {};
   };
-  
+  class intro
+  {
+	name = "intro";  
+	sound[] = {"\sounds\intro.ogg", 1.0, 1};  
+	titles[] = {};
+  };  
+
 };
 
 class CfgDebriefing

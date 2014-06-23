@@ -62,8 +62,8 @@ else
 	titleText[format["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 };
 
-if(life_firstSpawn) then {
+/*if(life_firstSpawn) then {
 	life_firstSpawn = false;
 	[] call life_fnc_welcomeNotification;
-};
+};*/
 [] call life_fnc_hudSetup;
