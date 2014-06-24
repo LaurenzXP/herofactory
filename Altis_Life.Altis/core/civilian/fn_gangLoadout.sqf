@@ -10,7 +10,7 @@
 	if((getPlayerUID player) in __GETC__(life_gang_sd))   then {
 		_uniform = uniform player;
 		switch(_uniform) do {
-			case "U_O_SpecopsUniform_ocamo" : {
+			case "U_B_CombatUniform_mcam" : {
 				player setObjectTextureGlobal [0,"textures\sec.jpg"];
 			};
 			case "U_Rangemaster" : {

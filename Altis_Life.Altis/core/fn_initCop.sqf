@@ -26,6 +26,7 @@ if(life_blacklisted) exitWith
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-[] call life_fnc_copLoadout;
 [] call life_fnc_gangLoadout;
+[] call life_fnc_copLoadout;
+
 

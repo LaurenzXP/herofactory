@@ -50,43 +50,41 @@ switch(_shop) do
 		};
 	};
 	
-	case "security"
+	case "security":
 	{
 		switch(true) do
 		{
-			case (__GETC__(life_gang_sd) < 4): {"Du bist kein Mitglied des Sicherheitsdienstes"};
-			default
-			{
+			case ((getPlayerUID player) in  __GETC__(life_gang_sd)): {"Du bist kein Mitglied des Sicherheitsdienstes"};
+			default	{
 				_ret =  ["Altis Life SD Shop",
-                    [
-                        ["optic_Arco",nil,4000],
-                        ["optic_SOS",nil,5000],
-                        ["optic_NVS",nil,6000],
-                        ["srifle_GM6_F",nil,110000],
-                        ["5Rnd_127x108_Mag",nil,2000],
-                        ["optic_LRPS",nil,12000],
-                        ["optic_DMS",nil,6500],
-                        ["optic_Nightstalker",nil,9500],
-                    	["hgun_Rook40_F",nil,500],
-						["hgun_PDW2000_F",nil,6500],
-						["hgun_pistol_heavy_01_F",nil,5850],
-						["arifle_Mk20C_plain_F",nil,25000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,10000],
-						["NVGoggles",nil,350],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["FirstAidKit",nil,25],
-						["16Rnd_9x21_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,75],
-						["11Rnd_45ACP_Mag",nil,85],
-						["30Rnd_556x45_Stanag",nil,125]                
-                    ]
-				];
+				     		[
+		                        ["optic_Arco",nil,4000],
+		                        ["optic_SOS",nil,5000],
+		                        ["optic_NVS",nil,6000],
+		                        ["srifle_GM6_F",nil,110000],
+		                        ["5Rnd_127x108_Mag",nil,2000],
+		                        ["optic_LRPS",nil,12000],
+		                        ["optic_DMS",nil,6500],
+		                        ["optic_Nightstalker",nil,9500],
+		                    	["hgun_Rook40_F",nil,500],
+								["hgun_PDW2000_F",nil,6500],
+								["hgun_pistol_heavy_01_F",nil,5850],
+								["arifle_Mk20C_plain_F",nil,25000],
+								["optic_ACO_grn_smg",nil,750],
+								["optic_MRCO",nil,10000],
+								["NVGoggles",nil,350],
+								["ToolKit",nil,50],
+								["itemgps",nil,50],
+								["FirstAidKit",nil,25],
+								["16Rnd_9x21_Mag",nil,25],
+								["30Rnd_9x21_Mag",nil,75],
+								["11Rnd_45ACP_Mag",nil,85],
+								["30Rnd_556x45_Stanag",nil,125]                
+                   			]
+						];
 			};
-		}
-
-	}
+		};
+	};
 	case "med_basic":
 	{
 		switch (true) do 

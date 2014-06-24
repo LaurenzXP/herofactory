@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_reb.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,7 +6,7 @@
 	Description:
 	Master configuration file for Reb shop.
 */
-private["_filter"];
+private["_filter", "_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
@@ -17,7 +18,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		[
+		_ret = [
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
 			["U_I_G_resistanceLeader_F",nil,11500],
@@ -28,12 +29,23 @@ switch (_filter) do
 			[" U_O_CombatUniform_oucamo",nil,15000],
 			["U_i_GhillieSuit",nil,50000]
 		];
+		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
+			
+		  _ret = [
+		  			["U_B_CombatUniform_mcam", "SD COMBAT UNIFORM", 18000],
+		  			["U_Rangemaster", "SD STANDARD UNIFORM", 18000]
+		  		]
+		};		
+
+
+
+
 	};
 	
 	//Hats
 	case 1:
 	{
-		[
+		_ret = [
 			["H_ShemagOpen_tan",nil,850],
 			["H_PilotHelmetFighter_O",nil,2500],
 			["H_Shemag_olive",nil,850],
@@ -47,7 +59,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		[
+		_ret = [
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -63,17 +75,24 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		[
+		_ret = [
 			["V_TacVest_khk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_HarnessO_brn",nil,7500]
 		];
+		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
+			_ret = [
+				["V_Rangemaster_belt",nil,800],
+				["V_PlateCarrier1_blk",nil,1500],
+				["V_PlateCarrier3_blk",nil,1450]
+			]
+		}
 	};
 	
 	//Backpacks
 	case 4:
 	{
-		[
+		_ret = [
 			["B_AssaultPack_cbr",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
@@ -83,5 +102,19 @@ switch (_filter) do
 			["B_Carryall_oli",nil,5000],
 			["B_Carryall_khk",nil,5000]
 		];
+		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
+			_ret =
+			[
+				["B_OutdoorPack_blk",nil,800],
+				["B_FieldPack_blk",nil,500],
+				["B_AssaultPack_blk",nil,700],
+				["B_Bergen_blk",nil,2500],
+				["B_Carryall_cbr",nil,3500],
+				["B_Parachute",nil,5000]
+			];
+
+		};
+
 	};
 };
+_ret;
