@@ -19,7 +19,7 @@ if(_owner == "") exitWith {
 // quick'n dirty
 if(_owner != getPlayerUID _unit && side _unit != west) exitWith {
 	
-	private ["_mags", "_weapons", "_items", "_backpack"];
+/*	private ["_mags", "_weapons", "_items", "_backpack"];
 	_weapons = weapons _unit;
 	_mags = magazines _unit;
 	_items = items _unit;
@@ -60,7 +60,19 @@ if(_owner != getPlayerUID _unit && side _unit != west) exitWith {
 	};
 	//waitUntil {!(isNull (findDisplay 602))};
 	_gearDisplay closeDisplay 0;
-	_handle = [] spawn SOCK_fnc_updateRequest;
+	_handle = [] spawn SOCK_fnc_updateRequest;*/
+
+	_gearDisplay = displayNull;
+	waitUntil {
+		_gearDisplay = findDisplay 602;
+		!isNull _gearDisplay;
+	};
+	
+
+	hint "Diese Box gehört nicht dir!";
+	_gearDisplay closeDisplay 0;
+		
+
 };
 
 if(typeOf _container in ["B_supplyCrate_F","Land_Box_AmmoOld_F"]) then {

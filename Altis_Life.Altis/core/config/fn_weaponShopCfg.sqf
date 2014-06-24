@@ -55,7 +55,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case ((getPlayerUID player) in  __GETC__(life_gang_sd)): {"Du bist kein Mitglied des Sicherheitsdienstes"};
-			default	{
+			{
 				_ret =  ["Altis Life SD Shop",
 				     		[
 		                        ["optic_Arco",nil,4000],
@@ -83,6 +83,7 @@ switch(_shop) do
                    			]
 						];
 			};
+			default {"Du bist kein Mitglied des Sicherheitsdienstes"};
 		};
 	};
 	case "med_basic":
