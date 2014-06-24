@@ -3020,7 +3020,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Weapon Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Sniper Shop"",life_fnc_weaponShopMenu,""cop_sniper""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Grundausruestung"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Polizei Shop Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[""GSGA Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""GSGA Sniper"",life_fnc_weaponShopMenu,""cop_sniper""]; this addAction[""GSGA Gruppenfuehrer"",life_fnc_weaponShopMenu,""cop_gsga""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];";
 				};
 				class Item50
 				{
@@ -90190,7 +90190,7 @@ class Mission
 		};
 		class Item244
 		{
-			position[]={3732.2744,18.77618,12993.236};
+			position[]={3730.7554,18.722088,12996.428};
 			name="med_spawn_1";
 			type="Empty";
 			angle=-90.997803;
