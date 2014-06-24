@@ -167,7 +167,7 @@ switch(_shop) do
         };
     };
 	
-		case "cop_sniper":
+		case "cop_gsga":
     {
         switch(true) do
         {
