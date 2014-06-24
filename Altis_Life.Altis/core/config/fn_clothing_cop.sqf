@@ -30,6 +30,12 @@ switch (_filter) do
 			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
 			_ret set[count _ret,["U_B_HeliPilotCoveralls",nil,1500]];
 		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret set[count _ret,["U_B_CombatUniform_mcam_worn",nil,550]];
+			_ret set[count _ret,["U_B_HeliPilotCoveralls",nil,1500]];
+		};
+			
 	};
 	
 	//Hats
@@ -56,6 +62,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
 		};
+		[] call life_fnc_copLoadout;
 	};
 	
 	//Glasses

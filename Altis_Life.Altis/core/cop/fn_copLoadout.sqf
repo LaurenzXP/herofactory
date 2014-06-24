@@ -1,48 +1,18 @@
 #include <macro.h>
 /*
-	File: fn_medicLoadout.sqf
-	Author: Bryan "Tonic" Boardwine
+	COP UNIFORM SCRIPT
+	Author: [SD] Demon 
 	
-	Description:
-	Loads the medic out with the default gear.
 */
-private("_coplevel");
 
 
-player addUniform "U_Rangemaster";
+	// Switch texture only if cop is wearing a specific uniform!
+	if ((__GETC__(life_coplevel) > 0) && (uniform player == "U_Rangemaster") )  then {
+		player setObjectTextureGlobal [0, "textures\COP\Uniform\Rangemaster_Polizei_beamter.jpg"]; // this is for all cops whitelisted or public.
+	};
 
-
-	_coplevel = __GETC__(life_coplevel);
-
-	switch(_coplevel) do {
+	if (__GETC__(life_coplevel) >= 3) && (uniform player == "U_B_CombatUniform_mcam_worn") then {
+		player setObjectTextureGlobal [0, "textures\COP\Uniform\U_B_CombatUniform_mcam.P2.jpg"]; // this is for all whitelisted cops above the rank of 2 on the database (these numbers can be adjusted as needed)
+	};
 	
-	case 1: 
-	{
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
-	};
-	case 2:
-	{
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
-	};
-	case 3:
-	{
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
-	};
-	case 4:
-	{
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
-	};
-	case 5:
-	{	
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\police_uniform.jpg"];
-	};	
-	case 6:
-	{
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\swat_shirt.jpg"];
-	};	
-	case 7:
-	{	
-		player setObjectTextureGlobal [0,"textures\COP\Uniform\swat_shirt.jpg"];	
-	};
-};
-
+	

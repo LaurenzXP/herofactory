@@ -66,11 +66,7 @@ switch (_side) do
 		// GANGS
 		// Security service - with loadout for Uniforms
 		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
-				_uniform = uniform player;
-				switch(_uniform) do {
-					case "U_O_SpecopsUniform_ocamo" : {
-						player setObjectTextureGlobal [0,"textures\sec.jpg"];
-				};
+				
 			};
 			_markers = _markers + [
 							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]

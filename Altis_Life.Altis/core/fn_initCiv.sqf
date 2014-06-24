@@ -5,7 +5,7 @@
 	Description:
 	Initializes the civilian.
 */
-private["_spawnPos", "_uniform"];
+private["_spawnPos"];
 
 civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
 civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", ["Land_i_House_Big_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_03_V1_F"],250];
@@ -28,8 +28,7 @@ if(life_is_arrested) then
 player addRating 9999999;
 
 
-
-
-
 [] call life_fnc_zoneCreator;
 [] call life_fnc_initHouses;
+[] call life_fnc_copLoadout;	
+[] call life_fnc_gangLoadout;

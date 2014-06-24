@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_onRespawn.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -21,6 +22,7 @@ switch(playerSide) do
 	case west: 
 	{
 		[] spawn life_fnc_loadGear;
+		[] call life_fnc_copLoadout;
 	};
 	case east: 
 	{
@@ -65,3 +67,4 @@ cutText ["","BLACK IN"];
 
 [] call life_fnc_civFetchGear;
 [] call SOCK_fnc_updateRequest;
+[] call life_fnc_RemoveLoot;

@@ -7,13 +7,14 @@
 	Creates an intro on the bottom-right hand corner of the screen.
 */
 
-_onScreenTime = 6;
+_onScreenTime = 4;
 
 sleep 10; //Wait in seconds before the credits start after player is in-game
  
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
-	playSound ["intro",true];
+	// ES NERVT :D 
+//	playSound ["intro",true];
 };
 
 

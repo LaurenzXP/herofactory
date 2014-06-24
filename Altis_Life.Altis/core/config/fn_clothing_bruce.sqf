@@ -43,11 +43,11 @@ switch (_filter) do
 		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
 			_ret = _ret + 
 			[
-				["O_soldierU_M_F","SD Security",2000]
+				["U_Rangemaster","SD Security",2000]
 			];
 				
 		};
-		
+		[] call life_fnc_gangLoadout;
 		//O_soldierU_M_F
 		
 		
