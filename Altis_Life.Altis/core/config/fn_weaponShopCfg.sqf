@@ -28,17 +28,16 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a cop!"};
 			default
 			{
-				_ret = ["Altis Cop Shop",
+				_ret = ["Grundausstattung",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_sdar_F","Taser Gewehr",20000],
+						["hgun_P07_snds_F","Taser Pistole",2000],
 						["hgun_P07_F",nil,7500],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,2500],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["Chemlight_red",nil,30],
@@ -83,7 +82,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
 			default
 			{
-				_ret =  ["Altis Patrol Officer Shop",
+				_ret =  ["Polizei Shop",
 					[
 						["arifle_MX_F",nil,35000],
 						["SMG_02_ACO_F",nil,30000],
@@ -105,10 +104,10 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (__GETC__(life_coplevel) < 4): {"You are not at a sergeant rank!"};
 			default
 			{
-				_ret = ["Altis Sergeant Officer Shop",
+				_ret = ["GSGA Shop",
 					[
 						["SMG_02_ACO_F",nil,15000],
 						["hgun_ACPC2_F",nil,17500],
@@ -116,32 +115,22 @@ switch(_shop) do
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],
 						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],["B_UAV_01_backpack_F",nil,50000],
-						["B_UavTerminal",nil,50000],
+						["30Rnd_9x21_Mag",nil,60],
 						["9Rnd_45ACP_Mag",nil,200],
 						["arifle_MX_Black_F",nil,35000],
-						["muzzle_snds_H",nil,2500],
 						["30Rnd_65x39_caseless_mag",nil,500],
 						["arifle_MX_SW_Black_F",nil,105000],
-						["muzzle_snds_H_MG",nil,5000],
 						["100Rnd_65x39_caseless_mag",nil,2000],
 						["arifle_MXM_Black_F",nil,90000],
-						["arifle_MX_GL_F",nil,40000],
-						["UGL_FlareWhite_F",nil,500],
-						["SmokeShell",nil,100],
-						["SmokeShellGreen",nil,100],
-						["SmokeShellRed",nil,100],
-						["3Rnd_UGL_FlareWhite_F",nil,500],
 						["muzzle_snds_H",nil,2500],
 						["30Rnd_65x39_caseless_mag",nil,500],
-						["UGL_FlareGreen_F",nil,500],
-						["UGL_FlareRed_F",nil,500],
-						["LMG_Mk200_F",nil,100000],
-						["200Rnd_65x39_cased_Box",nil,2000],
 						["acc_flashlight",nil,750],
 						["acc_pointer_IR",nil,750],
 						["optic_Holosight",nil,1500],
 						["optic_Holosight_smg",nil,1500],
+						["Chemlight_red",nil,30],
+				        ["Chemlight_yellow",nil,30],
+				        ["Chemlight_green",nil,30],
 						["optic_Hamr",nil,2000],
 						["optic_tws",nil,2000],
 						["optic_MRCO",nil,3000],
@@ -159,16 +148,56 @@ switch(_shop) do
         switch(true) do
         {
             case (playerSide != west): {"You are not a cop!"};
-            case (__GETC__(life_coplevel) < 5): {"You are not at a sniper rank!"};
+            case (__GETC__(life_coplevel) < 4): {"You are not at a sniper rank!"};
             default
             {
-               _ret =  ["Altis Sniper Shop",
+               _ret =  ["GSGA Scharfschuetzen Shop",
                     [
                         ["optic_Arco",nil,4000],
                         ["optic_SOS",nil,5000],
                         ["optic_NVS",nil,6000],
                         ["srifle_GM6_F",nil,110000],
                         ["5Rnd_127x108_Mag",nil,2000],
+                        ["optic_LRPS",nil,12000],
+                        ["optic_DMS",nil,6500],
+                        ["optic_Nightstalker",nil,9500]                
+                    ]
+                ];
+            };
+        };
+    };
+	
+		case "cop_sniper":
+    {
+        switch(true) do
+        {
+            case (playerSide != west): {"You are not a cop!"};
+            case (__GETC__(life_coplevel) < 5): {"You are not at a officer rank!"};
+            default
+            {
+               _ret =  ["GSGA Gruppenfuehrer Shop",
+                    [
+                        ["optic_Arco",nil,4000],
+						["muzzle_snds_H_MG",nil,5000],
+						["UGL_FlareWhite_F",nil,500],
+						["UGL_FlareGreen_F",nil,500],
+						["UGL_FlareRed_F",nil,500],
+						["B_UavTerminal",nil,50000],
+						["200Rnd_65x39_cased_Box",nil,2000],
+						["LMG_Mk200_F",nil,100000],
+						["arifle_MX_GL_F",nil,40000],
+						["B_UAV_01_backpack_F",nil,50000],
+						["SmokeShell",nil,100],
+						["SmokeShellGreen",nil,100],
+						["SmokeShellRed",nil,100],
+						["3Rnd_UGL_FlareWhite_F",nil,500],
+						["Chemlight_red",nil,30],
+				        ["Chemlight_yellow",nil,30],
+				        ["Chemlight_green",nil,30],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,500],
+                        ["optic_SOS",nil,5000],
+                        ["optic_NVS",nil,6000],
                         ["optic_LRPS",nil,12000],
                         ["optic_DMS",nil,6500],
                         ["optic_Nightstalker",nil,9500]                
