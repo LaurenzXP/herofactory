@@ -66,20 +66,12 @@ switch (_side) do
 		// GANGS
 		// Security service - with loadout for Uniforms
 		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
-				
-			};
 			_markers = _markers + [
 							["securityservice","Sicherheitsdienst","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 						  ];
 		};
 		// ADAC with loadout for Uniforms
 		if((getPlayerUID player) in __GETC__(life_gang_adac)  )then {
-				_uniform = uniform player;
-				switch(_uniform) do {
-					case "C_scientist_F" : {
-						player setObjectTextureGlobal [0,"textures\ADAC\adac_uniform.paa"];
-				};
-			};
 			_markers = _markers + [
 							["adac_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 							["adac_2","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]

@@ -15,11 +15,6 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 _packet set[count _packet,_array];
 
 
-diag_log "UPDATEREQUEST:";
-diag_log _packet;
-diag_log _array;
-diag_log med_gear;
-
 switch (playerSide) do {
 	case west: {_packet set[count _packet,cop_gear];};
 	case civilian: {

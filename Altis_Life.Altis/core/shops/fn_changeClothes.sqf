@@ -21,6 +21,10 @@ _data = _control lbData _selection;
 [_data,true] call life_fnc_handleItem;
 _price ctrlSetStructuredText parseText format ["Price: <t color='#8cff9b'>$%1</t>",[(_control lbValue _selection)] call life_fnc_numberText];
 
+[] call life_fnc_copLoadout;	
+[] call life_fnc_gangLoadout;
+
+
 _totalPrice = 0;
 {
 	if(_x != -1) then

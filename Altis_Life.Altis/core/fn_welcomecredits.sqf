@@ -6,7 +6,28 @@
 	Description:
 	Creates an intro on the bottom-right hand corner of the screen.
 */
-
+private["_onScreenTime",
+"_role1",
+"_role1names",
+"_role2",
+"_role2names",
+"_role3",
+"_role3names",
+"_role4",
+"_role4names",
+"_role5",
+"_role5names",
+"_role6",
+"_role6names",
+"_role7",
+"_role8names",
+"_role9",
+"_role9names",
+"_role10",
+"_role10names",
+"_memberFunction",
+"_memberNames",
+"_finalText"];
 _onScreenTime = 4;
 
 sleep 10; //Wait in seconds before the credits start after player is in-game
@@ -37,6 +58,8 @@ _role8 = "Created by:";
 _role8names = ["TAW_Tonic"];
 _role9 = "Music by:";
 _role9names = ["DANIpeNET"];
+_role10 = "Directed by:";
+_role10names = ["Torsten Ennenbach"];
 _role11 = "Special thanks to:";
 _role11names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming"];
 
