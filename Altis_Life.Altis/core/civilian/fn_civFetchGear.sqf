@@ -157,4 +157,9 @@ _ret set[count _ret,_pItems];
 _ret set[count _ret,_hItems];
 _ret set[count _ret,_yItems];
 
+
+diag_log "PLAYER POSITION";
+diag_log (position player); 
+
+
 civ_gear = _ret;

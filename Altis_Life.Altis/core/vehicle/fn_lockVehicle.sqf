@@ -10,4 +10,8 @@ _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _state = [_this,1,2,[0,false]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {};
 
+
+diag_log "VEHICLE POSITION";
+diag_log (position player); 
+
 _vehicle lock _state;
