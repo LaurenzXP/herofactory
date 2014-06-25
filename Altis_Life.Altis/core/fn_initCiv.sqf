@@ -30,5 +30,4 @@ player addRating 9999999;
 
 [] call life_fnc_zoneCreator;
 [] call life_fnc_initHouses;
-[] call life_fnc_copLoadout;	
-[] call life_fnc_gangLoadout;
+[] call life_fnc_updateClothing;

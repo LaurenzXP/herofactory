@@ -32,8 +32,12 @@ switch (_filter) do
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
 			
 		  _ret = [
-		  			["U_B_CombatUniform_mcam", "SD COMBAT UNIFORM", 18000],
-		  			["U_Rangemaster", "SD STANDARD UNIFORM", 18000]
+		  			["U_B_CombatUniform_mcam", "SD COMBAT UNIFORM", 1800],
+		  			["U_Rangemaster", "SD STANDARD UNIFORM", 1800],
+		  			["U_NikosAgedBody", "SD Fine Dress", 1800]
+
+
+		  			
 		  		]
 		};		
 
@@ -54,6 +58,28 @@ switch (_filter) do
 			["H_MilCap_oucamo",nil,1200],
 			["H_Bandanna_camo",nil,650]
 		];
+
+		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
+			
+		  _ret = [
+				
+				["H_Bandanna_khk_hs",nil,650],
+				["H_Beret_blk",nil,650],
+				["H_MilCap_oucamo",nil,650],
+				["H_Bandanna_camo",nil,650],
+				["H_ShemagOpen_tan",nil,650],
+				["H_Shemag_olive",nil,650],
+				["H_ShemagOpen_khk",nil,650],
+				["H_Shemag_olive_hs",nil,650],
+				["H_Shemag_khk",nil,650],
+				["H_Shemag_tan",nil,650],
+				["H_Shemag_olive",nil,650]
+
+
+		  		]
+		};	
+
+
 	};
 	
 	//Glasses
@@ -82,9 +108,11 @@ switch (_filter) do
 		];
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
 			_ret = [
-				["V_Rangemaster_belt",nil,800],
 				["V_PlateCarrier1_blk",nil,1500],
-				["V_PlateCarrier3_blk",nil,1450]
+				["V_TacVest_blk",nil,1450],
+				["V_Chestrig_blk",nil,1450],
+				["V_BandollierB_blk",nil,1450],
+				["V_TacVest_blk_POLICE",nil,1300]
 			]
 		}
 	};

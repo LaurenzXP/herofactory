@@ -7,6 +7,9 @@
     Load the Gangspecific Loadout for Gangs
 */
 
+
+if (playerSide == "civilian") {
+
 	if((getPlayerUID player) in __GETC__(life_gang_sd))   then {
 		_uniform = uniform player;
 		switch(_uniform) do {
@@ -25,6 +28,6 @@
 
 
 	};
-
+};
 
 	

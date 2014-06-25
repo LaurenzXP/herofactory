@@ -61,8 +61,10 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
+			_ret set[count _ret,["H_Beret_blk_POLICE",nil,100]];
+
 		};
-		[] call life_fnc_copLoadout;
+		[] call life_fnc_updateClothing;
 	};
 	
 	//Glasses
@@ -90,7 +92,9 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
-			_ret set[count _ret,["V_PlateCarrier3_blk",nil,1450]];
+			_ret set[count _ret,["V_TacVest_blk",nil,1450]];
+			_ret set[count _ret,["V_Chestrig_blk",nil,1450]];
+			_ret set[count _ret,["V_BandollierB_blk",nil,1450]];
 			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1300]];
 		};
 	};

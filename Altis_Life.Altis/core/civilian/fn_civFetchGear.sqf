@@ -8,7 +8,7 @@
     Description:
     Saves the players gear for syncing to the database for persistence.
 */
-private["_ret","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled"];
+private["_ret","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_position"];
 _ret = [];
 
 _ret set[count _ret,uniform player];
@@ -157,9 +157,11 @@ _ret set[count _ret,_pItems];
 _ret set[count _ret,_hItems];
 _ret set[count _ret,_yItems];
 
+_position = position player;
+
+_ret set[count _ret,_position];
 
 diag_log "PLAYER POSITION";
 diag_log (position player); 
-
 
 civ_gear = _ret;
