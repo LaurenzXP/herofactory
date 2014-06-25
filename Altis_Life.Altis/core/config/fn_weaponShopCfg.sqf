@@ -393,7 +393,7 @@ switch(_shop) do
 			[
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
-				["ToolKit",nil,250],
+				["ToolKit",nil,500],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
