@@ -18,7 +18,7 @@ _units = [];
 
 ctrlSetText[2404,"Establishing connection..."];
 
-if(__GETC__(life_coplevel) < 3 && __GETC__(life_adminlevel) == 0) then
+if(((__GETC__(life_coplevel) > 0) || ((getPlayerUID player) in __GETC__(life_gang_sd))) then
 {
 	ctrlShow[2405,false];
 };

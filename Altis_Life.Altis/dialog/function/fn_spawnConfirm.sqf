@@ -68,4 +68,4 @@ else
 	[] call life_fnc_welcomeNotification;
 };*/
 [] call life_fnc_hudSetup;
-[] call life_fnc_updateClothing;	
+[] call life_fnc_updateClothes;	

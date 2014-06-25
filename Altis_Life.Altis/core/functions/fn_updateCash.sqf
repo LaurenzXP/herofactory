@@ -54,4 +54,4 @@ if (_type == "cash") then {
 
 
 
-
+[] call life_fnc_updateClothes;

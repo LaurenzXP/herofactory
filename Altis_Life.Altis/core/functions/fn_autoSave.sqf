@@ -11,8 +11,7 @@ while {true} do {
     sleep 600;
     [] call SOCK_fnc_updateRequest;
     hint "Game Autosaved.";
-    [] call life_fnc_gangLoadout;
-    [] call life_fnc_copLoadout;
+    [] call life_fnc_updateClothes;
     [] call life_fnc_RemoveLoot;
 };
 

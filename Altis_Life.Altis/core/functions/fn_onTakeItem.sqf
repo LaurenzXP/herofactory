@@ -23,3 +23,5 @@ switch(playerSide) do
 	case independent: {};
 	case east: {};
 };
+
+[] call life_fnc_updateClothes;
