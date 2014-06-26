@@ -8,3 +8,4 @@
 
 [] call life_fnc_copLoadout;	
 [] call life_fnc_gangLoadout;
+[] call life_fnc_medicLoadout;

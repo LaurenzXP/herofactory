@@ -38,11 +38,10 @@ switch (_shop) do
 	case "med_air_hs": {
 		_return = [
 			["B_Heli_Light_01_F",50000],
-			["O_Heli_Light_02_unarmed_F",75000],
-			["I_Heli_Transport_02_F",175000]
-		];
-	};
-	
+			["O_Heli_Light_02_unarmed_F",75000]
+			];			
+		};
+
 	case "civ_car":
 	{
 		_return = 

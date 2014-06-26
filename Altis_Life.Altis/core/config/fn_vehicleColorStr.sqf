@@ -223,9 +223,19 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Black"};
 			case 1: {_color = "Polizei 1"};
-			case 1: {_color = "Polizei 2"};
+			case 2: {_color = "Polizei 2"};
 		};
 	};
+	case "I_Heli_light_03_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Polizei"};
+			case 1: {_color = "Notarzt"};
+		};
+	};
+
+
 	case "B_Truck_01_mover_F":
 	{
 		switch (_index) do
