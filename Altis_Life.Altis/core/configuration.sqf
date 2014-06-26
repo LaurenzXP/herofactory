@@ -178,6 +178,9 @@ life_inv_items =
 	"life_inv_rock",
 	"life_inv_cement",
 	"life_inv_goldbar",
+	"life_inv_blastingcharge",
+	"life_inv_boltcutter",
+	"life_inv_defusekit"
 	"life_inv_storage1",
 	"life_inv_storage2"
 ];
@@ -261,6 +264,8 @@ sell_array =
 	["glass",1450],
 	["fuelF",500],
 	["spikeStrip",1200],
+	["cement",1950],
+	["goldbar",95000]
 	["cement",1950]
 ];
 __CONST__(sell_array,sell_array);
@@ -287,6 +292,9 @@ buy_array =
 	["fuelF",850],
 	["peach",68],
 	["spikeStrip",2500],
+	["blastingcharge",35000],
+	["boltcutter",7500],
+	["defusekit",2500]
 	["spikeStrip",2500],
 	["storage1",100000],
 	["storage2",250000]

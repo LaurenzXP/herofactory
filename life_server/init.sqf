@@ -3,6 +3,10 @@ DB_Async_Active = false;
 __CONST__(LIFE_SCHEMA_NAME,"'arma3srv-life'");//CHANGE THIS IF YOUR DATABASE IS NOT CALLED ARMA3LIFE KEEP THE ' '
 publicVariable "LIFE_SCHEMA_NAME";
 
+life_adminlevel = 0;
+life_medicLevel = 0;
+life_coplevel = 0;
+
 //Null out harmful things for the server.
 __CONST__(JxMxE_PublishVehicle,"No");
 
@@ -22,7 +26,7 @@ fed_bank setVariable["fed_locked",false,true];
 "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", "CALL resetLifeVehicles();",(call LIFE_SCHEMA_NAME)]; //Reset vehicles active state to false.
 "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", "CALL deleteDeadVehicles();",(call LIFE_SCHEMA_NAME)]; //Delete dead / non-usable vehicles for cleanup.
 
-life_federal_funds = (count playableUnits) * 750; //Amount the federal reserve is funded.
+fed_bank setVariable["safe",(count playableUnits),true];
 life_animals_spawned = false;
 life_animals_array = [];
 
@@ -32,7 +36,9 @@ life_animals_array = [];
 [] execVM "\life_server\initHousing.sqf";
 //[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf"; Not currently used
 
-_tempID = ["SERV_onClientDisconnect","onPlayerDisconnected","TON_fnc_clientDisconnect"] call BIS_fnc_addStackedEventHandler;
+//Double the cleanup for connecting clients and disconnecting clients.
+_onDisconnect = ["SERV_onClientDisconnect","onPlayerDisconnected","TON_fnc_clientDisconnect"] call BIS_fnc_addStackedEventHandler;
+_onConnect = ["SERV_onClientConnected","onPlayerConnected","TON_fnc_clientDisconnect"] call BIS_fnc_addStackedEventHandler;
 
 [] spawn TON_fnc_cleanup;
 life_gang_list = [];
@@ -89,3 +95,13 @@ publicVariable "life_fnc_fedSuccess";
 		} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
 	};
 } foreach allUnits;
+
+//Lockup the dome
+private["_dome","_rsb"];
+_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
+_rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
+
+for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _dome animate [format["Door_%1_rot",_i],0];};
+_rsb setVariable["bis_disabled_Door_1",1,true];
+_rsb allowDamage false;
+fed_bank attachTo[_rsb,[-0.1,3,0.8]];

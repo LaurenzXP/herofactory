@@ -2,7 +2,8 @@
 SQLyog Community v11.42 (64 bit)
 MySQL - 5.1.73 : Database - ni381535_1_DB
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -106,7 +107,7 @@ CREATE TABLE `players` (
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
   KEY `blacklist` (`blacklist`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 /*Table structure for table `vehicles` */
 
@@ -128,7 +129,7 @@ CREATE TABLE `vehicles` (
   KEY `side` (`side`),
   KEY `pid` (`pid`),
   KEY `type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 
 

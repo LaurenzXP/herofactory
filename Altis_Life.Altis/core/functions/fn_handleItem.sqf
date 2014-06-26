@@ -182,23 +182,37 @@ if(_bool) then
 							}
 								else
 							{
-								if(uniform player == _item) then
-								{
-									player addItem _item;
-								}
-									else
-								{
-									if(uniform player != "") then
-									{
+								if(player isKindOf "Civilian") then {
+									if(uniform player == _item) then {
+										player addItem _item;
+									} else {
+										if(uniform player != "") then {
+											_items = uniformItems player;
+											removeUniform player;
+										};
+										
+										player addUniform _item;
+										if(!isNil "_items") then {
+											{player addItemToUniform _x} foreach _items;
+										};
+									};
+								} else {
+									private["_itemName","_unitName"];
+									_itemName = toString [(toArray _item select 2)];
+									_unitName = toString [(toArray (typeOf player) select 0)];
+									
+									if(uniform player != "") then {
 										_items = uniformItems player;
 										removeUniform player;
 									};
 									
-									player addUniform _item;
-									
-									if(!isNil {_items}) then
-									{
-										{[_x,true,false,false,true] spawn life_fnc_handleItem;} foreach _items;
+									if(_itemName != _unitName) then {
+										player forceAddUniform _item;
+									} else {
+										player addUniform _item;
+									};
+									if(!isNil "_items") then {
+										{player addItemToUniform _x} foreach _items;
 									};
 								};
 							};
@@ -268,22 +282,32 @@ if(_bool) then
 								}
 									else
 								{
-									createDialog "VAS_prompt";
-									waitUntil {!isNil {vas_prompt_choice}};
-									if(vas_prompt_choice) then
-									{
-										switch (_type) do
-										{
-											case 1: { player addPrimaryWeaponItem _item; };
-											case 2: { player addSecondaryWeaponItem _item; };
-											case 3: { player addHandgunItem _item; };
+									private["_wepItems","_action","_slotTaken"];
+										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
+										_slotTaken = false;
+
+										if(_wepItems select 2 != "") then {_slotTaken = true;};
+
+										if(_slotTaken) then {
+											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											if(_action) then {
+												switch(_type) do {
+													case 1: {player addPrimaryWeaponItem _item;};
+													case 2: {player addSecondaryWeaponItem _item;};
+													case 3: {player addHandgunItem _item;};
+													default {player addItem _item;};
+												};
+											} else {
+												player addItem _item; //Add it to any available container
+											};
+										} else {
+											switch(_type) do {
+												case 1: {player addPrimaryWeaponItem _item;};
+												case 2: {player addSecondaryWeaponItem _item;};
+												case 3: {player addHandgunItem _item;};
+												default {player addItem _item;};
+											};
 										};
-									}
-										else
-									{
-										player addItem _item;
-									};
-									vas_prompt_choice = nil;
 								};
 							};
 						};
@@ -317,22 +341,32 @@ if(_bool) then
 								}
 									else
 								{
-									createDialog "VAS_prompt";
-									waitUntil {!isNil {vas_prompt_choice}};
-									if(vas_prompt_choice) then
-									{
-										switch (_type) do
-										{
-											case 1: { player addPrimaryWeaponItem _item; };
-											case 2: { player addSecondaryWeaponItem _item; };
-											case 3: { player addHandgunItem _item; };
+									private["_wepItems","_action","_slotTaken"];
+										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
+										_slotTaken = false;
+
+										if(_wepItems select 1 != "") then {_slotTaken = true;};
+
+										if(_slotTaken) then {
+											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											if(_action) then {
+												switch(_type) do {
+													case 1: {player addPrimaryWeaponItem _item;};
+													case 2: {player addSecondaryWeaponItem _item;};
+													case 3: {player addHandgunItem _item;};
+													default {player addItem _item;};
+												};
+											} else {
+												player addItem _item; //Add it to any available container
+											};
+										} else {
+											switch(_type) do {
+												case 1: {player addPrimaryWeaponItem _item;};
+												case 2: {player addSecondaryWeaponItem _item;};
+												case 3: {player addHandgunItem _item;};
+												default {player addItem _item;};
+											};
 										};
-									}
-										else
-									{
-										player addItem _item;
-									};
-									vas_prompt_choice = nil;
 								};
 							};
 						};
@@ -366,22 +400,32 @@ if(_bool) then
 								}
 									else
 								{
-									createDialog "VAS_prompt";
-									waitUntil {!isNil {vas_prompt_choice}};
-									if(vas_prompt_choice) then
-									{
-										switch (_type) do
-										{
-											case 1: { player addPrimaryWeaponItem _item; };
-											case 2: { player addSecondaryWeaponItem _item; };
-											case 3: { player addHandgunItem _item; };
+									private["_wepItems","_action","_slotTaken"];
+										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
+										_slotTaken = false;
+
+										if(_wepItems select 0 != "") then {_slotTaken = true;};
+
+										if(_slotTaken) then {
+											_action = ["Do you want to add this item to your weapon or inventory? If you add it to your weapon your current existing attachment will be lost!","Attachment slot taken!","Weapon","Inventory"] call BIS_fnc_guiMessage;
+											if(_action) then {
+												switch(_type) do {
+													case 1: {player addPrimaryWeaponItem _item;};
+													case 2: {player addSecondaryWeaponItem _item;};
+													case 3: {player addHandgunItem _item;};
+													default {player addItem _item;};
+												};
+											} else {
+												player addItem _item; //Add it to any available container
+											};
+										} else {
+											switch(_type) do {
+												case 1: {player addPrimaryWeaponItem _item;};
+												case 2: {player addSecondaryWeaponItem _item;};
+												case 3: {player addHandgunItem _item;};
+												default {player addItem _item;};
+											};
 										};
-									}
-										else
-									{
-										player addItem _item;
-									};
-									vas_prompt_choice = nil;
 								};
 							};
 						};
@@ -558,7 +602,7 @@ if(_bool) then
 								
 					if(_ispack) then
 					{
-						player removeItemFromBackpack _item;
+						_item call _tmpfunction;
 					}
 						else
 					{

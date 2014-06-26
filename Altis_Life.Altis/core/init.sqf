@@ -4,7 +4,7 @@
 */
 life_firstSpawn = true;
 private["_handle","_timeStamp"];
-cutText["Setting up client, please wait...","BLACK FADED"];
+0 cutText["Setting up client, please wait...","BLACK FADED"];
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 //diag_log "------------------------------------------------------------------------------------------------------";
@@ -33,7 +33,7 @@ waitUntil {(!isNil {clientGangLeader})};
 //diag_log "::Life Client:: Received server functions.";
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
-cutText["Finishing client setup procedure","BLACK FADED"];
+0 cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
@@ -81,10 +81,21 @@ _handle = [] spawn compile PreprocessFileLineNumbers "core\config_housing.sqf";
 waitUntil {scriptDone _handle};
 life_sidechat = true;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
-cutText ["","BLACK IN"];
+0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
+LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
 [] call life_fnc_settingsInit;
+player setVariable["steam64ID",getPlayerUID player];
+[] spawn {
+	private["_name"];
+	_name = "";
+	while {true} do {
+		_name = name player;
+		if(_name != "Error: No unit") exitWith {};
+	};
+	player setVariable["realname",_name,true];
+};
 life_fnc_moveIn = compileFinal
 "
 	player moveInCargo (_this select 0);

@@ -5,7 +5,7 @@
 	Description:
 	Joins the selected gang if it is open.
 */
-private["_dialog","_sel","_gangs","_gang","_group","_locked","_name"];
+private["_dialog","_sel","_gangs","_gang","_group","_locked"];
 disableSerialization;
 
 _dialog = findDisplay 2520;

@@ -51,5 +51,6 @@ switch (_className) do
 
 	case "Land_Box_AmmoOld_F": {700};
     case "B_supplyCrate_F": {1000};
+	case "Land_CargoBox_V1_F": {5000};
 	default {-1};
 };

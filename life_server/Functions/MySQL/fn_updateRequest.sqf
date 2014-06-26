@@ -5,7 +5,7 @@
 	Description:
 	Ain't got time to describe it, READ THE FILE NAME!
 */
-private["_uid","_side","_cash","_bank","_licenses","_gear","_name","_query","_thread"];
+private["_uid","_side","_cash","_bank","_licenses","_gear","_name","_query","_thread","_position",];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _name = [_this,1,"",[""]] call BIS_fnc_param;
 _side = [_this,2,sideUnknown,[civilian]] call BIS_fnc_param;
@@ -13,12 +13,7 @@ _cash = [_this,3,0,[0]] call BIS_fnc_param;
 _bank = [_this,4,5000,[0]] call BIS_fnc_param;
 _licenses = [_this,5,[],[[]]] call BIS_fnc_param;
 _gear = [_this,6,[],[[]]] call BIS_fnc_param;
-
-
-diag_log "UPDATE FUNCTION REQUEST";
-diag_log _this;
-diag_log _gear;
-
+_position = [_this,8,"",[""]] call BIS_fnc_param;
 
 //Get to those error checks.
 if((_uid == "") OR (_name == "")) exitWith {};
@@ -28,12 +23,7 @@ _name = [_name] call DB_fnc_mresString;
 _gear = [_gear] call DB_fnc_mresArray;
 _cash = [_cash] call DB_fnc_numberSafe;
 _bank = [_bank] call DB_fnc_numberSafe;
-
-diag_log "UPDATE FUNCTION REQUEST 2";
-diag_log _this;
-diag_log _gear;
-
-
+_position = [_position] call DB_fnc_mresString;
 
 //Does something license related but I can't remember I only know it's important?
 for "_i" from 0 to count(_licenses)-1 do {
@@ -43,12 +33,12 @@ for "_i" from 0 to count(_licenses)-1 do {
 
 _licenses = [_licenses] call DB_fnc_mresArray;
 
-diag_log "PLAYER GEAR";
-diag_log _gear;
+diag_log "PLAYER POSITION";
+diag_log _position;
 
 switch (_side) do {
-	case west: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_licenses='%4', cop_gear='%6', arrested='%7' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool];};
-	case civilian: {_query = 		format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%6', arrested='%7' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool];};
+	case west: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_licenses='%4', cop_gear='%6', arrested='%7', position='%8' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool, _position];};
+	case civilian: {_query = 		format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%6', arrested='%7', position='%8' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool, _position];};
 	case independent: {_query = 	format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_gear='%4', med_licenses='%5' WHERE playerid='%6'",_name,_cash,_bank,_gear,_licenses,_uid];};
 	case east: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', adac_licenses='%4' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid];};
 

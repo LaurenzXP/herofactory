@@ -122,6 +122,7 @@ switch(_shop) do
 					[
 						["arifle_MX_F",nil,35000],
 						["SMG_02_ACO_F",nil,30000],
+						["HandGrenade_Stone","Flashbang",1700],
 						["MineDetector",nil,1000],
 						["acc_flashlight",nil,750],
 						["optic_Holosight",nil,1200],
@@ -147,6 +148,7 @@ switch(_shop) do
 					[
 						["SMG_02_ACO_F",nil,15000],
 						["hgun_ACPC2_F",nil,17500],
+						["HandGrenade_Stone","Flashbang",1700],
 						["arifle_MXC_F",nil,30000],
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],

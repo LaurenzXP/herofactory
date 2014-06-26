@@ -20,7 +20,7 @@ switch (_shop) do
 {
 	case "reb":
 	{
-		ctrlSetText[2505,"Stratis Rebel Shop"];
+		ctrlSetText[2505,"Altis Rebel Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -83,6 +83,7 @@ switch (_shop) do
 	{
 		ctrlSetText[2505,"ADAC Shop"];
 	};	
+	
 	case "admin":
 	{
 		ctrlSetText[2505,"Admin Shop"];

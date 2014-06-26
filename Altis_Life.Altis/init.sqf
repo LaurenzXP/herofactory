@@ -18,7 +18,7 @@ if(isNull player) then
 */
 enableSaving[false,false];
 
-life_versionInfo = "Altis Life RPG v3.1.3";
+life_versionInfo = "Altis Life RPG v3.1.3.5+";
 /*
 if(X_Client) then
 {

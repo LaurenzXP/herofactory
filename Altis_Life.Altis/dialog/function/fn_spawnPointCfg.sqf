@@ -95,7 +95,29 @@ switch (_side) do
 				_markers set [count _markers, [_mkName, format ["Home %1", _i], "\a3\ui_f\data\map\MapControl\watertower_ca.paa"]];
 				_i = _i + 1;
 			};
-		}forEach life_houses;			
+		}forEach life_houses;
+
+
+// Spawn @ last known position:
+
+
+	/*	_i = 1;
+		{
+			_lastposition = nearestObject [(_x select 0), "House_F"];
+			if((typeOf _house) in _houses) then {
+				
+				_mkName  = format["civ_spawn_home_%1", _i];
+				
+				if (isNil (_mkName)) then {
+					_mk = createMarkerLocal [_mkName, (_x select 0)];
+					_mk setMarkerAlphaLocal 0;
+				};
+				
+				_markers set [count _markers, [_mkName, format ["Home %1", _i], "\a3\ui_f\data\map\MapControl\watertower_ca.paa"]];
+				_i = _i + 1;
+			};
+		}forEach life_houses; **/
+
 	};
 	
 	case independent: {

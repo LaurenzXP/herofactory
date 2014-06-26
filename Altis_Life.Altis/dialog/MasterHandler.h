@@ -23,5 +23,7 @@
 #include "pInteraction.h"
 #include "deathScreen.h"
 #include "vehicleShop.h"
+#include "settings.h"
+#include "federalReserve.h"
 #include "trunkHouse.hpp"
 #include "house.hpp"

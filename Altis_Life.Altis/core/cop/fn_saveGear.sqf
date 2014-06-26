@@ -48,7 +48,13 @@ if(backpack player != "") then
         };
     } forEach (backpackItems player);
 };
-
+//Hard code for Laser Desigantor batteries
+_curWep = currentWeapon player;
+if("Laserdesignator" in assignedItems player) then
+{
+	player selectWeapon "Laserdesignator";
+	if(currentMagazine player != "") then {_magazines set[count _magazines,(currentMagazine player)];};
+};
 if(vest player != "") then
 {
     {

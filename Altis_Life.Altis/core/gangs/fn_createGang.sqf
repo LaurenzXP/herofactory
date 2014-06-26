@@ -5,7 +5,7 @@
 	Description:
 	Functionality meant for creating gangs.
 */
-private["_value","_len","_group","_uid"];
+private["_value","_len","_group"];
 _value = ctrlText 2522;
 _len = [_value] call KRON_StrLen;
 
