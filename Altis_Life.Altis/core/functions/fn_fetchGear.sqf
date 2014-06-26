@@ -55,6 +55,6 @@ if(handgunWeapon player != "") then
 	};
 };
 player selectWeapon (primaryWeapon player);
-
+[] call life_fnc_updateClothes;	
 if(isNil "_handgunItems") then {_handgunItems = ["","",""];};
 [_primary,_launcher,_handgun,_magazines,_uniform,_vest,_backpack,_items,_primitems,_secitems,_handgunitems,_uitems,_vitems,_bitems,_headgear,_goggles];

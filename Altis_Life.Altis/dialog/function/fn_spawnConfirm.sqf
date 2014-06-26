@@ -68,4 +68,4 @@ if(count life_spawn_point == 0) then
 	[] call life_fnc_welcomeNotification;
 };*/
 [] call life_fnc_hudSetup;
-[] call life_fnc_updateClothing;	
+[] call life_fnc_updateClothes;	

@@ -307,7 +307,7 @@ life_weapon_shop_array =
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",11500],
 	["ItemGPS",45],
-	["ToolKit",12500],
+	["ToolKit",125],
 	["FirstAidKit",65],
 	["Medikit",450],
 	["NVGoggles",980],

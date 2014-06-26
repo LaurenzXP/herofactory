@@ -8,9 +8,10 @@
 */
 
 
-if (playerSide == "civilian") {
+if (playerSide == civilian) then
+{
 
-	if((getPlayerUID player) in __GETC__(life_gang_sd))   then {
+	if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
 		_uniform = uniform player;
 		switch(_uniform) do {
 			case "U_B_CombatUniform_mcam" : {
