@@ -103,6 +103,7 @@ CREATE TABLE `players` (
   `adac_licenses` text,
   `adac_gear` text,
   `med_gear` text,
+  `position` varchar(255),
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
