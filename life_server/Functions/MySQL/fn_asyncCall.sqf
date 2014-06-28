@@ -12,16 +12,11 @@
 		3: BOOL (True to return a single array, false to return multiple entries mainly for garage).
 */
 waitUntil{!DB_Async_Active};
-private["_queryStmt","_queryResult","_key","_loops"];
 
-
-
-
-
+private["_queryStmt","_queryResult","_key","_loops","_timestamp"];
 _queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
 _mode = [_this,1,false,[true]] call BIS_fnc_param;
-
-
+_timestamp = diag_tickTime;
 
 if(_queryStmt == "") exitWith {_queryStmt};
 DB_Async_Active = true;
@@ -36,16 +31,13 @@ while {true} do {
 	_loops = _loops + 1;
 };
 
-diag_log "ASYNC CALLED";
-diag_log _queryStmt;
-diag_log _queryResult;
 DB_Async_Active = false; //Unlock the async caller
 
 if(_mode) then {
 	if(_queryResult == "") exitWith {
 		missionNamespace setVariable [format["QUERY_%1",_this select 2],"_LOOP_EXCEEDS_"];
 	};
-
+	
 	_queryResult = call compile format["%1",_queryResult];
 	if(!isnil {_this select 3}) exitWith {
 		if(!(_this select 3)) then {
@@ -58,13 +50,12 @@ if(_mode) then {
 		};
 	};
 
-	diag_log missionNamespace;
-	diag_log format["QUERY_%1",_this select 2];
-	diag_log _this;
-	diag_log "------------------------------";
+
 	
 	if(isNil {((_queryResult select 0) select 0)}) exitWith {missionNamespace setVariable[format["QUERY_%1",_this select 2],"_NO_ENTRY_"];};
 	_queryResult = (_queryResult select 0) select 0;
 	if(count _queryResult == 0) exitWith {missionNamespace setVariable[format["QUERY_%1",_this select 2],"_NO_ENTRY_"];};
 	missionNamespace setVariable[format["QUERY_%1",_queryResult select 0],_queryResult];
+
+
 };

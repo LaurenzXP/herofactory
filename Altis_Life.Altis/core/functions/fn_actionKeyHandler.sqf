@@ -88,7 +88,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 				waitUntil {scriptDone _handle};
 			} else {
 				//It wasn't a misc item so is it money?
-				if((typeOf _curTarget) == _money && isNil {_curTarget getVariable "inUse"}) then {
+				if((typeOf _curTarget) == _money && {!(_curTarget getVariable["inUse",false])}) then {
 					private["_handle"];
 					_curTarget setVariable["inUse",TRUE,TRUE];
 					_handle = [_curTarget] spawn life_fnc_pickupMoney;

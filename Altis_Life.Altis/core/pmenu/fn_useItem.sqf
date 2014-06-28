@@ -27,6 +27,8 @@ switch (true) do
 	};
 	
 	case (_item == "blastingcharge"): {
+		player reveal fed_bank;
+		(group player) reveal fed_bank;
 		[cursorTarget] spawn life_fnc_blastingCharge;
 	};
 	

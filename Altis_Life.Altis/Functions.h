@@ -322,6 +322,7 @@ class Life_Client_Core
 		class licensesRead {};
 		class repairDoor {};
 		class doorAnimate {};
+		class fedCamDisplay {};
 		class copLoadout {};
 		
 		//* Added for Housing

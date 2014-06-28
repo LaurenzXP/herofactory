@@ -33,7 +33,7 @@ for "_i" from 0 to count(_licenses)-1 do {
 
 _licenses = [_licenses] call DB_fnc_mresArray;
 
-diag_log "PLAYER POSITION";
+diag_log "PLAYER POSITION SERVERSIDE";
 diag_log _position;
 
 switch (_side) do {
