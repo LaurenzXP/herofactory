@@ -207,6 +207,8 @@ switch(_shop) do
 					[
 						["SMG_02_ACO_F",nil,15000],
 						["hgun_ACPC2_F",nil,17500],
+						["arifle_TRG21_F",nil,10000],
+						["30Rnd_556x45_Stanag",nil,500],
 						["HandGrenade_Stone","Flashbang",1700],
 						["arifle_MXC_F",nil,30000],
 						["optic_Arco",nil,2500],
@@ -277,6 +279,7 @@ switch(_shop) do
                         ["optic_Arco",nil,4000],
 						["muzzle_snds_H_MG",nil,5000],
 						["UGL_FlareWhite_F",nil,500],
+						["arifle_TRG21_GL_F",nil,30000],
 						["UGL_FlareGreen_F",nil,500],
 						["UGL_FlareRed_F",nil,500],
 						["B_UavTerminal",nil,50000],
@@ -315,7 +318,7 @@ switch(_shop) do
 			["Mohammed's Jihadi Shop",
 					[
 						["hgun_Pistol_heavy_01_F",nil,82000],
-						["LMG_Zafir_F",nil,200000],
+						["LMG_Zafir_F",nil,500000],
 						["150Rnd_762x51_Box",nil,5000],
 						["11Rnd_45ACP_Mag",nil,70],
 						["hgun_Rook40_F",nil,61500],
@@ -344,6 +347,7 @@ switch(_shop) do
 						["20Rnd_762x51_Mag",nil,1000],
 						["acc_flashlight",nil,500],
 						["acc_pointer_IR",nil,500],
+						["7Rnd_408_Mag",nil,5000],
 						["optic_Aco",nil,2500],
 						["optic_ACO_grn",nil,2500],
 						["optic_Aco_smg",nil,2500],
@@ -351,6 +355,7 @@ switch(_shop) do
 						["optic_Holosight",nil,3000],
 						["optic_Holosight_smg",nil,3000],
 						["optic_Hamr",nil,5000],
+						["srifle_LRR_LRPS_F",nil,1500000],
 						["muzzle_snds_B",nil,10000],
 						["muzzle_snds_H",nil,10000],
 						["muzzle_snds_acp",nil,10000],
@@ -458,6 +463,22 @@ switch(_shop) do
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["ToolKit",nil,500],
+				["FirstAidKit",nil,150],
+				["NVGoggles",nil,2000],
+				["Chemlight_red",nil,300],
+				["Chemlight_yellow",nil,300],
+				["Chemlight_green",nil,300],
+				["Chemlight_blue",nil,300]
+			]
+		];
+	};
+	case "gas":
+	{
+		["Altis General Store",
+			[
+				["Binocular",nil,300],
+				["ItemGPS",nil,100],
+				["ToolKit",nil,1000],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
