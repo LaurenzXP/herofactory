@@ -32,7 +32,7 @@ _handler = {
 
 
 _query = switch(_side) do {
-	case west: 				{format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses,  coplevel,   cop_gear, position	FROM players WHERE playerid='%1'",_uid];};
+	case west: 				{format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses,  coplevel,   cop_gear, position, blacklist	FROM players WHERE playerid='%1'",_uid];};
 	case civilian:			{format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses,  arrested,   civ_gear, position 	FROM players WHERE playerid='%1'",_uid];};
 	case independent: 		{format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses,  mediclevel, med_gear, position 	FROM players WHERE playerid='%1'",_uid];};
 	case east: 				{format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, adac_licenses, adaclevel,  adac_gear, position	FROM players WHERE playerid='%1'",_uid];};

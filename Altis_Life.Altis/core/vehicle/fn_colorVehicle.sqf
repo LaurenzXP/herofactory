@@ -30,6 +30,20 @@ if(count _texture == 0) exitWith {};
 if(count (_texture select _index) > 2) then {_texture2 = (_texture select _index) select 2;};
 if(count (_texture select _index) > 3) then {_texture3 = (_texture select _index) select 3;};
 _texture = _texture select _index;
+
+
+try {
+	if(typeName _texture == "ARRAY") then { _texture = _texture select 0;};
+} catch {
+    _index = 0;
+};
+
+
+
+diag_log "TEXTURE LOADING";
+diag_log _index;
+diag_log _texture;
+
 if(typeName _texture == "ARRAY") then { _texture = _texture select 0;};
 
 //Local to us? Set it's color.

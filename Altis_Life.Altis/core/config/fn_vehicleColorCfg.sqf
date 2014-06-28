@@ -249,5 +249,6 @@ switch (_vehicle) do
 
 
 };
-
+diag_log "VEHICLE COLOR CFG";
+diag_log _ret;
 _ret;

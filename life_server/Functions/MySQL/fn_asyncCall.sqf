@@ -13,6 +13,9 @@
 */
 waitUntil{!DB_Async_Active};
 
+diag_log "ASYNC CALL CALLED";
+
+
 private["_queryStmt","_queryResult","_key","_loops","_timestamp"];
 _queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
 _mode = [_this,1,false,[true]] call BIS_fnc_param;
@@ -21,10 +24,17 @@ _timestamp = diag_tickTime;
 if(_queryStmt == "") exitWith {_queryStmt};
 DB_Async_Active = true;
 
+diag_log _queryStmt;
+
+
 _queryResult = "";
 _loops = 0;
 while {true} do {
 	_queryResult = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommandAsync ['%1', '%2']", (call LIFE_SCHEMA_NAME), _queryStmt];
+
+	diag_log _queryResult;
+
+
 	if(_queryResult != "") exitWith {};
 	if(_loops >= 10) exitWith {}; //Why is it taking that long? ABORT!
 	sleep 0.35;

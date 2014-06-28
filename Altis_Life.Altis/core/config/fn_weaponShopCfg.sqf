@@ -59,14 +59,29 @@ switch(_shop) do
 			 ["Altis Life SD Shop",
 				   	[
                         ["optic_Arco",nil,4000],
+
+						["arifle_Mk20C_F",nil,130000],
+						["arifle_Mk20C_plain_F",nil,135000],
+						["arifle_Mk20_F",nil,140000],
+						["arifle_Mk20_plain_F",nil,160000],
+                        ["srifle_LRR_SOS_F",nil,9500],
+ 						["LMG_Mk200_F",nil,100000],
+						["arifle_MX_GL_F",nil,40000],       
+                        ["srifle_GM6_F",nil,110000],
+						["hgun_Pistol_heavy_01_F",nil,82000],
+						["LMG_Zafir_F",nil,200000],
+						["hgun_PDW2000_F",nil,90000],
+						["arifle_Katiba_C_F",nil,150000],
+						["arifle_Katiba_F",nil,160000],
+						["arifle_SDAR_F",nil,140000],
+																								                        						                
 						["muzzle_snds_H_MG",nil,5000],
 						["UGL_FlareWhite_F",nil,500],
 						["UGL_FlareGreen_F",nil,500],
 						["UGL_FlareRed_F",nil,500],
 						["B_UavTerminal",nil,50000],
 						["200Rnd_65x39_cased_Box",nil,2000],
-						["LMG_Mk200_F",nil,100000],
-						["arifle_MX_GL_F",nil,40000],
+
 						["B_UAV_01_backpack_F",nil,50000],
 						["SmokeShell",nil,100],
 						["SmokeShellGreen",nil,100],
@@ -82,10 +97,51 @@ switch(_shop) do
                         ["optic_LRPS",nil,12000],
                         ["optic_DMS",nil,6500],
                         ["optic_Nightstalker",nil,9500],
-                        ["srifle_GM6_F",nil,110000],
+
                         ["5Rnd_127x108_Mag",nil,2000],
-                        ["srifle_LRR_SOS_F",nil,9500],
-                        ["7Rnd_408_Mag",nil,9500]
+
+                        ["7Rnd_408_Mag",nil,9500],
+
+						["150Rnd_762x51_Box",nil,5000],
+						["11Rnd_45ACP_Mag",nil,70],
+						["hgun_Rook40_F",nil,61500],
+						["DemoCharge_Remote_Mag",nil,100000],
+						["APERSMine_Range_Mag",nil,70000],
+						["16Rnd_9x21_Mag",nil,120],
+						["hgun_Pistol_heavy_02_F",nil,58000],
+						["optic_Yorris",nil,1000],
+						["6Rnd_45ACP_Cylinder",nil,250],
+
+						["30Rnd_9x21_Mag",nil,500],
+
+						["30Rnd_556x45_Stanag",nil,1000],
+						["20Rnd_556x45_UW_mag",nil,1000],
+
+						["30Rnd_65x39_caseless_green",nil,1000],
+
+						["30Rnd_556x45_Stanag",nil,1000],
+						["srifle_DMR_01_F",nil,190000],
+						["10Rnd_762x51_Mag",nil,1000],
+						["srifle_EBR_F",nil,210000],
+						["20Rnd_762x51_Mag",nil,1000],
+						["acc_flashlight",nil,500],
+						["acc_pointer_IR",nil,500],
+						["optic_Aco",nil,2500],
+						["optic_ACO_grn",nil,2500],
+						["optic_Aco_smg",nil,2500],
+						["optic_ACO_grn_smg",nil,2500],
+						["optic_Holosight",nil,3000],
+						["optic_Holosight_smg",nil,3000],
+						["optic_Hamr",nil,5000],
+						["muzzle_snds_B",nil,10000],
+						["muzzle_snds_H",nil,10000],
+						["muzzle_snds_acp",nil,10000],
+						["optic_MRCO",nil,6000],
+
+
+
+
+
 					]
 				];
 			};

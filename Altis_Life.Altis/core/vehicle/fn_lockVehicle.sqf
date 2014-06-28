@@ -14,4 +14,7 @@ if(isNull _vehicle) exitWith {};
 diag_log "VEHICLE POSITION";
 diag_log (position player); 
 
+// store vehicle items;
+
+
 _vehicle lock _state;

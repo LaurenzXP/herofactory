@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_inventory"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -52,11 +52,24 @@ if((_vInfo select 5) == "False") exitWith
 	[[1,format[(localize "STR_Garage_SQLError_Destroyed"),_vInfo select 2]],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 
-if((_vInfo select 6) == "True") exitWith
+
+// Herofactiory Vehicle Inventory Load
+
+ _inventory = (_vInfo select 9);
+
+diag_log "VEHICLE INVENTORY";
+diag_log _inventory;
+diag_log _vInfo;
+
+if((_vInfo select 9) == "True") exitWith
 {
 	serv_sv_use = serv_sv_use - [_vid];
 	[[1,format[(localize "STR_Garage_SQLError_Active"),_vInfo select 2]],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
+
+
+
+
 if(typeName _sp != "STRING") then {
 	_nearVehicles = nearestObjects[_sp,["Car","Air","Ship"],10];
 } else {
@@ -78,6 +91,7 @@ waitUntil {scriptDone _thread};
 
 if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
+
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],50] select 0;
 	_vehicle attachTo[_hs,[-0.4,-4,14]];
@@ -89,6 +103,17 @@ if(typeName _sp == "STRING") then {
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 };
+
+
+//_inventory = [_inventory] call DB_fnc_mresToArray;
+_inventory = [_inventory ,0,[],[]] call BIS_fnc_param;
+
+
+diag_log "VEHICLE INVENTORY AFTER SPAWN";
+diag_log _inventory;
+_vehicle setVariable["trunk",_inventory] spawn life_fnc_MP;
+diag_log _vehicle;
+
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 _vehicle lock 2;
@@ -96,7 +121,7 @@ _vehicle lock 2;
 [[_vehicle,parseNumber(_vInfo select 8)],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),(call compile format["%1", _vInfo select 7])]];
-//_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
+
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Sets of animations

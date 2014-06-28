@@ -6,6 +6,8 @@
 	Main functionality for pickaxe in mining.
 */
 closeDialog 0;
+if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
+life_action_inUse = true;	
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 switch (true) do
 {
