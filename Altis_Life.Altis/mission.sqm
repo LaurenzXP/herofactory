@@ -3340,7 +3340,7 @@ class Mission
 				};
 				class Item78
 				{
-					position[]={25723.586,18.272123,21278.367};
+					position[]={25719.137,17.993744,21267.133};
 					azimut=220.388;
 					special="NONE";
 					id=192;
@@ -78412,14 +78412,14 @@ class Mission
 		};
 		class Item121
 		{
-			position[]={25716.904,18.13162,21271.055};
+			position[]={25710.395,18.112192,21260.092};
 			name="car_g_2";
 			type="Empty";
-			angle=220.388;
+			angle=142.63934;
 		};
 		class Item122
 		{
-			position[]={25723.572,18.269375,21278.281};
+			position[]={25719.123,17.991835,21267.047};
 			name="civ_gar_1_2";
 			text="Garage";
 			type="o_service";

@@ -423,4 +423,20 @@ switch(_shop) do
 			]
 		];
 	};
+	case "gas":
+	{
+		["Altis General Store",
+			[
+				["Binocular",nil,300],
+				["ItemGPS",nil,100],
+				["ToolKit",nil,1000],
+				["FirstAidKit",nil,150],
+				["NVGoggles",nil,2000],
+				["Chemlight_red",nil,300],
+				["Chemlight_yellow",nil,300],
+				["Chemlight_green",nil,300],
+				["Chemlight_blue",nil,300]
+			]
+		];
+	};
 };

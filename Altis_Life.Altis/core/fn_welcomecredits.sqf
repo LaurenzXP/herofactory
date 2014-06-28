@@ -25,6 +25,10 @@ private["_onScreenTime",
 "_role9names",
 "_role10",
 "_role10names",
+"_role11",
+"_role11names",
+"_role12",
+"_role12names",
 "_memberFunction",
 "_memberNames",
 "_finalText"];
@@ -43,25 +47,27 @@ if(life_firstSpawn) then {
 _role1 = "Willkommen auf dem Herofactory Altis Life RPG Server:";
 _role1names = ["[GER] Altis Life RPG by Tonic"];
 _role2 = "Serveradmins!";
-_role2names = ["Cedi","[SD] Demon","Snake"];
+_role2names = ["Cedi","[SD] Demon","LT. Faceman","Snake"];
 _role3 = "Website:";
 _role3names = ["herosfactory.forumprofi.de"];
-_role4 = "Teamspeak:";
-_role4names = ["78.143.39.207:22400"];
-_role5 = "NEWS:";
-_role5names = ["Medics die Funktionieren", "ADAC", "Sicherheitsdienst", "Freundliche Polizisten", "Nervige Terroristen"];
-_role6 = "Fragen?";
-_role6names = ["Komm ins TS!"];
-_role7 = "Herofactory";
-_role7names = ["supported by shadowdragons.de"];
-_role8 = "Created by:";
-_role8names = ["TAW_Tonic"];
-_role9 = "Music by:";
-_role9names = ["DANIpeNET"];
-_role10 = "Directed by:";
-_role10names = ["Torsten Ennenbach"];
-_role11 = "Special thanks to:";
-_role11names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming"];
+_role4 = "MapDesign";
+_role4names = ["LT. Faceman"];
+_role5 = "Teamspeak:";
+_role5names = ["78.143.39.207:22400"];
+_role6 = "NEWS:";
+_role6names = ["Medics die Funktionieren", "ADAC", "Sicherheitsdienst", "Freundliche Polizisten", "Nervige Terroristen"];
+_role7 = "Fragen?";
+_role7names = ["Komm ins TS!"];
+_role8 = "Herofactory";
+_role8names = ["supported by shadowdragons.de"];
+_role9 = "Created by:";
+_role9names = ["TAW_Tonic"];
+_role10 = "Music by:";
+_role10names = ["DANIpeNET"];
+_role11 = "Directed by:";
+_role11names = ["Torsten Ennenbach"];
+_role12 = "Special thanks to:";
+_role12names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming"];
 
 
 
@@ -97,5 +103,7 @@ sleep (_onScreenTime);
 [_role8, _role8names],
 [_role9, _role9names],
 [_role10, _role10names],
-[_role11, _role11names]
+[_role11, _role11names],
+[_role12, _role12names],
+
 ];
