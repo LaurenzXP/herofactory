@@ -21,7 +21,7 @@ if (playerSide == west) then {
 	};
 	
 	if ((__GETC__(life_coplevel) > 0) && (unitBackpack player == "B_AssaultPack_blk") ) then {
-		 (unitbackpack player) setObjectTextureGlobal [0, "textures\COP\Uniform\Rucksack Polizei.jpg"]; // this is for all whitelisted cops above the rank of 2 on the database (these numbers can be adjusted as needed)
+		 (unitbackpack player) setObjectTextureGlobal [0, "textures\COP\Uniform\Rucksack_Polizei.jpg"]; // this is for all whitelisted cops above the rank of 2 on the database (these numbers can be adjusted as needed)
 	};
 
 };
