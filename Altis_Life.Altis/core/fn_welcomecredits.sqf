@@ -93,17 +93,16 @@ _onScreenTime,
 sleep (_onScreenTime);
 } forEach [
 //The list below should have exactly the same amount of roles as the list above
-[_role1, _role1names],
-[_role2, _role2names],
-[_role3, _role3names],
-[_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names],
-[_role7, _role7names],
-[_role8, _role8names],
-[_role9, _role9names],
-[_role10, _role10names],
-[_role11, _role11names],
-[_role12, _role12names],
-
+	[_role1, _role1names],
+	[_role2, _role2names],
+	[_role3, _role3names],
+	[_role4, _role4names],
+	[_role5, _role5names],
+	[_role6, _role6names],
+	[_role7, _role7names],
+	[_role8, _role8names],
+	[_role9, _role9names],
+	[_role10, _role10names],
+	[_role11, _role11names],
+	[_role12, _role12names]
 ];
