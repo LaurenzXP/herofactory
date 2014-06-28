@@ -12,7 +12,7 @@ if (playerSide == west) then {
 		player setObjectTextureGlobal [0, "textures\COP\Uniform\Rangemaster_Polizei_beamter.jpg"]; // this is for all cops whitelisted or public.
 	};
 
-	if ((__GETC__(life_coplevel) > 2) && (uniform player == "U_B_CombatUniform_mcam_worn") ) then {
+	if ((__GETC__(life_coplevel) > 6) && (uniform player == "U_B_CombatUniform_mcam_worn") ) then {
 		player setObjectTextureGlobal [0, "textures\COP\Uniform\U_B_CombatUniform_mcam.P1.jpg"]; // this is for all whitelisted cops above the rank of 2 on the database (these numbers can be adjusted as needed)
 	};
 	
