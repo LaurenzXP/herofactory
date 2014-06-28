@@ -37,12 +37,14 @@ diag_log "PLAYER POSITION SERVERSIDE";
 diag_log _position;
 
 switch (_side) do {
-	case west: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_licenses='%4', cop_gear='%6', arrested='%7', position='%8' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool, _position];};
-	case civilian: {_query = 		format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%6', arrested='%7', position='%8' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool, _position];};
+	case west: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_licenses='%4', cop_gear='%6', arrested='%7' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool];};
+	case civilian: {_query = 		format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', civ_gear='%6', arrested='%7' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,[_this select 7] call DB_fnc_bool];};
 	case independent: {_query = 	format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_gear='%4', med_licenses='%5' WHERE playerid='%6'",_name,_cash,_bank,_gear,_licenses,_uid];};
 	case east: {_query = 			format["UPDATE players SET name='%1', cash='%2', bankacc='%3', adac_licenses='%4' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid];};
 
 };
+diag_log "PLAYER POSITION SERVERSIDE";
+diag_log _query;
 
 waitUntil {!DB_Async_Active};
 _thread = [_query,false] spawn DB_fnc_asyncCall;
