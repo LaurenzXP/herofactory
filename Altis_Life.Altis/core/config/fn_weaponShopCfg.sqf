@@ -292,6 +292,9 @@ switch(_shop) do
 						["optic_Holosight",nil,3000],
 						["optic_Holosight_smg",nil,3000],
 						["optic_Hamr",nil,5000],
+						["muzzle_snds_B",nil,10000],
+						["muzzle_snds_H",nil,10000],
+						["muzzle_snds_acp",nil,10000],
 						["optic_MRCO",nil,6000],
 						["optic_Arco",nil,8000],
 						["optic_DMS",nil,10000]
