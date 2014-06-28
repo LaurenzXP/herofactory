@@ -1,9 +1,8 @@
 /*
-	@version: 2.2
-	@file_name: fn_handleItem.sqf
-	@file_author: TAW_Tonic
-	@file_edit: 12/7/2013
-	@file_description: Handles the incoming requests and adds or removes it.
+	Author: Bryan "Tonic" Boardwine
+	
+	Description
+	Main gear handling functionality.
 */
 private["_item","_details","_bool","_ispack","_items","_isgun","_ongun","_override","_toUniform","_toVest"];
 _item = [_this,0,"",[""]] call BIS_fnc_param;

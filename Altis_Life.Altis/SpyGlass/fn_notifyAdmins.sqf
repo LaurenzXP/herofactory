@@ -7,7 +7,6 @@
 	flagged person.
 */
 private["_pName","_pReason"];
-#define __GETC__(var) (call var)
 _pName = _this select 0;
 _pReason = _this select 1;
 if(isServer && !hasInterface) exitWith {}; //NO SERVER DO NOT EXECUTE IT!

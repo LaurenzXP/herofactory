@@ -27,12 +27,6 @@ switch (playerSide) do {
  		[] call life_fnc_medFetchGear;
 		_packet set[count _packet,med_gear];
 	};
-	case east:
- 	{
-		[] call life_fnc_adacloadGear;
-		_packet set[count _packet,adac_gear];
-
-	};
 };
 
 [_packet,"DB_fnc_updateRequest",false,false] spawn life_fnc_MP;

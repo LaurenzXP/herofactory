@@ -58,10 +58,6 @@ while {player getVariable "restrained"} do
 	{
 		//disableUserInput true;
 		if(driver (vehicle player) == player) then {player action["eject",vehicle player];};
-	}
-		else
-	{
-		//disableUserInput false;
 	};
 };
 
