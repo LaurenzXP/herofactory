@@ -156,7 +156,7 @@ switch (_vehicle) do
 		[
 			["textures\COP\Vehicles\Hunter\hunter_pol1.jpg","cop","textures\COP\Vehicles\Hunter\hunter_pol2.jpg"],
 			["textures\COP\Vehicles\Hunter\polizei_hunter1.jpg","cop","textures\COP\Vehicles\Hunter\polizei_hunter2.jpg"],
-			["textures\COP\Vehicles\Hunter\hunter_GSG9.jpg","cop","textures\COP\Vehicles\Hunter\hunter_GSGA plane.jpg"],
+			["textures\COP\Vehicles\Hunter\hunter_GSG9.jpg","cop","textures\COP\Vehicles\Hunter\hunter_GSGA_plane.jpg"],
 			["textures\COP\Vehicles\Hunter\Polizei_Huntzer_3.0.jpg","cop","textures\COP\Vehicles\Hunter\Hunter3.0Plane.jpg"]
 		];
 	};
