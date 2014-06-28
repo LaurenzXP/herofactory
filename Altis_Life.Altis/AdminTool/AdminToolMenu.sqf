@@ -60,7 +60,6 @@ ToolsMenu =
 		["Spectate Player", [6],  "", -5, [["expression", format[_EXECscript4,"spectate.sqf"]]], "1", "1"],
 		["Teleport To Me", [7], "", -5, [["expression", format[_EXECscript4, "TPtoME.sqf"]]], "1", "1"],
 		["Teleport", [8], "", -5, [["expression", format[_EXECscript4, "Tele.sqf"]]], "1", "1"],
-		["ESP", [9], "", -5, [["expression", format[_EXECscript4, "ESP.sqf"]]], "1", "1"],
 		["Autos Repair und Flipen", [10], "", -5, [["expression", format[_EXECscript4, "repairflip.sqf"]]], "1", "1"],
 		["Cash", [11], "", -5, [["expression", format[_EXECscript4, "cash.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
