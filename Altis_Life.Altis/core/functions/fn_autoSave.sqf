@@ -12,7 +12,6 @@ while {true} do {
     [] call SOCK_fnc_updateRequest;
     hint "Game Autosaved.";
     [] call life_fnc_updateClothes;
-    [] call life_fnc_RemoveLoot;
 };
 
 

@@ -57,31 +57,37 @@ switch(_shop) do
 			case ((getPlayerUID player) in  __GETC__(life_gang_sd)): 
 			{
 			 ["Altis Life SD Shop",
-				     		[
-		                        ["optic_Arco",nil,4000],
-		                        ["optic_SOS",nil,5000],
-		                        ["optic_NVS",nil,6000],
-		                        ["srifle_GM6_F",nil,110000],
-		                        ["5Rnd_127x108_Mag",nil,2000],
-		                        ["optic_LRPS",nil,12000],
-		                        ["optic_DMS",nil,6500],
-		                        ["optic_Nightstalker",nil,9500],
-		                    	["hgun_Rook40_F",nil,500],
-								["hgun_PDW2000_F",nil,6500],
-								["hgun_pistol_heavy_01_F",nil,5850],
-								["arifle_Mk20C_plain_F",nil,25000],
-								["optic_ACO_grn_smg",nil,750],
-								["optic_MRCO",nil,10000],
-								["NVGoggles",nil,350],
-								["ToolKit",nil,50],
-								["itemgps",nil,50],
-								["FirstAidKit",nil,25],
-								["16Rnd_9x21_Mag",nil,25],
-								["30Rnd_9x21_Mag",nil,75],
-								["11Rnd_45ACP_Mag",nil,85],
-								["30Rnd_556x45_Stanag",nil,125]                
-                   			]
-						];
+				   	[
+                        ["optic_Arco",nil,4000],
+						["muzzle_snds_H_MG",nil,5000],
+						["UGL_FlareWhite_F",nil,500],
+						["UGL_FlareGreen_F",nil,500],
+						["UGL_FlareRed_F",nil,500],
+						["B_UavTerminal",nil,50000],
+						["200Rnd_65x39_cased_Box",nil,2000],
+						["LMG_Mk200_F",nil,100000],
+						["arifle_MX_GL_F",nil,40000],
+						["B_UAV_01_backpack_F",nil,50000],
+						["SmokeShell",nil,100],
+						["SmokeShellGreen",nil,100],
+						["SmokeShellRed",nil,100],
+						["3Rnd_UGL_FlareWhite_F",nil,500],
+						["Chemlight_red",nil,30],
+				        ["Chemlight_yellow",nil,30],
+				        ["Chemlight_green",nil,30],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,500],
+                        ["optic_SOS",nil,5000],
+                        ["optic_NVS",nil,6000],
+                        ["optic_LRPS",nil,12000],
+                        ["optic_DMS",nil,6500],
+                        ["optic_Nightstalker",nil,9500],
+                        ["srifle_GM6_F",nil,110000],
+                        ["5Rnd_127x108_Mag",nil,2000],
+                        ["srifle_LRR_SOS_F",nil,9500],
+                        ["7Rnd_408_Mag",nil,9500]
+					]
+				];
 			};
 			default {"Du bist kein Mitglied des Sicherheitsdienstes"};
 		};
@@ -103,7 +109,16 @@ switch(_shop) do
 						["Chemlight_red",nil,30],
 				        ["Chemlight_yellow",nil,30],
 				        ["Chemlight_green",nil,30],
-						["B_FieldPack_ocamo",nil,3000]
+						["B_FieldPack_ocamo",nil,3000],
+						["B_AssaultPack_cbr",nil,2500],
+						["B_Kitbag_mcamo",nil,4500],
+						["B_TacticalPack_oli",nil,3500],
+						["B_FieldPack_ocamo",nil,3000],
+						["B_Bergen_sgg",nil,4500],
+						["B_Kitbag_cbr",nil,4500],
+						["B_Carryall_oli",nil,5000],
+						["B_Carryall_khk",nil,5000]
+
 					]
 				];
 			};

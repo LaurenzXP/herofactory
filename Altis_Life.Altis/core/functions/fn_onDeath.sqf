@@ -18,7 +18,7 @@ if(playerSide == civilian) then
 	removeAllContainers _unit;
 };
 
-hideBody _unit;
+//hideBody _unit;
 //Make my killer wanted!
 if(side _source != west && alive _source) then
 {
