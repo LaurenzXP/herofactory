@@ -12,7 +12,10 @@ player createDiarySubject ["gangregeln","Gang Rules"];
 player createDiarySubject ["shadowdragons","Altis Sicherheitsdienst"];
 player createDiarySubject ["controls","Controls"];
 player createDiarySubject ["bugs","Fehler"];
+player createDiarySubject ["kompetenzen","Kompetenzen"];
 player createDiarySubject ["admins","Der Admin"];
+
+
 
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -639,6 +642,40 @@ player createDiarySubject ["admins","Der Admin"];
 			"Der Admin", 
 				"
 				Hat immer recht!<br/>
+				"
+		]
+	];
+	player createDiaryRecord ["kompetenzen",
+		[
+			"Ansprechpartner", 
+				"
+				Head of Admins: <br/>
+					1: Snake <br/>
+					2: Demon <br/>
+					3: Faceman <br/><br/>
+
+				Rcon Admins: <br/>
+					Einige ;) <br/><br/>
+
+				Polizeiprasidenten: <br/>
+					1: Snake <br/>
+					2: Fumiko <br/>
+					3: Sanbourne <br/><br/>
+
+				Aerztekammer: <br/>
+					1: Kyanreth <br/>
+					2: GrelowLP <br/>
+					3: Cedi <br/><br/>
+
+				Sicherheitsdienst: <br/>
+					1: Jubii <br/>
+					2: Demon <br/><br/>
+
+				Sicherheitsdienst: <br/>
+					1: Jubii <br/>
+					2: Demon <br/><br/>
+
+
 				"
 		]
 	];

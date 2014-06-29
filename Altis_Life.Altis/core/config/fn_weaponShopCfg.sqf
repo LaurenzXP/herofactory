@@ -161,7 +161,8 @@ switch(_shop) do
 						["B_Bergen_sgg",nil,4500],
 						["B_Kitbag_cbr",nil,4500],
 						["B_Carryall_oli",nil,5000],
-						["B_Carryall_khk",nil,5000]
+						["B_Carryall_khk",nil,5000],
+						["U_Rangemaster",nil,1000]						
 
 					]
 				];
