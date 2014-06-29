@@ -14,9 +14,9 @@ if (playerSide == west) then {
 
 	if ((__GETC__(life_coplevel) > 0) && (uniform player == "U_B_CombatUniform_mcam") && ((getPlayerUID player) in  __GETC__(life_gang_combat_medic)))  then {
 		player setObjectTextureGlobal [0, "textures\COP\Uniform\U_B_CombatUniform_mcam.P2_combatmedic.jpg"]; // this is for all cops whitelisted or public.
-		diag_log "PLAYER IS COMBATMEDIC";
+
 	} else {
-		diag_log "PLAYER IS NO COMBATMEDIC";
+
 		if ((__GETC__(life_coplevel) > 6) && (uniform player == "U_B_CombatUniform_mcam_worn") ) then {
 			player setObjectTextureGlobal [0, "textures\COP\Uniform\U_B_CombatUniform_mcam.P1.jpg"]; // this is for all whitelisted cops above the rank of 2 on the database (these numbers can be adjusted as needed)
 		};

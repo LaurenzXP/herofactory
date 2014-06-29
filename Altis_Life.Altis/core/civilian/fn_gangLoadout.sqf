@@ -24,7 +24,7 @@ if (playerSide == civilian) then
 	};
 	if((getPlayerUID player) in __GETC__(life_gang_adac)) then {
 			case "U_Rangemaster" : {
-				player setObjectTextureGlobal [0, "textures\ADAC\adac_uniform.jpg"]; 			
+				player setObjectTextureGlobal [0, "textures\ADAC\recruit_uniform_adac.jpg"]; 			
 			};		
 
 

@@ -4908,7 +4908,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="carshop1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""sd_car"",civilian,[""civ_car_100""],""civ"",""Bruce's New & Used Auto's""]];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""]];";
 				};
 			};
 		};
