@@ -29,6 +29,12 @@ private["_onScreenTime",
 "_role11names",
 "_role12",
 "_role12names",
+"_role13",
+"_role13names",
+"_role14",
+"_role14names",
+"_role15",
+"_role15names",
 "_memberFunction",
 "_memberNames",
 "_finalText"];
@@ -39,7 +45,7 @@ sleep 10; //Wait in seconds before the credits start after player is in-game
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
 	// ES NERVT :D 
-//	playSound ["intro",true];
+	playSound ["intro",true];
 };
 
 
@@ -55,7 +61,7 @@ _role4names = ["LT. Faceman"];
 _role5 = "Teamspeak:";
 _role5names = ["78.143.39.207:22400"];
 _role6 = "NEWS:";
-_role6names = ["Medics die Funktionieren", "ADAC", "Sicherheitsdienst", "Freundliche Polizisten", "Nervige Terroristen"];
+_role6names = ["Neue Regeln", "Bewaffnete Fahrzeuge", "Sicherheitsdienst", "Nervige Terroristen"];
 _role7 = "Fragen?";
 _role7names = ["Komm ins TS!"];
 _role8 = "Herofactory";
@@ -68,6 +74,12 @@ _role11 = "Directed by:";
 _role11names = ["Torsten Ennenbach"];
 _role12 = "Special thanks to:";
 _role12names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming"];
+_role13 = "Polizeileiter:";
+_role13names = ["Snake","Fumiko","Sanbourne"];
+_role14 = "Notarztleiter:";
+_role14names = ["Kyanreth","GrelowLP","Cedi"];
+_role15 = "ADAC";
+_role15names = ["Max Freitag"];
 
 
 
@@ -104,5 +116,8 @@ sleep (_onScreenTime);
 	[_role9, _role9names],
 	[_role10, _role10names],
 	[_role11, _role11names],
-	[_role12, _role12names]
+	[_role12, _role12names],
+	[_role13, _role13names],
+	[_role14, _role14names],
+	[_role15, _role15names]
 ];

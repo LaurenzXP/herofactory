@@ -61,7 +61,8 @@ switch (_shop) do
 		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
 			_return = _return + 
 			[
-				["O_MRAP_02_F",640000]
+				["O_MRAP_02_F",640000],
+				["O_MRAP_02_hmg_F",1130000]
 			];
 				
 		};
@@ -168,6 +169,9 @@ switch (_shop) do
 				["O_MRAP_02_F",640000],
 				["O_MRAP_02_hmg_F",1130000]
 			];
+		} else {
+			_return = [];
+		};
 
 	};
 

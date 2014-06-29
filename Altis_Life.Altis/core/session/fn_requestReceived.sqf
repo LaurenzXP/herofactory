@@ -142,4 +142,6 @@ switch (playerSide) do
 		};
 	};
 };
+
+
 life_session_completed = true;
