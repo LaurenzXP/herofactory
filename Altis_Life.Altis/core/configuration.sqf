@@ -18,9 +18,11 @@ life_gang_sd =
 	"76561197984199703"];
 	
 life_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
+
+life_gang_combat_medic = ["76561197967160502","76561198083768206"]; 
 __CONST__(life_gang_sd,life_gang_sd);
 __CONST__(life_gang_adac,life_gang_adac);
-
+__CONST__(life_gang_combat_medic,life_gang_combat_medic);
 
 life_query_time = time;
 life_action_delay = time;
@@ -46,6 +48,7 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 
+Life_request_timer = false;
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
 __CONST__(life_revive_fee,250); //Fee for players to pay when revived.
