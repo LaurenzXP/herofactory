@@ -163,11 +163,19 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Regular"};
+			case 0: {_color = "Tarnfleck"};
 			case 1: {_color = "SD"};
 		};
 	};
-	
+	case "O_MRAP_02_hmg_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Tarnfleck"};
+			case 1: {_color = "SD"};
+			case 2: {_color = "GSG"};
+		};
+	};	
 	case "I_Truck_02_covered_F":
 	{
 		switch (_index) do

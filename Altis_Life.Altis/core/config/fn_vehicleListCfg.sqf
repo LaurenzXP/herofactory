@@ -114,7 +114,8 @@ switch (_shop) do
 			["O_Truck_03_device_F",7450000],	
 			["B_Heli_Light_01_F",1325000],
 			["B_G_Offroad_01_armed_F",7000000],
-			["I_Heli_Transport_02_F",6325000]
+			["I_Heli_Transport_02_F",6325000],
+			["O_MRAP_02_hmg_F",13500000]
 		];
 	};
 	
@@ -152,8 +153,24 @@ switch (_shop) do
 		{
 			_return set[count _return,
 			["O_MRAP_02_F",250000]];
+    		_return set[count _return,
+			["O_MRAP_02_hmg_F",13500000]];
 		};
 	};
+
+
+	case "sd_car":
+	{
+
+		if((getPlayerUID player) in __GETC__(life_gang_sd)  )then {
+			_return = _return + 
+			[
+				["O_MRAP_02_F",640000],
+				["O_MRAP_02_hmg_F",1130000]
+			];
+
+	};
+
 	
 	case "civ_air":
 	{
@@ -223,7 +240,8 @@ switch (_shop) do
 			["B_Boat_Transport_01_F",3000],
 			["C_Boat_Civil_01_police_F",20000],
 			["B_Boat_Armed_01_minigun_F",75000],
-			["B_SDV_01_F",100000]
+			["B_SDV_01_F",100000],
+			["O_Boat_Armed_01_hmg_F",40000]
 		];
 	};
 };

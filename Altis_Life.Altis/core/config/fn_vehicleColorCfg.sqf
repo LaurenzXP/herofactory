@@ -226,6 +226,16 @@ switch (_vehicle) do
 			["textures\COP\Vehicles\Ifrit_Polizei4_Front.jpg","cop","textures\COP\Vehicles\Ifrit_Polizei4_hinten.jpg"]
 		];
 	};
+	case "O_MRAP_02_hmg_F":
+	{
+		_ret =
+		[
+			["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"],
+			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"],
+			["textures\COP\Vehicles\Ifrit_Polizei4_Front.jpg","cop","textures\COP\Vehicles\Ifrit_Polizei4_hinten.jpg"]
+		];
+	};
+
 	
 	case "B_Heli_Transport_01_F":
 	{

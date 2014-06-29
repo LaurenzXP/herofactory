@@ -3,7 +3,7 @@ onLoadName = "Altis Life RPG v3.1.3.5+";
 onLoadMission = "A RPG game mode developed by Tonic";
 joinUnassigned = 1;
 respawn = BASE;
-respawndelay = 5;
+respawndelay = 7;
 disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 0;
@@ -17,8 +17,8 @@ class Header
 };
 
 wreckLimit = 3;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 320;
+wreckRemovalMinTime = 320
+wreckRemovalMaxTime = 1200
 corpseLimit = 150;
 corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;

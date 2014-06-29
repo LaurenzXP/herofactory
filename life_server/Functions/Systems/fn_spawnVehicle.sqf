@@ -109,10 +109,6 @@ if(typeName _sp == "STRING") then {
 _inventory = [_inventory ,0,[],[]] call BIS_fnc_param;
 
 
-diag_log "VEHICLE INVENTORY AFTER SPAWN";
-diag_log _inventory;
-_vehicle setVariable["trunk",_inventory] spawn life_fnc_MP;
-diag_log _vehicle;
 
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
@@ -123,6 +119,16 @@ _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),(call compile format["%1", _vInfo select 7])]];
 
 [_vehicle] call life_fnc_clearVehicleAmmo;
+
+
+diag_log "VEHICLE INVENTORY AFTER SPAWN";
+diag_log _inventory;
+_vehicle setVariable["Trunk",_inventory] spawn life_fnc_MP;
+[[_vehicle],"life_fnc_vehStoreItem",_unit,false] spawn life_fnc_MP;
+ 
+
+diag_log _vehicle;
+
 
 //Sets of animations
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && (parseNumber(_vInfo select 8)) != 13) then
@@ -140,4 +146,5 @@ if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
 [[1,"Your vehicle is ready!"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+
 serv_sv_use = serv_sv_use - [_vid];
