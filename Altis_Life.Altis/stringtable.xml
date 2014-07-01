@@ -3,33 +3,43 @@
 	<Package name="Global">
 		<Key ID="STR_Global_Close">
 			<Original>Close</Original>
+			<German>Schließen</German>
 		</Key>
 		<Key ID="STR_Global_Sell">
 			<Original>Sell</Original>
+			<German>Verkaufen</German>
 		</Key>
 		<Key ID="STR_Global_Buy">
 			<Original>Buy</Original>
+			<German>Kaufen</German>
 		</Key>
 		<Key ID="STR_Global_Give">
 			<Original>Give</Original>
+			<German>Geben</German>
 		</Key>
 		<Key ID="STR_Global_Use">
 			<Original>Use</Original>
+			<German>Benutzen</German>
 		</Key>
 		<Key ID="STR_Global_Remove">
-			<Original>Remove</Original>
+			<Original>Throw</Original>
+			<German>Wegwerfen</German>
 		</Key>
 		<Key ID="STR_Global_Settings">
 			<Original>Settings</Original>
+			<German>Einstellungen</German>
 		</Key>
 		<Key ID="STR_Global_RentVeh">
 			<Original>Rent</Original>
+			<German>Mieten</German>
 		</Key>
 		<Key ID="STR_Global_Retrieve">
 			<Original>Retrieve</Original>
+			<German>Abrufen</German>
 		</Key>
 		<Key ID="STR_Global_NoSelection">
 			<Original>You did not select anything.</Original>
+			<German>Sie haben nichts ausgewehlt.</German>
 		</Key>
 	</Package>
 	<Package name="Admin_Menu">
@@ -46,49 +56,63 @@
 		</Key>
 		<Key ID="STR_ATM_Withdraw">
 			<Original>Withdraw</Original>
+			<German>Abheben</German>
 		</Key>
 		<Key ID="STR_ATM_Deposit">
 			<Original>Deposit</Original>
+			<German>Einzahlen</German>
 		</Key>
 		<Key ID="STR_ATM_Transfer">
 			<Original>Transfer</Original>
+			<German>Überweisen</German>
 		</Key>
 		<Key ID="STR_ATM_GreaterThan">
 			<Original>You can't deposit more then $999,999 at a time</Original>
+			<German>Sie können nicht mehr als $999,999 auf einmal einzahlen.</German>
 		</Key>
 		<Key ID="STR_ATM_notnumeric">
 			<Original>The amount entered isn't a numeric value.</Original>
+			<German>Der Betag den Sie eingegeben haben ist nicht annehmbar.</German>
 		</Key>
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
 			<Original>Altis Mobile</Original>
+			<German>Altis Handy</German>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
 			<Original>Message To Send:</Original>
+			<German>SMS senden an:</German>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
+			<German>SMS senden:</German>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
+			<German>Notruf Polizei</German>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
+			<German>SMS Admins</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
+			<German>Admin Nachricht</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
+			<German>Admin Nachricht an ALLE</German>
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
+			<German>Notruf Notarzt</German>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
 			<Original>Local Chop Shop</Original>
+			<German>Lokaler Fahrzeughehler</German>
 		</Key>
 	</Package>
 	<Package name="Gang_Menu">
@@ -97,56 +121,73 @@
 		</Key>
 		<Key ID="STR_Gang_Title2">
 			<Original>Gang Management - Current Gangs</Original>
+			<German>Gang Management - Derzeitige Gangs</German>
 		</Key>
 		<Key ID="STR_Gang_Join">
 			<Original>Join</Original>
+			<German>Beitreten</German>
 		</Key>
 		<Key ID="STR_Gang_Leave">
 			<Original>Leave</Original>
+			<German>Verlassen</German>
 		</Key>
 		<Key ID="STR_Gang_Lock">
 			<Original>Lock</Original>
+			<German>Schlieen</German>
 		</Key>
 		<Key ID="STR_Gang_Unlock">
 			<Original>Unlock</Original>
+			<German>Aufschließen</German>
 		</Key>
 		<Key ID="STR_Gang_Kick">
 			<Original>Kick</Original>
+			<German>Rausschmeißen</German>
 		</Key>
 		<Key ID="STR_Gang_SetLeader">
 			<Original>Set Leader</Original>
+			<German>Leiter wählen</German>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
 			<Original>To create a gang it costs $10,000</Original>
+			<German>Um eine Gang zu gründen brauchst du $10,000.</German>
 		</Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Create</Original>
+			<German>Erstellen</German>
 		</Key>
 		<Key ID="STR_Gang_YGN">
 			<Original>Your Gang Name</Original>
+			<German>Dein Gang Name</German>
 		</Key>
 		<Key ID="STR_Gang_MainMenu">
 			<Original>You aren't in a gang currently, what do you want to do?</Original>
+			<German>Du bist momentan in keiner Gang. Was möchtest du tun?</German>
 		</Key>
 		<Key ID="STR_Gang_Browse">
 			<Original>Browse</Original>
+			<German>Suchen</German>
 		</Key>
 	</Package>
 	<Package name="Garage_Menu">
 		<Key ID="STR_Garage_Title">
 			<Original>Vehicle Garage</Original>
+			<German>Fahrzeug-Garage</German>
 		</Key>
 		<Key ID="STR_Garage_GetVehicle">
 			<Original> Get Vehicle</Original>
+			<German>Fahrzeug holen</German>
 		</Key>
 		<Key ID="STR_Garage_SellVehicle">
 			<Original>Sell Vehicle</Original>
+			<German>Fahrzeug verkaufen</German>
 		</Key>
 		<Key ID="STR_Garage_SellPrice">
 			<Original>Sell Price</Original>
+			<German>Verkaufspreis</German>
 		</Key>
 		<Key ID="STR_Garage_SFee">
 			<Original>Storage Fee</Original>
+			<German>Parkgebühr</German>
 		</Key>
 		<Key ID="STR_Garage_NoVehicles">
 			<Original>No vehicles found in garage.</Original>
