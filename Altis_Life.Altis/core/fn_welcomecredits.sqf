@@ -45,7 +45,7 @@ sleep 10; //Wait in seconds before the credits start after player is in-game
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
 	// ES NERVT :D 
-	playSound ["intro",true];
+	//playSound ["intro",true];
 };
 
 
@@ -61,9 +61,9 @@ _role4names = ["LT. Faceman"];
 _role5 = "Teamspeak:";
 _role5names = ["78.143.39.207:22400"];
 _role6 = "NEWS:";
-_role6names = ["Neue Regeln", "Bewaffnete Fahrzeuge", "Sicherheitsdienst", "Nervige Terroristen"];
-_role7 = "Fragen?";
-_role7names = ["Komm ins TS!"];
+_role6names = ["IP Wechsel", "CPU Wechsel", "XEON", "SSD"];
+_role7 = "Neue Server IP am Samstag?";
+_role7names = ["85.25.214.214"];
 _role8 = "Herofactory";
 _role8names = ["supported by shadowdragons.de"];
 _role9 = "Created by:";
