@@ -191,24 +191,31 @@
 		</Key>
 		<Key ID="STR_Garage_NoVehicles">
 			<Original>No vehicles found in garage.</Original>
+			<German>Sie haben keine Fahrzeuge in der Garage</German>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
+			<German>Ihnen fehlen $%1 auf ihrem Konto</German>
 		</Key>
 		<Key ID="STR_Garage_SpawningVeh">
 			<Original>Spawning vehicle please wait...</Original>
+			<German>Fahrzeug fähr vor...</German>
 		</Key>
 		<Key ID="STR_Garage_SQLError_Destroyed">
 			<Original>Sorry but %1 was classified as a destroyed vehicle and was sent tot he scrap yard.</Original>
+			<German>Ihr Fahrzeug %1 wurde zerstört und wurde zum Schrottplatz gebracht.</German>
 		</Key>
 		<Key ID="STR_Garage_SQLError_Active">
 			<Original>Sorry but %1 is already active somewhere in the world and cannot be spawned.</Original>
+			<German>Entschuldigung das Fahrzeug %1 ist bereits ausgeparkt.</German>
 		</Key>
 		<Key ID="STR_Garage_SpawnPointError">
 			<Original>There is already a vehicle on the spawn point. You will be refunded the cost of getting out out.</Original>
+			<German>Es steht bereits ein Fahrzeug vor der Garage. Das Geld werden Sie erstattet bekommen.</German>
 		</Key>
 		<Key ID="STR_Garage_SoldCar">
 			<Original>You sold that vehicle for $%1</Original>
+			<German>Sie haben das Fahrzeug für $%1 verkauft</German>
 		</Key>
 		<Key ID="STR_Garage_Store_NotPersistent">
 			<Original>That vehicle is a rental and cannot be stored in your garage.</Original>
@@ -218,143 +225,185 @@
 		</Key>
 		<Key ID="STR_Garage_Store_Success">
 			<Original>The vehicle has been stored in your garage.</Original>
+			<German>Ihr Fahrzeug wurde in die Garage geparkt.</German>
+
 		</Key>
 	</Package>
 	<Package name="Key_Chain">
 		<Key ID="STR_Keys_Title">
 			<Original>Key Chain - Current List of Keys</Original>
+			<German>Schlüsselbund - Aktuelle Liste der Schlüssel</German>
 		</Key>
 		<Key ID="STR_Keys_DropKey">
 			<Original>Drop Key</Original>
+			<German>Schlüssel fallen lassen</German>
+
 		</Key>
 		<Key ID="STR_Keys_GiveKey">
 			<Original>Give Key</Original>
+			<German>Schlüssel geben</German>
 		</Key>
 	</Package>
 	<Package name="Player_Menu">
 		<Key ID="STR_PM_Title">
 			<Original>Player Menu</Original>
+			<German>Spieler Menü</German>
 		</Key>
 		<Key ID="STR_PM_cItems">
 			<Original>Current Items</Original>
+			<German>Aktuelle Gegenstände</German>
 		</Key>
 		<Key ID="STR_PM_Licenses">
 			<Original>Licenses</Original>
+			<German>Aktuelle Gegenstände</German>
 		</Key>
 		<Key ID="STR_PM_MoneyStats">
 			<Original>Money Stats</Original>
+			<German>Bank-Konto</German>
 		</Key>
 		<Key ID="STR_PM_MyGang">
 			<Original>My Gang</Original>
+			<German>Meine Gang</German>
 		</Key>
 		<Key ID="STR_PM_WantedList">
 			<Original>Wanted List</Original>
+			<German>Verhandungsliste</German>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Cell Phone</Original>
+			<German>Handy</German>
 		</Key>
 		<Key ID="STR_PM_KeyChain">
 			<Original>Key Chain</Original>
+			<German>Schlüsselbund</German>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
 			<Original>Admin Menu</Original>
 		</Key>
 		<Key ID="STR_PM_SyncData">
 			<Original>Sync Data</Original>
+			<German>Speichern</German>
 		</Key>
 	</Package>
 	<Package name="Settings_Menu">
 		<Key ID="STR_SM_Title">
 			<Original>Settings Menu</Original>
+			<German>Einstellungen</German>
 		</Key>
 		<Key ID="STR_SM_onFoot">
 			<Original>On Foot:</Original>
+			<German>Boden:</German>
 		</Key>
 		<Key ID="STR_SM_inCar">
 			<Original>In Car:</Original>
+			<German>Auto:</German>
 		</Key>
 		<Key ID="STR_SM_inAir">
 			<Original>In Air:</Original>
+			<German>Luft</German>
 		</Key>
 		<Key ID="STR_SM_ToolTip1">
 			<Original>View distance while on foot</Original>
+			<German>Sichtweite zu Fuß</German>
 		</Key>
 		<Key ID="STR_SM_ToolTip2">
 			<Original>View distance while in a land vehicle</Original>
+			<German>Sichtweite im Auto</German>
 		</Key>
 		<Key ID="STR_SM_ToolTip3">
 			<Original>View distance while in a air vehicle</Original>
+			<German>Sichtweite in der Luft</German>
 		</Key>
 		<Key ID="STR_SM_PlayerTags">
 			<Original>Player Tags</Original>
+			<German>Spieler Tags</German>
 		</Key>
 		<Key ID="STR_SM_TagsON">
 			<Original>Tags ON</Original>
+			<German>Tags AN</German>
 		</Key>
 		<Key ID="STR_SM_TagsOFF">
 			<Original>Tags OFF</Original>
+			<German>Tags AUS</German>
 		</Key>
 		<Key ID="STR_SM_SC">
 			<Original>Sidechat Settings</Original>
+			<German>Seitenkanal Einstellungen</German>
 		</Key>
 		<Key ID="STR_SM_SCOFF">
 			<Original>Sidechat OFF</Original>
+			<German>Seitenkanal AUS</German>
 		</Key>
 		<Key ID="STR_SM_SCON">
 			<Original>Sidechat ON</Original>
+			<German>Seitenkanal AN</German>
 		</Key>
 	</Package>
 	<Package name="Virt_Shop">
 		<Key ID="STR_VS_SI">
 			<Original>Shop Inventory</Original>
+			<German>Laden Inventar</German>
 		</Key>
 		<Key ID="STR_VS_PI">
 			<Original>Your Inventory</Original>
+			<German>Dein Inventar</German>
 		</Key>
 		<Key ID="STR_VS_BuyItem">
 			<Original>Buy Item</Original>
+			<German>Kaufen</German>
 		</Key>
 		<Key ID="STR_VS_SellItem">
 			<Original>Sell Item</Original>
+			<German>Verkaufen</German>
 		</Key>
 	</Package>
 	<Package name="Spawn_Menu">
 		<Key ID="STR_Spawn_Title">
 			<Original>Spawn Selection</Original>
+			<German>Spawn Auswahl</German>
 		</Key>
 		<Key ID="STR_Spawn_Spawn">
 			<Original>Spawn</Original>
 		</Key>
 		<Key ID="STR_Spawn_CSP">
 			<Original>Current Spawn Point</Original>
+			<German>Aktueller Spawn Punkt</German>
 		</Key>
 		<Key ID="STR_Spawn_Spawned">
 			<Original>You have spawned at</Original>
+			<German>Sie sind gespawnt in</German>
 		</Key>
 	</Package>
 	<Package name="Ticket_Menu">
 		<Key ID="STR_Ticket_GiveTicket">
 			<Original>Give Ticket</Original>
+			<German>Strafzettel geben</German>
 		</Key>
 		<Key ID="STR_Ticket_PayTicket">
 			<Original>Pay Ticket</Original>
+			<German>Strafe bezahlen</German>
 		</Key>
 		<Key ID="STR_Ticket_RefuseTicket">
 			<Original>Refuse Ticket</Original>
+			<German>Strafe verweigern</German>
 		</Key>
 	</Package>
 	<Package name="Trunk_Menu">
 		<Key ID="STR_Trunk_TInventory">
 			<Original>Trunk Inventory</Original>
+			<German>Kofferraum</German>
 		</Key>
 		<Key ID="STR_Trunk_PInventory">
 			<Original>Player Inventory</Original>
+			<German>Spieler Inventar</German>
 		</Key>
 		<Key ID="STR_Trunk_Take">
 			<Original>Take</Original>
+			<German>Nehmen</German>
 		</Key>
 		<Key ID="STR_Trunk_Store">
 			<Original>Store</Original>
+			<German>Lagern</German>
 		</Key>
 	</Package>
 	<Package name="Wanted_Menu">
@@ -363,6 +412,7 @@
 		</Key>
 		<Key ID="STR_Wanted_Pardon">
 			<Original>Pardon</Original>
+			<German>Verzeihen</German>
 		</Key>
 	</Package>
 	<Package name="Animals">
@@ -383,214 +433,278 @@
 		</Key>
 		<Key ID="STR_ANIM_Catshark">
 			<Original>Cat Shark</Original>
+			<German>Katzenhai</German>
 		</Key>
 		<Key ID="STR_ANIM_Rabbit">
 			<Original>Rabbit</Original>
+			<German>Hase</German>
 		</Key>
 	</Package>
 	<Package name="Notifications">
 		<Key ID="STR_NOTF_NE_1">
 			<Original>You do not have $%1 for a %2</Original>
+			<German>Sie haben kein $%1 für ein %2</German>
 		</Key>
 		<Key ID="STR_NOTF_B_1">
 			<Original>You bought a %1 for $%2</Original>
+			<German>Sie haben $%1 gekauft für %2</German>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
 			<Original>%1 was arrested by %2</Original>
+			<German>$%1 wurde festgenommen von %2</German>
 		</Key>
 		<Key ID="STR_NOTF_Fishing">
 			<Original>You caught a %1</Original>
+			<German>Sie haben ein/e %1 gefangen</German>
 		</Key>
 		<Key ID="STR_NOTF_CaughtTurtle">
 			<Original>You have taken some turtle meat</Original>
+			<German>Sie haben ein bisschen Schldkroetenfleich entnommen</German>
 		</Key>
 		<Key ID="STR_NOTF_Earned_1">
 			<Original>You have earned $%1</Original>
+			<German>Sie haben $%1 verdient</German>
 		</Key>
 		<Key ID="STR_NOTF_NetDrop">
 			<Original>Dropping fishing net....</Original>
+			<German>Fischernetz auswerfen...</German>
 		</Key>
 		<Key ID="STR_NOTF_NetDropFail">
 			<Original>Didn't catch any fish..</Original>
+			<German>Schade kein Fisch...</German>
 		</Key>
 		<Key ID="STR_NOTF_NetUp">
 			<Original>Fishing net pulled up.</Original>
+			<German>Fischernetz hochziehen</German>
 		</Key>
 		<Key ID="STR_NOTF_InvFull">
 			<Original>Your inventory space is full.</Original>
+			<German>Ihr Inventar ist voll.</German>
 		</Key>
 		<Key ID="STR_NOTF_Gathering">
 			<Original>Gathering %1...</Original>
+			<German>Sammeln %1...</German>
 		</Key>
 		<Key ID="STR_NOTF_ChopSoldCar">
 			<Original>You have sold a %1 for $%2</Original>
+			<German>Sie haben $%1 verkauft für %2</German>
 		</Key>
 		<Key ID="STR_NOTF_Picked">
 			<Original>You have picked %1 %2</Original>
+			<German>Sie haben ausgewählt %1 %2</German>
 		</Key>
 		<Key ID="STR_NOTF_Collected">
 			<Original>You have collected some %1</Original>
+			<German>Sie haben etwas %1 gesammelt</German>
 		</Key>
 		<Key ID="STR_NOTF_DPStart">
 			<Original>You are to deliver this package to %1</Original>
+			<German>Bitte Paket nach %1 bringen</German>
 		</Key>
 		<Key ID="STR_NOTF_DPTask">
 			<Original>Deliver this package to %1</Original>
+			<German>Bitte Paket nach %1 bringen</German>
 		</Key>
 		<Key ID="STR_NOTF_DPFailed">
 			<Original>You failed to deliver the package because you died.</Original>
+			<German>Sie haben das Paket nicht abgeben können, weil Sie gestorben sind.</German>
 		</Key>
 		<Key ID="STR_NOTF_HS_NoCash">
 			<Original>You do not have $%1 to be healed</Original>
+			<German>Sie haben keine $%1 um geheilt zu werden</German>
 		</Key>
 		<Key ID="STR_NOTF_HS_Healing">
 			<Original>Please stay still</Original>
+			<German>Bitte still stehen.</German>
 		</Key>
 		<Key ID="STR_NOTF_HS_ToFar">
 			<Original>You need to be within 5m while the doctor is healing you</Original>
+			<German>Bitte beim Doctor bleiben er beißt nicht.</German>
 		</Key>
 		<Key ID="STR_NOTF_HS_Healed">
 			<Original>You are now fully healed.</Original>
+			<German>Sie sind nun voll genesen.</German>
 		</Key>
 		<Key ID="STR_NOTF_BeingImpounded">
 			<Original>%1 your %2 is being impounded.</Original>
+			<German>%1 Ihr %2 wird derzeit beschlagnahmt.</German>
 		</Key>
 		<Key ID="STR_NOTF_Impounding">
 			<Original>Impounding Vehicle</Original>
+			<German>Beschlagnahme Fahrzeug.</German>
 		</Key>
 		<Key ID="STR_NOTF_ImpoundingCancelled">
 			<Original>Impounding has been cancelled.</Original>
+			<German>Das Fahrzeug konnte nicht beschlagnahmt werden.</German>
 		</Key>
 		<Key ID="STR_NOTF_Impounded">
 			<Original>You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!</Original>
 		</Key>
 		<Key ID="STR_NOTF_HasImpounded">
 			<Original>%1 has impounded %2's %3</Original>
+			<German>%1 hat %2s %3 beschlagnahmt</German>
 		</Key>
 		<Key ID="STR_NOTF_AbortESC">
 			<Original>Abort available in %1</Original>
+			<German>Abbruch möglich in %1</German>
 		</Key>
 		<Key ID="STR_NOTF_DeviceIsMining">
 			<Original>This vehicle is already mining</Original>
+			<German>Das Fahrzeug ist bereits aktiv</German>
 		</Key>
 		<Key ID="STR_NOTF_DeviceFull">
 			<Original>The vehicle is full</Original>
+			<German>Der Kofferraum ist voll</German>
 		</Key>
 		<Key ID="STR_NOTF_notNearResource">
 			<Original>You are not near a resource field</Original>
+			<German>Bu bist zuweit von dem Feld entfernt</German>
 		</Key>
 		<Key ID="STR_NOTF_MiningStopped">
 			<Original>You cannot turn the vehicle on when mining</Original>
+			<German>Das Fahrzeug darf während dem Minen nicht umgeparkt werden</German>
 		</Key>
 		<Key ID="STR_NOTF_DeviceMining">
 			<Original>The Device is mining...</Original>
+			<German>Es wird gebohrt...</German>
 		</Key>
 		<Key ID="STR_NOTF_DeviceMined">
 			<Original>Completed cycle, the device has mined %1</Original>
+			<German>Programm abgearbeitet es wurde %1 Rohmaterial produziert</German>
 		</Key>
 		<Key ID="STR_NOTF_OutOfFuel">
 			<Original>Vehicle is out of fuel</Original>
+			<German>Das Fahrzeug hat kein Benzin mehr</German>
 		</Key>
 	</Package>
 	<Package name="Life_Items">
 		<Key ID="STR_Item_Cannabis">
 			<Original>Cannabis</Original>
+			<German></German>
 		</Key>
 		<Key ID="STR_Item_Apple">
 			<Original>Apple</Original>
+			<German>Apfel</German>
 		</Key>
 		<Key ID="STR_Item_Apples">
 			<Original>Apples</Original>
+			<German>Äpfel</German>
 		</Key>
 		<Key ID="STR_Item_Cocaine">
 			<Original>Cocaine</Original>
+			<German>Kokain</German>
 		</Key>
 		<Key ID="STR_Item_Heroin">
 			<Original>Heroin</Original>
 		</Key>
 		<Key ID="STR_Item_Oil">
 			<Original>Oil</Original>
+			<German>Öl</German>
 		</Key>
 		<Key ID="STR_Item_Peach">
 			<Original>Peach</Original>
+			<German>Pfirsich</German>
 		</Key>
 		<Key ID="STR_Item_Peaches">
 			<Original>Peaches</Original>
+			<German>Pfirsiche</German>
 		</Key>
 	</Package>
 	<Package name="Federal_Reserve">
 		<Key ID="STR_NOTF_FRRobbery_fail">
 			<Original>The robbery has failed due to unknown reasons</Original>
+			<German>Der Raub ist missglückt</German>
 		</Key>
 		<Key ID="STR_NOTF_FRRobbery_Success">
 			<Original>$%1 was stolen from the robbery on the federal reserve</Original>
+			<German>Bei dem Raub wurde $%1 gestohlen</German>
 		</Key>
 		<Key ID="STR_FEDR_VInUse">
 			<Original>This vault is already being robbed by someone else</Original>
+			<German>Der Safe wurde vor kurzem geknackt</German>
 		</Key>
 		<Key ID="STR_FEDR_VRecently">
 			<Original>This vault was already robbed recently</Original>
+			<German>Der Safe wurde vor kurzem geknackt</German>
 		</Key>
 	</Package>
 	<Package name="Player_Interaction">
 		<Key ID="STR_pInAct_Title">
 			<Original>Player Interaction Menu</Original>
+			<German>Spieler Interations Menü</German>
 		</Key>
 		<Key ID="STR_pInAct_PutInCar">
 			<Original>Put in vehicle</Original>
+			<German>Ins Fahrzeug setzen</German>
 		</Key>
 		<Key ID="STR_pInAct_Unrestrain">
 			<Original>Un-Restrain</Original>
+			<German>Entfesseln</German>
 		</Key>
 		<Key ID="STR_pInAct_checkLicenses">
 			<Original>Check Licenses</Original>
+			<German>Lizensen überprüfen</German>
 		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
 			<Original>Search Player</Original>
+			<German>Spieler durchsuchen</German>
 		</Key>
 		<Key ID="STR_pInAct_StopEscort">
 			<Original>Stop Escorting</Original>
+			<German>Eskortieren stoppen</German>
 		</Key>
 		<Key ID="STR_pInAct_Escort">
 			<Original>Escort Player</Original>
+			<German>Spieler Eskortieren</German>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Ticket Player</Original>
+			<German>Bußgeld ausschreiben</German>
 		</Key>
 		<Key ID="STR_pInAct_Arrest">
 			<Original>Send to jail</Original>
+			<German>Ins Gefängnis stecken</German>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">
 			<Original>Vehicle Interaction Menu</Original>
+			<German>Fahrzeug Interaktions Menücken</German>
 		</Key>
 		<Key ID="STR_vInAct_Unflip">
 			<Original>Unflip Vehicle</Original>
+			<German>Fahrzeug umdrehen</German>
 		</Key>
 		<Key ID="STR_vInAct_GetInKart">
 			<Original>Get In Kart</Original>
 		</Key>
 		<Key ID="STR_vInAct_PushBoat">
 			<Original>Push Boat</Original>
+			<German>Fahrzeug drücken</German>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
 			<Original>Repair Vehicle</Original>
+			<German>Fahrzeug reparieren</German>
 		</Key>
 		<Key ID="STR_vInAct_Registration">
 			<Original>Registration</Original>
+			<German>Fahrzeug Regestrierung</German>
 		</Key>
 		<Key ID="STR_vInAct_SearchVehicle">
 			<Original>Search Vehicle</Original>
+			<German>Fahrzeug durchsuchen</German>
 		</Key>
 		<Key ID="STR_vInAct_PullOut">
 			<Original>Pullout Players</Original>
+			<German>Spieler rausziehen</German>
 		</Key>
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
+			<German>Fahrzeug beschlagnahmen</German>
 		</Key>
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Mine from device</Original>
+			<German>Bohrer benutzen</German>
 		</Key>
 	</Package>
 </Project>

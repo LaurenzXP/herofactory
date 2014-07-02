@@ -103,7 +103,7 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",950000],
+			["O_MRAP_02_F",1400000],
 			["C_Van_01_box_F",60000],
 			["I_Truck_02_transport_F",75000],
 			["I_Truck_02_covered_F",100000],
