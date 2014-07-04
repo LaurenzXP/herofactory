@@ -471,7 +471,7 @@ switch(_shop) do
 			[
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
-				["ToolKit",nil,500],
+				["ToolKit",nil,2500],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
@@ -487,7 +487,7 @@ switch(_shop) do
 			[
 				["Binocular",nil,300],
 				["ItemGPS",nil,100],
-				["ToolKit",nil,1000],
+				["ToolKit",nil,3000],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
 				["Chemlight_red",nil,300],
