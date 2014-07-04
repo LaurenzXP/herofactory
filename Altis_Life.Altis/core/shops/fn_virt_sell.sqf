@@ -15,9 +15,9 @@ _price = (__GETC__(sell_array) select _index) select 1;
 _var = [_type,0] call life_fnc_varHandle;
 
 _amount = ctrlText 2405;
-if(!([_amount] call fnc_isnumber)) exitWith {hint "You didn't enter an actual number";};
+if(!([_amount] call fnc_isnumber)) exitWith {hint "Error.. Diese Nummer ist nicht real!";};
 _amount = parseNumber (_amount);
-if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "You don't have that many items to sell!"};
+if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "Sie haben nicht so viele Item!"};
 
 _price = (_price * _amount);
 _name = [_var] call life_fnc_vartostr;

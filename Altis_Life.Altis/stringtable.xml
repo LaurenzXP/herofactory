@@ -655,7 +655,7 @@
 		</Key>
 		<Key ID="STR_pInAct_Escort">
 			<Original>Escort Player</Original>
-			<German>Spieler Eskortieren</German>
+			<German>Eskortieren</German>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Ticket Player</Original>
@@ -673,7 +673,7 @@
 		</Key>
 		<Key ID="STR_vInAct_Unflip">
 			<Original>Unflip Vehicle</Original>
-			<German>Fahrzeug umdrehen</German>
+			<German>Aufrichten</German>
 		</Key>
 		<Key ID="STR_vInAct_GetInKart">
 			<Original>Get In Kart</Original>
@@ -684,23 +684,23 @@
 		</Key>
 		<Key ID="STR_vInAct_Repair">
 			<Original>Repair Vehicle</Original>
-			<German>Fahrzeug reparieren</German>
+			<German>Reparieren</German>
 		</Key>
 		<Key ID="STR_vInAct_Registration">
 			<Original>Registration</Original>
-			<German>Fahrzeug Regestrierung</German>
+			<German>Regestrierung</German>
 		</Key>
 		<Key ID="STR_vInAct_SearchVehicle">
 			<Original>Search Vehicle</Original>
-			<German>Fahrzeug durchsuchen</German>
+			<German>Durchsuchen</German>
 		</Key>
 		<Key ID="STR_vInAct_PullOut">
 			<Original>Pullout Players</Original>
-			<German>Spieler rausziehen</German>
+			<German>Rausziehen</German>
 		</Key>
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
-			<German>Fahrzeug beschlagnahmen</German>
+			<German>Beschlagnahmen</German>
 		</Key>
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Mine from device</Original>

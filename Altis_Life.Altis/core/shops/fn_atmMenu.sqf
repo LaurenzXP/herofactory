@@ -9,7 +9,7 @@ private["_display","_text","_units","_type"];
 
 if(!life_use_atm) exitWith
 {
-	hint "Because you robbed the bank you can't use the ATM for 5 minutes.";
+	hint "Weil Sie die Bank ausgeraubt haben, ist Ihre Karte für 5min gesperrt!";
 };
 
 if(!dialog) then
