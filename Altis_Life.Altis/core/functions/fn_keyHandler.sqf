@@ -80,11 +80,20 @@ switch (_code) do
 				waitUntil {scriptDone _handle};
 				life_action_inUse = false;
 			};
-		};
 
-       if((!life_action_inUse) && (vehicle player == player) ) then
-        {
-            {
+        };
+
+	};
+
+//Q Key
+    case 16:
+    {    
+    	
+    if((!life_action_inUse) && (vehicle player == player) ) then
+	{
+	    
+    	{
+	        	life_action_inUse = true;		            
                 _str = [_x] call life_fnc_varToStr;
                 _val = missionNameSpace getVariable _x;
                 if(_val > 0 ) then
@@ -94,13 +103,15 @@ switch (_code) do
                         [] spawn life_fnc_pickAxeUse;
                     };
                 };
-            } foreach life_inv_items;
-        };
+
+          		 life_action_inUse = false;
+        } foreach life_inv_items;
+
+    }
+
+    };
 
 
-
-
-	};
 	
 	//Restraining (Shift + R)
 	case 19:
