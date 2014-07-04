@@ -300,7 +300,7 @@
 		</Key>
 		<Key ID="STR_SM_inAir">
 			<Original>In Air:</Original>
-			<German>Luft</German>
+			<German>Luft:</German>
 		</Key>
 		<Key ID="STR_SM_ToolTip1">
 			<Original>View distance while on foot</Original>

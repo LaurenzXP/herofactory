@@ -18,8 +18,10 @@ life_gang_sd =
 	"76561197984199703"];
 	
 life_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
-
 life_gang_combat_medic = ["76561197967160502","76561198083768206"]; 
+
+life_gang_asgard = [];
+
 __CONST__(life_gang_sd,life_gang_sd);
 __CONST__(life_gang_adac,life_gang_adac);
 __CONST__(life_gang_combat_medic,life_gang_combat_medic);
@@ -246,7 +248,7 @@ sell_array =
 [
 	["apple",50],
 	["heroinu",1850],
-	["heroinp",2650],
+	["heroinp",4650],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
@@ -260,16 +262,16 @@ sell_array =
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",2350],
+	["marijuana",4350],
 	["tbacon",25],
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
 	["peach",55],
 	["cocaine",3000],
-	["cocainep",5000],
+	["cocainep",4970],
 	["diamond",750],
-	["diamondc",2000],
+	["diamondc",3700],
 	["iron_r",3200],
 	["copper_r",1500],
 	["salt_r",1650],
