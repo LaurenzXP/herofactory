@@ -17,7 +17,7 @@ if((_itemInfo select 6) != "CfgVehicles") then
 {
 	if((_itemInfo select 4) in [4096,131072]) then
 	{
-		if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "You don't have enough room for that item."};
+		if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Sie haben nicht genug Platz."};
 	};
 };
 
@@ -32,9 +32,9 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 }
 	else
 {
-	if(_price > life_cash) exitWith {hint "You do not have enough money!"};
+	if(_price > life_cash) exitWith {hint "Sie haben nicht genug Geld um diesen Gegenstand zu kaufen!"};
 	[_item,true] spawn life_fnc_handleItem;
-	hint parseText format["You bought a %1 for <t color='#8cff9b'>$%2</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
+	hint parseText format["Sie haben ein %1 gekauft in der Farbe: <t color='#8cff9b'>$%2</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
 	life_cash = life_cash - _price;
 };
 

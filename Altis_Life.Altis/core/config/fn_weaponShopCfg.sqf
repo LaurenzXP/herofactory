@@ -354,7 +354,7 @@ switch(_shop) do
 						["20Rnd_762x51_Mag",nil,1000],
 						["acc_flashlight",nil,500],
 						["acc_pointer_IR",nil,500],
-						["7Rnd_408_Mag",nil,5000],
+						["7Rnd_408_Mag",nil,10000],
 						["optic_Aco",nil,2500],
 						["optic_ACO_grn",nil,2500],
 						["optic_Aco_smg",nil,2500],
@@ -367,7 +367,9 @@ switch(_shop) do
 						["muzzle_snds_H",nil,10000],
 						["muzzle_snds_acp",nil,10000],
 						["optic_MRCO",nil,6000],
+						["optic_SOS",nil,10000],
 						["optic_Arco",nil,8000],
+						["optic_NVS",nil,12000],
 						["optic_DMS",nil,10000]
 					]
 				];
