@@ -6,8 +6,7 @@
 	Main functionality for pickaxe in mining.
 */
 closeDialog 0;
-if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
-life_action_inUse = true;	
+
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 switch (true) do
 {
@@ -40,5 +39,4 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 	_itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 	titleText[format["You have mined %2 %1",_itemName,_diff],"PLAIN"];
 };
-
 life_action_inUse = false;
