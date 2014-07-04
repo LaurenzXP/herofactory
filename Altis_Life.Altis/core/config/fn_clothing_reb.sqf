@@ -31,13 +31,11 @@ switch (_filter) do
 		];
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
 			
-		  _ret = [
+		  _ret = _ret + [
 		  			["U_B_CombatUniform_mcam", "SD COMBAT UNIFORM", 1800],
 		  			["U_Rangemaster", "SD STANDARD UNIFORM", 1800],
 		  			["U_NikosAgedBody", "SD Fine Dress", 1800]
-
-
-		  			
+	  			
 		  		]
 		};		
 
@@ -61,7 +59,7 @@ switch (_filter) do
 
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
 			
-		  _ret = [
+		  _ret = _ret + [
 				
 				["H_Bandanna_khk_hs",nil,650],
 				["H_Beret_blk",nil,650],
@@ -107,7 +105,7 @@ switch (_filter) do
 			["V_HarnessO_brn",nil,7500]
 		];
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
-			_ret = [
+			_ret = _ret + [
 				["V_PlateCarrier1_blk",nil,1500],
 				["V_TacVest_blk",nil,1450],
 				["V_Chestrig_blk",nil,1450],
@@ -131,8 +129,7 @@ switch (_filter) do
 			["B_Carryall_khk",nil,5000]
 		];
 		if((getPlayerUID player) in __GETC__(life_gang_sd)) then {
-			_ret =
-			[
+			_ret = _ret + [
 				["B_OutdoorPack_blk",nil,800],
 				["B_FieldPack_blk",nil,500],
 				["B_AssaultPack_blk",nil,700],
