@@ -281,6 +281,7 @@ switch(_shop) do
                         ["200Rnd_65x39_cased_Box",nil,500],
                         ["muzzle_snds_acp",nil,2750],
                         ["muzzle_snds_H",nil,2750],
+                        ["muzzle_snds_M",nil,2750],
 						["muzzle_snds_H_MG",nil,5000],
 						["muzzle_snds_L",nil,650],
 						["UGL_FlareWhite_F",nil,500],
