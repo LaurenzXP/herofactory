@@ -37,7 +37,7 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
-if((playerSide in [west, east]) || (((getPlayerUID player) in __GETC__(life_gang_adac)) || ((getPlayerUID player) in __GETC__(life_gang_sd)))) then {
+if((playerSide in [west, east])) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 	
@@ -97,7 +97,22 @@ if((playerSide in [west, east]) || (((getPlayerUID player) in __GETC__(life_gang
 		_Btn3 ctrlShow false;
 	};
 	
-	_Btn4 ctrlShow false;
-	_Btn5 ctrlShow false;
-	_Btn6 ctrlShow false;
+	if (((getPlayerUID player) in __GETC__(life_gang_adac)) || ((getPlayerUID player) in __GETC__(life_gang_sd))) then {
+			_Btn4 ctrlSetText localize "STR_vInAct_Registration";
+			_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+	
+			_Btn5 ctrlSetText localize "STR_vInAct_SearchVehicle";
+			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
+	
+			_Btn6 ctrlSetText localize "STR_vInAct_PullOut";
+			_Btn6 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+
+
+	} else {
+		_Btn4 ctrlShow false;
+		_Btn5 ctrlShow false;
+		_Btn6 ctrlShow false;	
+	}
+
+
 };
