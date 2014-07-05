@@ -14,7 +14,50 @@ player createDiarySubject ["controls","Controls"];
 player createDiarySubject ["bugs","Fehler"];
 player createDiarySubject ["kompetenzen","Kompetenzen"];
 player createDiarySubject ["admins","Der Admin"];
+player createDiarySubject ["Preise","Preise"];
 
+
+
+player createDiaryRecord [
+[
+"Preise", //Subsection
+
+"Äpfel 50",
+"Heroin 4650",
+"salema 45",
+"ornate 40",
+"mackerel 175",
+"tuna 700",
+"mullet 250",
+"catshark 300",
+"rabbit 65",
+"oilp 3200",
+"turtle 3000",
+"water 5",
+"coffee 5",
+"turtlesoup 1000",
+"donuts 60",
+"marijuana 4350",
+"tbacon 25",
+"lockpick 75",
+"pickaxe 750",
+"redgull 200",
+"peach 55",
+"cocaine 3000",
+"cocainep 4970",
+"diamond 750",
+"diamondc 3700",
+"iron_r 3200",
+"copper_r 1500",
+"salt_r 1650",
+"glass 1450",
+"fuelF 500",
+"spikeStrip 1200",
+"cement 1950",
+"goldbar 95000"
+"
+]
+];
 
 
 /*  Example

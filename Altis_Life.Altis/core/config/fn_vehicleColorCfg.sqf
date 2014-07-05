@@ -50,7 +50,9 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["textures\COP\Vehicles\police_offroad.jpg","cop"],
 			["textures\MED\offroad_notarzt.jpg","med"],
-			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
+			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
+			["textures\ADAC\adac_offroad.jpg","civ"]
+
 		];
 	};
 	
@@ -134,7 +136,9 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["textures\MED\Notarzt_Hummingbird.jpg","med"]
+			["textures\MED\Notarzt_Hummingbird.jpg","med"],
+			["textures\ADAC\adac_Hummingbird.jpg","civ"]
+
 		];
 	};
 	
