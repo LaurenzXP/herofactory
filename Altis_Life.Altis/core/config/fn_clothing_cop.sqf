@@ -132,7 +132,9 @@ switch (_filter) do
 
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_ret set[count _ret,["B_AssaultPack_blk",nil,700];
+			_ret = ret + [
+				["B_AssaultPack_blk",nil,700]
+			];
 		};
 	};
 };
