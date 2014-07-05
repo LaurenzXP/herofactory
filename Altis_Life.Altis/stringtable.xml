@@ -702,6 +702,7 @@
 			<Original>Impound Vehicle</Original>
 			<German>Beschlagnahmen</German>
 		</Key>
+		
 		<Key ID="STR_vInAct_DeviceMine">
 			<Original>Mine from device</Original>
 			<German>Bohrer benutzen</German>
