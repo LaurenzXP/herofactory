@@ -73,5 +73,5 @@ switch (_index) do
 		} foreach _config;
 	};
 };
-
+[] call life_fnc_updateClothes;
 if(isNil {_this select 0}) then {_itemList lbSetCurSel 0;};
