@@ -158,10 +158,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\COP\Vehicles\Hunter\hunter_pol1.jpg","cop","textures\COP\Vehicles\Hunter\hunter_pol2.jpg"],
 			["textures\COP\Vehicles\Hunter\polizei_hunter1.jpg","cop","textures\COP\Vehicles\Hunter\polizei_hunter2.jpg"],
-			["textures\COP\Vehicles\Hunter\hunter_GSG9.jpg","cop","textures\COP\Vehicles\Hunter\hunter_GSGA_plane.jpg"],
-			["textures\COP\Vehicles\Hunter\Polizei_Huntzer_3.0.jpg","cop","textures\COP\Vehicles\Hunter\Hunter3.0Plane.jpg"]
+			["textures\COP\Vehicles\Hunter\hunter_GSG9.jpg","cop","textures\COP\Vehicles\Hunter\hunter_GSGA_plane.jpg"]
 		];
 	};
 	
@@ -226,8 +224,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"],
-			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"],
-			["textures\COP\Vehicles\Ifrit_Polizei4_Front.jpg","cop","textures\COP\Vehicles\Ifrit_Polizei4_hinten.jpg"]
+			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"]
 		];
 	};
 	case "O_MRAP_02_hmg_F":
@@ -235,8 +232,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\soft_f\MRAP_02\Data\mrap_02_ext_01_co.paa","civ","\a3\soft_f\MRAP_02\Data\mrap_02_ext_02_co.paa"],
-			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"],
-			["textures\COP\Vehicles\Ifrit_Polizei4_Front.jpg","cop","textures\COP\Vehicles\Ifrit_Polizei4_hinten.jpg"]
+			["textures\vehicles\Ifrit_black_front.jpg","civ","textures\vehicles\Ifrit_black_hinten.jpg"]
 		];
 	};
 

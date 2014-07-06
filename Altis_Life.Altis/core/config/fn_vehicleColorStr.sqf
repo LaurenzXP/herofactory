@@ -154,10 +154,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "GSGA 1"};
-			case 1: {_color = "Polizei 2"};
-			case 2: {_color = "GSGA 2"};
-			case 3: {_color = "Polizei 2"};
+			case 1: {_color = "Polizei"};
+			case 2: {_color = "GSGA"};
 		};
 	};
 	
@@ -175,7 +173,6 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Tarnfleck"};
 			case 1: {_color = "SD"};
-			case 2: {_color = "GSG"};
 		};
 	};	
 	case "I_Truck_02_covered_F":
