@@ -225,7 +225,7 @@ class Mission
 		minute=0;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
-	};;
+	};
 	class Groups
 	{
 		items=133;
@@ -75727,7 +75727,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=250;
+		items=251;
 		class Item0
 		{
 			position[]={8487.9248,107.08304,25155.91};
@@ -77666,6 +77666,13 @@ class Mission
 			position[]={12820.835,86.442863,16721.746};
 			name="civ_car_100";
 			type="Empty";
+		};
+		class Item250
+		{
+			position[]={8469.2002,79.148193,25309.859};
+			name="junkyard";
+			text="Beschlagnahmte Fahrzeuge";
+			type="KIA";
 		};
 	};
 	class Sensors

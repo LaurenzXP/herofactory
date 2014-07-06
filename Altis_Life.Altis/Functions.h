@@ -122,6 +122,7 @@ class Life_Client_Core
 		class arrestAction {};
 		class escortAction {};
 		class impoundAction {};
+		class impoundPermAction {};
 		class pulloutAction {};
 		class putInCar {};
 		class stopEscorting {};

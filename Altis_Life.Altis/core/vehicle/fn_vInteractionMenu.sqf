@@ -69,7 +69,8 @@ if((playerSide in [west, east])) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
 	};
-	
+	_Btn7 ctrlSetText localize "STR_vInAct_Impound_Perm";
+	_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundPermAction;";
 } else {
 	
 	if(_curTarget isKindOf "Ship") then {

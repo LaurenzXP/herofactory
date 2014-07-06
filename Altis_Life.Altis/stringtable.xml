@@ -700,6 +700,10 @@
 		</Key>
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
+			<German>Abschleppen</German>
+		</Key>
+		<Key ID="STR_vInAct_Impound_Perm">
+			<Original>Impound Vehicle</Original>
 			<German>Beschlagnahmen</German>
 		</Key>
 		
