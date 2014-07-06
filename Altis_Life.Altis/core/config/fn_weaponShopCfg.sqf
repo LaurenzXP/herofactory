@@ -301,7 +301,6 @@ switch(_shop) do
                         ["optic_LRPS",nil,12000],
                         ["optic_tws",nil,2000],
                         ["optic_DMS",nil,6500],
-                        ["optic_Nightstalker",nil,9500],
                         ["B_UavTerminal",nil,30000],
                         ["B_UAV_01_backpack_F",nil,50000],
                         ["DemoCharge_Remote_Mag",nil,10000],
