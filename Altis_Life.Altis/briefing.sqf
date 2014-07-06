@@ -55,7 +55,6 @@ player createDiaryRecord [
 "spikeStrip 1200",
 "cement 1950",
 "goldbar 95000"
-
 ]
 ];
 
