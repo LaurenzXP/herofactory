@@ -51,7 +51,7 @@ if(life_firstSpawn) then {
 
 
 _role1 = "Willkommen auf dem Herofactory Altis Life RPG Server:";
-_role1names = ["[GER] Altis Life RPG by Tonic"];
+_role1names = ["Altis Life RPG by Tonic"];
 _role2 = "Serveradmins!";
 _role2names = ["Cedi","[SD] Demon","LT. Faceman","Snake"];
 _role3 = "Website:";

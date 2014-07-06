@@ -29,5 +29,6 @@ player setObjectTextureGlobal [0,"textures\MED\recrute_uniform_rettungsdienst.jp
 */
 
 if ((playerSide == independent)  && (uniform player == "U_Rangemaster") )  then {
+diag_log "SETTING MEDIC TEXTURE";
 		player setObjectTextureGlobal [0, "textures\MED\recrute_uniform_rettungsdienst.jpg"]; // this is for all cops whitelisted or public.
 	};

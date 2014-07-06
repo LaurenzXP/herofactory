@@ -39,3 +39,5 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 		_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Price: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
 	};
 };
+[] call life_fnc_updateClothes;
+_priceTag;

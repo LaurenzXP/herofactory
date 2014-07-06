@@ -4,9 +4,9 @@
 #define MAX_SPEED_ROPES_AVAIL 30
 
 
-#define STR_TOSS_ROPES "Toss Ropes"
-#define STR_FAST_ROPE "Fast Rope"
-#define STR_CUT_ROPES "Cut Ropes"
+#define STR_TOSS_ROPES "Seile runterlassen"
+#define STR_FAST_ROPE "Abseilen"
+#define STR_CUT_ROPES "Seile abschneiden"
 
 
 if (isdedicated) exitwith {};
@@ -145,6 +145,9 @@ zlt_fnc_fastropeUnit = {
 	_heli = vehicle _unit;
 	if (_unit == _heli) exitWith {};
 
+	if((player getVariable "restrained")) exitWith {hint "Du bist gefesselt";};
+
+
 	_ropes = (_heli getvariable ["zlt_ropes", []]);
 	if (count _ropes == 0) exitwith {};
 	
@@ -169,6 +172,7 @@ zlt_fnc_fastropeUnit = {
 
 
 zlt_fnc_cutropes = {
+	if((player getVariable "restrained")) exitWith {hint "Du bist gefesselt";};
 	_veh = _this;
 	_ropes = (_veh getvariable ["zlt_ropes", []]);
 	{deletevehicle _x} foreach _ropes;
@@ -183,6 +187,7 @@ zlt_fnc_removeropes = {
 };
 
 zlt_fnc_createropes = {
+	if((player getVariable "restrained")) exitWith {hint "Du bist gefesselt";};
 	zlt_mutexAction = true;
 	(vehicle player) call zlt_fnc_tossropes;
 	zlt_mutexAction = false;

@@ -43,8 +43,4 @@ if(playerSide == west) then
 {
 	[] call life_fnc_saveGear;
 };
-if(playerSide == east) then
-{
-	[] call life_fnc_adacsaveGear;
-};
 [] call life_fnc_updateClothes;
