@@ -11,6 +11,8 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
+	case "diamond": {4}; // on this we base our calculation of prices - if legal processed weight x2 x1000, if illegal x2 x1000 + 500 
+	case "diamondc": {2};
 	case "oilu": {7};
 	case "oilp": {6};
 	case "heroinu": {3};
@@ -43,8 +45,6 @@ switch (_item) do
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {1};
-	case "diamond": {4};
-	case "diamondc": {2};
 	case "cocaine": {3};
 	case "cocainep": {2};
 	case "spikeStrip": {15};

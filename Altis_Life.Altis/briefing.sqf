@@ -18,43 +18,42 @@ player createDiarySubject ["Preise","Preise"];
 
 
 
-player createDiaryRecord [
+player createDiaryRecord ["Preise",
 [
+
 "Preise", //Subsection
 
-"Äpfel 50",
-"Heroin 4650",
-"salema 45",
-"ornate 40",
-"mackerel 175",
-"tuna 700",
-"mullet 250",
-"catshark 300",
-"rabbit 65",
-"oilp 3200",
-"turtle 3000",
-"water 5",
-"coffee 5",
-"turtlesoup 1000",
-"donuts 60",
-"marijuana 4350",
-"tbacon 25",
-"lockpick 75",
-"pickaxe 750",
-"redgull 200",
-"peach 55",
-"cocaine 3000",
-"cocainep 4970",
-"diamond 750",
-"diamondc 3700",
-"iron_r 3200",
-"copper_r 1500",
-"salt_r 1650",
-"glass 1450",
-"fuelF 500",
-"spikeStrip 1200",
-"cement 1950",
-"goldbar 95000"
+"Äpfel 50€ <br/>
+Heroin 5650€ <br/>
+Goldstrieme 45€ <br/>
+Geisterpfeifenfische 40€ <br/>
+Makrele 175€ <br/>
+Tunfisch 700€ <br/>
+Meeräschen 250€ <br/>
+Katzenhei 300€ <br/>
+Hasenfleisch 65€ <br/>
+Öl 6000€ <br/>
+Schildkröten 6000€ <br/>
+Wasser 5€ <br/>
+Kaffee 5€ <br/>
+Schildkrötensuppe 1000€ <br/>
+Donuts 60€ <br/>
+Marihuana 4350€ <br/>
+Bohnen 25€ <br/>
+lockpick 75€ <br/>
+Spitzhacke 750€ <br/>
+Redbull 200€ <br/>
+Pfirsich 55€ <br/>
+Kokain 4500€ <br/>
+Diamanten 4000€ <br/>
+Eisen 3200€ <br/>
+Kupfer 2000€ <br/>
+Salz 1650€ <br/>
+Glass 1450€ <br/>
+Benzin 500€ <br/>
+spikeStrip 1200€ <br/>
+Zement 4400€ <br/>
+Goldbarren 95000€ <br/>"
 ]
 ];
 

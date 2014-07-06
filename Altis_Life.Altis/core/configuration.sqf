@@ -20,7 +20,7 @@ life_gang_sd =
 life_gang_adac = ["76561198125791794","76561198135304154","76561197988162012","76561197979887957"];
 life_gang_combat_medic = ["76561197967160502","76561198083768206"]; 
 
-life_gang_asgard = [];
+life_gang_asgard = ["76561198052971274"];
 
 __CONST__(life_gang_sd,life_gang_sd);
 __CONST__(life_gang_adac,life_gang_adac);
@@ -248,7 +248,7 @@ sell_array =
 [
 	["apple",50],
 	["heroinu",1850],
-	["heroinp",4650],
+	["heroinp",5650],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
@@ -256,8 +256,8 @@ sell_array =
 	["mullet",250],
 	["catshark",300],
 	["rabbit",65],
-	["oilp",3200],
-	["turtle",3000],
+	["oilp",6000],
+	["turtle",6000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
@@ -269,18 +269,18 @@ sell_array =
 	["redgull",200],
 	["peach",55],
 	["cocaine",3000],
-	["cocainep",4970],
+	["cocainep",4500],
 	["diamond",750],
-	["diamondc",3700],
-	["iron_r",3200],
-	["copper_r",1500],
-	["salt_r",1650],
-	["glass",1450],
+	["diamondc",4000],
+	["iron_r",3200], // weight 3
+	["copper_r",2000], // weight 3 - 1000 to prevent fast farming 
+	["salt_r",1650], // make money with salt ;)
+	["glass",1450], // make glas more expensive
 	["fuelF",500],
 	["spikeStrip",1200],
-	["cement",1950],
-	["goldbar",95000],
-	["cement",1950]
+	["cement", 4400],
+	["goldbar",95000]
+
 ];
 __CONST__(sell_array,sell_array);
 
@@ -295,7 +295,7 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
-	["turtle",4000],
+	["turtle",7500],
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],
