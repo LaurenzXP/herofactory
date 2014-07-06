@@ -35,7 +35,7 @@ switch (true) do
 	{
 		switch(true) do
 		{
-			case (damage _veh > 0.15) : {_price = 950;};
+			case (damage _veh > 0.15) : {_price = 1050;};
 			case (damage _veh > 0.06) : {_price = 650;};
 			case (damage _veh > 0.03) : {_price = 350;};
 			default {_price = 25;};

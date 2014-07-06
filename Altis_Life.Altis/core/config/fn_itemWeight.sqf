@@ -13,8 +13,8 @@ switch (_item) do
 {
 	case "diamond": {4}; // on this we base our calculation of prices - if legal processed weight x2 x1000, if illegal x2 x1000 + 500 
 	case "diamondc": {2};
-	case "oilu": {7};
-	case "oilp": {6};
+	case "oilu": {6};
+	case "oilp": {5};
 	case "heroinu": {3};
 	case "heroinp": {2};
 	case "cannabis": {2};

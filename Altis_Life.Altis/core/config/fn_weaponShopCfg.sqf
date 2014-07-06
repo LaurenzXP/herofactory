@@ -191,13 +191,13 @@ switch(_shop) do
 			{
 			["GSGA Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["SMG_01_ACO_F",nil,15000],
+						["SMG_02_ACO_F",nil,30000],
+						["SMG_01_ACO_F",nil,30000],
 						["arifle_MXM_Black_F",nil,90000],
 						["arifle_MX_SW_Black_F",nil,105000],
 						["arifle_MX_Black_F",nil,35000],
 						["hgun_ACPC2_F",nil,17500],
-						["arifle_TRG20_F",nil,10000],
+						["arifle_TRG20_F",nil,90000],
 						["arifle_MXC_F",nil,30000],
 						["30Rnd_65x39_caseless_mag",nil,100],
 						["30Rnd_556x45_Stanag",nil,500],
@@ -224,6 +224,7 @@ switch(_shop) do
 						["optic_SOS",nil,5000],
 						["optic_tws",nil,2000],
 						["optic_NVS",nil,6000],
+						["optic_Nightstalker",nil,6000],
 						["muzzle_snds_H",nil,2500],
 						["HandGrenade_Stone","Flashbang",1700]
 					]
@@ -242,14 +243,15 @@ switch(_shop) do
             {
            ["GSGA Scharfschuetzen Shop",
                     [
-                        ["srifle_GM6_F",nil,110000],
+                        ["srifle_GM6_F",nil,210000],
                         ["5Rnd_127x108_Mag",nil,2000],
                         ["optic_SOS",nil,5000],
                         ["optic_NVS",nil,6000],
                         ["optic_LRPS",nil,12000],
                         ["optic_Arco",nil,4000],
                         ["optic_DMS",nil,6500],
-                        ["optic_tws",nil,2000]
+                        ["optic_Nightstalker",nil,6000],
+                        ["optic_tws",nil,12000]
                     ]
                 ];
             };
@@ -266,15 +268,14 @@ switch(_shop) do
             {
            ["GSGA Gruppenfuehrer Shop",
                     [
-                        ["LMG_Zafir_F",nil,50000],
-                        ["SMG_02_ACO_F",nil,15000],
-                        ["SMG_01_ACO_F",nil,15000],
-                        ["LMG_Mk200_F",nil,50000],
-                        ["srifle_EBR_F",nil,50000],
-                        ["arifle_MX_GL_F",nil,40000],
-                        ["arifle_TRG21_GL_F",nil,30000],
-                        ["30Rnd_9x21_Mag",nil,60],
-                        ["30Rnd_45ACP_Mag_SMG_01",nil,60],
+                        ["LMG_Zafir_F",nil,250000],
+                        ["SMG_02_ACO_F",nil,30000],
+                        ["SMG_01_ACO_F",nil,30000],
+                        ["LMG_Mk200_F",nil,200000],
+                        ["arifle_MX_GL_F",nil,100000],
+                        ["arifle_TRG21_GL_F",nil,90000],
+                        ["30Rnd_9x21_Mag",nil,100],
+                        ["30Rnd_45ACP_Mag_SMG_01",nil,100],
                         ["150Rnd_762x51_Box",nil,500],
                         ["200Rnd_65x39_cased_Box",nil,500],
                         ["muzzle_snds_acp",nil,2750],
@@ -299,8 +300,9 @@ switch(_shop) do
                         ["optic_SOS",nil,5000],
                         ["optic_NVS",nil,6000],
                         ["optic_LRPS",nil,12000],
-                        ["optic_tws",nil,2000],
+                        ["optic_tws",nil,12000],
                         ["optic_DMS",nil,6500],
+                        ["optic_Nightstalker",nil,6000],
                         ["B_UavTerminal",nil,30000],
                         ["B_UAV_01_backpack_F",nil,50000],
                         ["DemoCharge_Remote_Mag",nil,10000],

@@ -211,6 +211,13 @@ switch (_vehicle) do
 		[
 			["textures\COP\Vehicles\strider_sek.jpg","cop"]
 		];
+	};
+	case "I_MRAP_03_hmg_F":
+	{
+		_ret =
+		[
+			["textures\COP\Vehicles\strider_sek.jpg","cop"]
+		];
 	};	
 	case "B_Heli_Light_01_F":
 	{
