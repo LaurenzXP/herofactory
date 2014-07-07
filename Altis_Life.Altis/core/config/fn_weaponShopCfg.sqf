@@ -108,6 +108,7 @@ switch(_shop) do
 						["muzzle_snds_B",nil,10000],
 						["muzzle_snds_H",nil,10000],
 						["muzzle_snds_acp",nil,10000],
+						["Rangefinder",nil,6500],
 						["optic_MRCO",nil,6000]
 
 
@@ -225,7 +226,8 @@ switch(_shop) do
 						["optic_tws",nil,2000],
 						["optic_NVS",nil,6000],
 						["muzzle_snds_H",nil,2500],
-						["HandGrenade_Stone","Flashbang",1700]
+						["HandGrenade_Stone","Flashbang",1700],
+						["Rangefinder",nil,6500]
 					]
 				];
 			};
@@ -244,6 +246,7 @@ switch(_shop) do
                     [
                         ["srifle_GM6_F",nil,210000],
                         ["5Rnd_127x108_Mag",nil,2000],
+                        ["Rangefinder",nil,6500],
                         ["optic_SOS",nil,5000],
                         ["optic_NVS",nil,6000],
                         ["optic_LRPS",nil,12000],
@@ -301,6 +304,7 @@ switch(_shop) do
                         ["optic_tws",nil,12000],
                         ["optic_DMS",nil,6500],
                         ["NVGoggles_OPFOR",nil,6000],
+                        ["Rangefinder",nil,6500],
                         ["B_UavTerminal",nil,30000],
                         ["B_UAV_01_backpack_F",nil,50000],
                         ["DemoCharge_Remote_Mag",nil,10000],
