@@ -36,7 +36,7 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,1500],
-						["NVGoggles",nil,2000],
+						["NVGoggles_OPFOR",nil,2000],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
@@ -131,7 +131,7 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
-						["NVGoggles",nil,1200],
+						["NVGoggles_OPFOR",nil,1200],
 						["Chemlight_red",nil,30],
 				        ["Chemlight_yellow",nil,30],
 				        ["Chemlight_green",nil,30],
@@ -224,7 +224,6 @@ switch(_shop) do
 						["optic_SOS",nil,5000],
 						["optic_tws",nil,2000],
 						["optic_NVS",nil,6000],
-						["optic_Nightstalker",nil,6000],
 						["muzzle_snds_H",nil,2500],
 						["HandGrenade_Stone","Flashbang",1700]
 					]
@@ -250,7 +249,6 @@ switch(_shop) do
                         ["optic_LRPS",nil,12000],
                         ["optic_Arco",nil,4000],
                         ["optic_DMS",nil,6500],
-                        ["optic_Nightstalker",nil,6000],
                         ["optic_tws",nil,12000]
                     ]
                 ];
@@ -302,7 +300,7 @@ switch(_shop) do
                         ["optic_LRPS",nil,12000],
                         ["optic_tws",nil,12000],
                         ["optic_DMS",nil,6500],
-                        ["optic_Nightstalker",nil,6000],
+                        ["NVGoggles_OPFOR",nil,6000],
                         ["B_UavTerminal",nil,30000],
                         ["B_UAV_01_backpack_F",nil,50000],
                         ["DemoCharge_Remote_Mag",nil,10000],

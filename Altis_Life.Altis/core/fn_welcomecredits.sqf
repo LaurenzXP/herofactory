@@ -69,7 +69,7 @@ _role8names = ["supported by shadowdragons.de"];
 _role9 = "Created by:";
 _role9names = ["TAW_Tonic"];
 _role10 = "Vertreter der Fraktionen:";
-_role10names = ["CIV:[Asgard] Loki","Polizei: Snake","SD: Demon"];
+_role10names = ["CIV:______","Polizei: Snake","SD: Demon"];
 _role11 = "Directed by:";
 _role11names = ["Torsten Ennenbach"];
 _role12 = "Special thanks to:";
@@ -77,7 +77,7 @@ _role12names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming","LT. S
 _role13 = "Polizeileiter:";
 _role13names = ["Snake","Fumiku"];
 _role14 = "Notarztleiter:";
-_role14names = ["Kyanreth","GrelowLP","Cedi"];
+_role14names = ["Kiffererdbere","GrelowLP"];
 _role15 = "ADAC";
 _role15names = ["Max Freitag"];
 

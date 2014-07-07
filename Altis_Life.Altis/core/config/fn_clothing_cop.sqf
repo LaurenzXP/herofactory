@@ -98,6 +98,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
+			_ret set[count _ret,[" V_RebreatherIR",nil,800]];
 		};
 
 		if(__GETC__(life_coplevel) > 2) then
