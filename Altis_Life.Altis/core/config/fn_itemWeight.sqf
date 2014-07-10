@@ -13,6 +13,11 @@ switch (_item) do
 {
 	case "diamond": {4}; // on this we base our calculation of prices - if legal processed weight x2 x1000, if illegal x2 x1000 + 500 
 	case "diamondc": {2};
+	case "methu": {6};
+    case "methp": {4};
+    case "uran238": {2};
+    case "warhead": {2};
+    case "uran": {3};
 	case "oilu": {6};
 	case "oilp": {5};
 	case "heroinu": {3};
@@ -54,6 +59,12 @@ switch (_item) do
 	case "blastingcharge": {15};
 	case "boltcutter": {5};
 	case "defusekit": {2};
+	case "wine": {2};
+    case "moonshine": {2};
+    case "grapes": {3};
+    case "zigaretten": {2};
+    case "zigarren": {2};
+    case "taback": {3};
 	
 	// more jobs
 	case "gold": {12};

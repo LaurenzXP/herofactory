@@ -35,3 +35,13 @@ if(!StartProgress) then
 	//[8,true,false] execFSM "core\fsm\core_time.fsm";
 };
 StartProgress = true;
+
+
+MAC_fnc_switchMove = {
+    private["_object","_anim"];
+    _object = _this select 0;
+    _anim = _this select 1;
+
+    _object switchMove _anim;
+    
+};

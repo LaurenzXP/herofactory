@@ -15,6 +15,11 @@ switch (_var) do
 	//Virtual Inventory Items
 	case "life_inv_oilu": {"Unprocessed Oil"};
 	case "life_inv_oilp": {"Processed Oil"};
+	case "life_inv_uranu": {"Uranerz"};
+    case "life_inv_uranp": {"Uran 238"};
+    case "life_inv_Warhead": {"Warhead"};
+	case "life_inv_methu": {"Unprocessed Methamphetamine"};
+    case "life_inv_methp": {"Pure Methamphetamine"};
 	case "life_inv_heroinu": {"Unprocessed Heroin"};
 	case "life_inv_heroinp": {"Processed Heroin"};
 	case "life_inv_cannabis": {"Cannabis"};
@@ -59,9 +64,19 @@ switch (_var) do
 	case "life_inv_blastingcharge": {"Blasting Charge"};
 	case "life_inv_boltcutter": {"Bolt Cutter"};
 	case "life_inv_defusekit": {"Bomb Defusal Kit"};
+	case "life_inv_moonshine": {"Moonshine"};
+    case "life_inv_wine": {"Wine"};
+    case "life_inv_grapes": {"Grapes"};
+    case "life_inv_zigarren": {"Zigarren"};
+    case "life_inv_zigaretten": {"Zigaretten"};
+    case "life_inv_taback": {"Tabak"};
+    case "life_inv_warhead": {"Sprengkopf"};
+    case "life_inv_uran238": {"Uran 238"};
+    case "life_inv_uran": {"Uran"};
 	
 	//License Block
 	case "license_civ_driver": {"Driver License"};
+	case "license_civ_meth": {"Methamphetamine Training"};
 	case "license_civ_air": {"Pilot License"};
 	case "license_civ_heroin": {"Heroin Training"};
 	case "license_civ_gang": {"Gang License"};
@@ -83,6 +98,14 @@ switch (_var) do
 	case "license_civ_marijuana": {"Marijuana Training"};
 	case "license_civ_cement": {"Cement Mixing License"};
 	case "license_med_air": {"Pilot License"};
+	case "license_civ_uran": {"Gefahrengutschein"};
+	case "license_civ_Warhead": {"Waffenhersteller"};
+	case "license_civ_grapes": {"Grape Processing"};
+    case "license_civ_moonshine": {"Moonshine Processing"};
+    case "license_civ_taback": {"Zigarettenherstellung"};
+    case "license_civ_zigarren": {"Zigarrenherstellung"};
+    case "license_civ_uran": {"Uranverabeitung"};
+case "license_civ_warhead": {"Sprengstoffmanufaktur"};
 	
     //Virtual Inventory Items
     case "life_inv_storage1": {"House Storage"};

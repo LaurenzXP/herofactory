@@ -203,7 +203,18 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storage1",
-	"life_inv_storage2"
+	"life_inv_storage2",
+	"life_inv_methu",
+    "life_inv_methp",
+    "life_inv_uran",
+    "life_inv_uran238",
+    "life_inv_warhead",
+    "life_inv_moonshine",
+    "life_inv_wine",
+    "life_inv_grapes",
+    "life_inv_zigarren",
+    "life_inv_zigaretten",
+    "life_inv_taback"
 ];
 
 //Setup variable inv vars.
@@ -218,6 +229,7 @@ life_licenses =
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
+	["license_civ_warhead","civ"],
 	["license_civ_gang","civ"],
 	["license_civ_boat","civ"],
 	["license_civ_oil","civ"],
@@ -227,6 +239,8 @@ life_licenses =
 	["license_civ_rebel","civ"],
 	["license_civ_coke","civ"],
 	["license_civ_diamond","civ"],
+	["license_civ_meth","civ"],
+	["license_civ_uran","civ"],
 	["license_civ_copper","civ"],
 	["license_civ_iron","civ"],
 	["license_civ_sand","civ"],
@@ -237,7 +251,11 @@ life_licenses =
 	["license_adac_air","adac"],
 	["license_adac_boot","adac"],	
 	["license_adac_truck","adac"],	
-	["license_adac_driver","adac"]
+	["license_adac_driver","adac"],
+	["license_civ_grapes","civ"],
+    ["license_civ_moonshine","civ"],
+    ["license_civ_taback","civ"],
+    ["license_civ_zigarren","civ"]
 ];
 
 //Setup License Variables
@@ -245,7 +263,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["warhead",2000],["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["moonshine",2000],["zigarren",650],["froglsd",1200],["methu",400],["methp",4000],["moonshine",3000],["blastingcharge",10000],["boltcutter",500]];
 
 
 /*
@@ -254,8 +272,16 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 sell_array = 
 [
 	["apple",50],
+	["moonshine",800],
+    ["wine",255],
+    ["grapes",70],
 	["heroinu",1850],
 	["heroinp",5650],
+	["methu",400],
+    ["methp",4000],
+    ["uran",400],
+    ["uran238",4500],
+    ["warhead",5500],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
@@ -286,7 +312,10 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement", 4400],
-	["goldbar",95000]
+	["goldbar",95000],
+	["zigarren",800],
+    ["zigaretten",255],
+    ["taback",70]
 
 ];
 __CONST__(sell_array,sell_array);
@@ -318,7 +347,16 @@ buy_array =
 	["defusekit",2500],
 	["spikeStrip",2500],
 	["storage1",100000],
-	["storage2",250000]
+	["storage2",250000],
+	["moonshine",1250],
+    ["wine",400],
+    ["grapes",95],
+    ["zigarren",1250],
+    ["zigaretten",400],
+    ["taback",95],
+    ["warhead",1250],
+    ["uran238",400],
+    ["uran",95]
 ];
 __CONST__(buy_array,buy_array);
 

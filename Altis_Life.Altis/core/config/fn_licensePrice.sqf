@@ -1,7 +1,7 @@
 /*
 	File: fn_licensePrice.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Returns the license price.
 */
@@ -31,9 +31,17 @@ switch (_type) do
 	case "cocaine": {30000};
 	case "sand": {14500};
 	case "iron": {9500};
+	case "meth": {250000};
 	case "copper": {8000};
 	case "cement": {6500};
 	case "mair": {15000};
+	case "uran": {250000};
+	case "warhead" : {300000};
+	case "passport": {25000};
+    case "grapes": {12000};
+    case "moonshine": {25000};
+    case "taback": {12000};
+    case "zigarren": {25000};
 	
 	case "home": {150000};
 	

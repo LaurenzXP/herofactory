@@ -50,10 +50,10 @@ if(life_firstSpawn) then {
 
 
 
-_role1 = "Willkommen auf dem Herofactory Altis Life RPG Server:";
+_role1 = "Willkommen auf dem Herofactory The Original:";
 _role1names = ["Altis Life RPG by Tonic"];
 _role2 = "Serveradmins!";
-_role2names = ["Cedi","[SD] Demon","LT. Faceman|Laurenz","Snake"];
+_role2names = ["[SD] Demon","LT. Faceman|Laurenz","Snake"];
 _role3 = "Website:";
 _role3names = ["herosfactory.forumprofi.de"];
 _role4 = "MapDesign";
@@ -61,8 +61,8 @@ _role4names = ["LT. Faceman|Laurenz"];
 _role5 = "Teamspeak:";
 _role5names = ["78.143.39.207:22400"];
 _role6 = "NEWS:";
-_role6names = ["Q = Pickaxe", "Map", "Preise", "Übersetzung"];
-_role7 = "Neue Server IP am Samstag?";
+_role6names = ["Q = Pickaxe","Neue Sachen :P", "Neue Jobs"];
+_role7 = "Der Server Ihres Vertrauens!";
 _role7names = ["85.25.214.214"];
 _role8 = "Herofactory";
 _role8names = ["supported by shadowdragons.de"];
@@ -73,7 +73,7 @@ _role10names = ["CIV:______","Polizei: Snake","SD: Demon"];
 _role11 = "Directed by:";
 _role11names = ["Torsten Ennenbach"];
 _role12 = "Special thanks to:";
-_role12names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","HellsGateGaming","LT. Shelby(Skins)"];
+_role12names = ["TAW_Tonic", "Bruuudis","xmscx","Demon","PolarBlue","HellsGateGaming","LT. Shelby(Skins)"];
 _role13 = "Polizeileiter:";
 _role13names = ["Snake","Fumiku"];
 _role14 = "Notarztleiter:";

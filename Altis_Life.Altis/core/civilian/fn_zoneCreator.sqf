@@ -17,6 +17,51 @@ _peachZones = ["peaches_1","peaches_2","peaches_3","peaches_4"];
 _heroinZones = ["heroin_1"];
 _cocaineZones = ["cocaine_1"];
 _weedZones = ["weed_1"];
+_methZones = ["meth_1"];
+_uranZones = ["uran_1"];
+_grapeZones = ["grape_1"];
+_tabackZones = ["taback_1"];
+
+
+//Create uran zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Uran = player addAction['Uran abbauen',life_fnc_gatheruran,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Uran;"];
+} foreach _uranZones;
+
+//Create taback zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Taback = player addAction['Pflücke Tabak',life_fnc_gathertaback,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Taback;"];
+} foreach _tabackZones;
+
+//Create grape zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Grapes = player addAction['Gather Grapes',life_fnc_gatherGrapes,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Grapes;"];
+} foreach _grapeZones;
+
+//Create uran zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Uran = player addAction['Uran abbauen',life_fnc_gatherUran,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Uran;"];
+} foreach _uranZones;
+
+//Create meth zones
+{
+	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
+	_zone setTriggerArea[100,100,0,false];
+	_zone setTriggerActivation["CIV","PRESENT",true];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Meth = player addAction['Methzutaten stehlen',life_fnc_gatherMeth,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Meth;"];
+} foreach _methZones;
 
 //Create apple zones
 {

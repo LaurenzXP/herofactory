@@ -31,6 +31,9 @@ switch (_mode) do
 			case "gang": {_var = "license_civ_gang"}; //Gang license cost
 			case "rebel": {_var = "license_civ_rebel"}; //Rebel License
 			case "truck":{_var = "license_civ_truck"}; //Truck License
+			case "meth": {_var = "license_civ_meth"};  
+			case "uran": {_var = "license_civ_uran"};
+			case "warhead": {_var = "license_civ_warhead"};
 			case "diamond": {_var = "license_civ_diamond"};
 			case "salt": {_var = "license_civ_salt"};
 			case "cocaine": {_var = "license_civ_coke"};
@@ -39,7 +42,11 @@ switch (_mode) do
 			case "copper": {_var = "license_civ_copper"};
 			case "cement": {_var = "license_civ_cement"};
 			case "mair": {_var = "license_med_air"};
-			case "home": {_var = "license_civ_home"}; 	
+			case "home": {_var = "license_civ_home"}; 
+			case "grapes": {_var = "license_civ_grapes"};
+            case "moonshine": {_var = "license_civ_moonshine"};	
+            case "taback": {_var = "license_civ_taback"};
+            case "zigarren": {_var = "license_civ_zigarren"};
 			
 			
 			// licenzen
@@ -73,6 +80,9 @@ switch (_mode) do
 			case "license_civ_gang": {_var = "gang"}; //Gang license cost
 			case "license_civ_rebel": {_var = "rebel"}; //Rebel License
 			case "license_civ_truck":{_var = "truck"}; //Truck License
+			case "license_civ_meth": {_var = "meth"}; 
+			case "license_civ_uran": {_var = "uran"};
+			case "license_civ_warhead": {_var = "warhead"};
 			case "license_civ_diamond": {_var = "diamond"};
 			case "license_civ_salt": {_var = "salt"};
 			case "license_civ_coke": {_var = "cocaine"};
@@ -82,7 +92,10 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};	
-			
+			case "license_civ_grapes": {_var = "grapes"};
+            case "license_civ_moonshine": {_var = "moonshine"};
+            case "license_civ_taback": {_var = "taback"};
+            case "license_civ_zigarren": {_var = "zigarren"};
 			
 			// licenzen
 			case "license_adac": {_var = "adac"};

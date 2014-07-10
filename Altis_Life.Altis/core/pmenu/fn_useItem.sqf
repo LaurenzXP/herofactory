@@ -80,7 +80,17 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] spawn fnc_drugweed_use;
+		ReportLoc = getPos player;
+		//[[0,format["%1 was seen smoking a Joint!.",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[[0,format["%1 is chilling with a big Bob Marley special blueberry Blunt!",name player]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
+			life_thirst = 50;
+			life_hunger = 20;
+			[] spawn
+			{
+				titleText["You are stoned and hungry, chill!","PLAIN"];
+				[] spawn life_fnc_weed;
+			};
+		[[0,format["POLICE REPROT: I have just seen someone smoking WEED in Altis! Is it not YOU'RE JOB TO STOP THIS?! -Anon",name player]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		};
 	};
 	

@@ -98,6 +98,10 @@ class Life_Client_Core
 	{
 		file = "core\actions";
 		class buyLicense {};
+		class gatherGrapes {};
+		class gathertaback {};
+		class gatherMeth {};
+		class gatheruran {};
 		class chemlightUse {};
 		class heal {};
 		class healHospital {};
@@ -110,6 +114,7 @@ class Life_Client_Core
 		class dpFinish {};
 		class dropFishingNet {};
 		class gatherApples {};
+		class robShops {};
 		class gatherCannabis {};
 		class gatherHeroin {};
 		class gatherOil {};
