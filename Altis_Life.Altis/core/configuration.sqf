@@ -57,6 +57,11 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 
+// [SD] Demon changes
+// make vehicles more expensive while you can change this on your own: formula: rent-prices * life_vehicle_cost_multiplier = buy_price 
+life_vehicle_cost_multiplier = 1.7
+
+
 Life_request_timer = false;
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
