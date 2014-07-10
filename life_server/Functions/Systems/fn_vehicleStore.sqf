@@ -38,6 +38,7 @@ if(_impound) then
 		(owner _unit) publicVariableClient "life_impound_inuse";
 		if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 			//deleteVehicle _vehicle;
+			_vehicle setVehicleLock "LOCKED"
 			_vehicle allowDamage false;
 			_vehicle setVehiclePosition [[0,0],["junkyard"],30];
 
@@ -52,6 +53,7 @@ if(_impound) then
 			_thread = [_query,false] spawn DB_fnc_asyncCall;
 			waitUntil {scriptDone _thread};
 			if(!isNil "_vehicle" && {!isNull _vehicle}) then {
+				_vehicle setVehicleLock "LOCKED"
 				_vehicle allowDamage false;
 				_vehicle setVehiclePosition [[0,0],["junkyard"],30];
 			};
